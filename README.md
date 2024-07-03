@@ -8,4 +8,3 @@
 >   - Vikram Singh (Leader)
 >   - Jaival Chauhan
 >   - Siddhartha Chatterjee
-
