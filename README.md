@@ -1,4 +1,3 @@
-# Indian-Heritage-Code-Crafters
-HELLO WORLD
 
-Tutorial
+# Indian-Heritage-Code-Crafters
+
