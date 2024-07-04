@@ -13,60 +13,38 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-
     <!-- Background slideshow -->
     <div class="slideshow-container">
+        <div class="navbar1">
+            <ul>
+                <li style="position: relative; left: 0%;"><a href="#"><img src="menu-bar.png"
+                            style="width: 40px; height: 40px;"></a></li>
+                <li style="position: relative; left: 40%;"><a href="home.html">Some Text</a></li>
+                <li>
+                    <form class="search-bar">
+                        <input type="search" name="search" pattern=".*\S.*" required placeholder="search">
+
+                        <button class="search-btn" type="submit">
+                            <img src="search-interface-symbol.png" style="width: 10px; height: 10px;">
+                        </button>
+                    </form>
+                </li>
+                <!-- <li class="searchButt"><button type="submit"></button></li>
+                <li class="searchBar"><input type="search" placeholder="Search"></li> -->
+
+            </ul>
+        </div>
 
         <div class="mySlides fade">
             <img src="Red_Fort,_Delhi_India.jpg" style="width:100%">
         </div>
-
+        
         <div class="mySlides fade">
             <img src="93080_2x1.avif" style="width:100%">
         </div>
-        
-        <div class="mySlides fade">
+
+
+        <!-- <div class="mySlides fade">
             <img src="diwali-lanterns-rts2t3o5_3x2.avif" style="width:100%">
         </div>
         
@@ -76,7 +54,7 @@
         
         <div class="mySlides fade">
             <img src="Bharatnatyam.jpg" style="width:100%">
-        </div>
+        </div> -->
 
     </div>
 
@@ -93,8 +71,9 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 7000); // Change image every 2 seconds
+            setTimeout(carousel, 5000); // Change image every 5 seconds
         }
+
     </script>
 </body>
 

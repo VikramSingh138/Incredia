@@ -1,12 +1,5 @@
-* {
-    box-sizing: border-box;
-}
 
 .mySlides {
-    display: none;
-}
-
-nav {
     display: none;
 }
 
@@ -14,7 +7,7 @@ img {
     vertical-align: middle;
     opacity: .7;
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
 }
 
 /* Slideshow container */
@@ -23,10 +16,11 @@ img {
     margin: auto;
 }
 
+
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 7s;
+    animation-duration: 6s;
 }
 
 @keyframes fade {
@@ -41,6 +35,57 @@ img {
     100% {
         opacity: 0;
     }
+}
+
+/* The navbar */
+.navbar1 {
+    overflow: hidden;
+    background: transparent;
+    width: 100%;
+    z-index: 4;
+}
+
+li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+/* Navbar links */
+li a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar1 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.search {
+    border-style: solid;
+    border-radius: 30px;
+}
+
+.search-bar {
+    padding: 18px;
+    float: right;
+    border: hidden;
+    border-radius: 30px;
+}
+
+input {
+    border: 0;
+    background: transparent;
+}
+
+.search-btn {
+    border: 0;
+    border-radius: 18px;
+    background: transparent;
 }
 
 /* On smaller screens, decrease text size */
