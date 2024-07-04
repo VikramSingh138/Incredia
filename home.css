@@ -2,22 +2,23 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Verdana, sans-serif;
+.mySlides {
+    display: none;
 }
 
-.mySlides {
+nav {
     display: none;
 }
 
 img {
     vertical-align: middle;
-    opacity: .4;
+    opacity: .7;
+    width: 100vw;
+    height: 92vh;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
 }
@@ -25,16 +26,20 @@ img {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 7s;
 }
 
 @keyframes fade {
-    from {
-        opacity: 0.4;
+    0% {
+        opacity: 0;
     }
 
-    to {
+    50% {
         opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
