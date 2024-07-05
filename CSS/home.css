@@ -91,6 +91,15 @@ nav img {
     width: 45px;
 }
 
+.title {
+    position: absolute;
+    left: 42%;
+    top: 5%;
+    font-family: Comic Sans MS;
+    font-size: 35px;
+    font-weight: 500;
+}
+
 .box {
     position: relative;
     float: right;
@@ -142,4 +151,20 @@ hr {
     margin: 0px 100px;
     border: 2px solid black;
     border-radius: 3px;
+}
+
+.content {
+    position: absolute;
+    max-width: 800px;
+    left: 10%;
+    top: 25%;
+}
+
+.content h1 {
+    font-family: Comic Sans MS;
+    font-size: 45px;
+}
+
+.content p{
+    font-size: 25px;
 }
