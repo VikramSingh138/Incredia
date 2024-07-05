@@ -1,5 +1,11 @@
+body {
+    margin: 0;
+}
+
 .background {
     position: absolute;
+    background-image: url(../Images/360_F_499051346_2lzgknTzUH9aQlgMO4rAUmtwa1MWtXZX.jpg);
+    background-repeat: no-repeat;
     top: 0;
     left: 0;
     height: 100vh;
@@ -25,6 +31,7 @@
     font-size: 70px;
     font-weight: 450;
     border-right: .15em solid rgb(255, 255, 255);
+    border-color: transparent;
     letter-spacing: 0em;
     animation:
         typing 2s steps(100, end) 2s,
@@ -59,26 +66,80 @@
     }
 
     50% {
-        border-color: orange;
+        border-color: rgb(255, 0, 0);
     }
 }
 
 .main-page {
-    opacity: 0;
     position: relative;
-    background-image: url(Images/360_F_499051346_2lzgknTzUH9aQlgMO4rAUmtwa1MWtXZX.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100vw;
-    transform: translateY(30px);
-    animation-name: bg-in;
-    animation-delay: 5s;
 }
 
-@keyframes bg_in {
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
+nav {
+    padding: 30px;
+    background: transparent;
+}
+
+nav img {
+    position: relative;
+    display: inline-block;
+    left: 5%;
+    height: 45px;
+    width: 45px;
+}
+
+.box {
+    position: relative;
+    float: right;
+    right: 5%;
+}
+
+.input {
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background: none;
+    background-image: url(../Images/search-interface-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #000000;
+    outline: none;
+    transition: .5s;
+}
+
+.box:hover input {
+    width: 350px;
+    background: transparent;
+    border: 4px solid #ff2d2d;
+    border-radius: 10px;
+}
+
+.box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #ffffff;
+    transition: .2s;
+}
+
+.box:hover i {
+    opacity: 0;
+    z-index: -1;
+}
+
+hr {
+    margin: 0px 100px;
+    border: 2px solid black;
+    border-radius: 3px;
 }
