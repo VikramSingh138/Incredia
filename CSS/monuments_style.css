@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* body{
+    min-height:100vh;
+    background-image: url(../Images/petal_design.jpg);
+} */
+
+.unordered-list-1{
+    font-size: 100px;
+}
