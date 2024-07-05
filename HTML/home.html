@@ -4,16 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/home.css">
 </head>
 
 <body>
     <div class="background">
-        <div class="greet">
+
+        <!-- Greeting on starting -->
+        <!-- <div class="greet">
             <p>नमस्ते</p>
-        </div>
+        </div> -->
+
+        <!-- After greetings, Home page loading -->
         <div class="main-page">
+
+            <!-- Navigation bar -->
+            <nav>
+                <img src="../Images/menu (1).png">
+                <div class="title">Code Crafters</div>
+                <div class="box">
+                    <form name="search">
+                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                    </form>
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+
+            <hr>
+
+            <!-- Short summery of the website -->
+            <div class="content1">
+                <h1>Explore the Heritage of India with us.</h1>
+                <p>Welcome to Explore India, your ultimate destination for discovering the rich and diverse heritage of this incredible country. Dive into the captivating history of India, tracing its journey from ancient civilizations to modern times. Celebrate the vibrant festivals that light up the nation with joy and color, each telling its unique story. Immerse yourself in the diverse cultural traditions, including regional cuisines and authentic recipes that tantalize the taste buds. Marvel at the intricate arts and crafts, and experience the rhythmic beats of traditional music and dance forms. Delve into the literary treasures that reflect the profound thoughts and emotions of this land. Join us on a journey through the heart of India, where every corner holds a story waiting to be told.</p>
+            </div>
+
+            <!-- Shortcut links to explore quickly -->
+            <div class="content2">
+                #shortcut_links
+            </div>
         </div>
     </div>
 </body>
