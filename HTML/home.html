@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../CSS/home.css">
+    <script src="../JavaScript/nav-anim.js"></script>
 </head>
 
 <body>
@@ -20,28 +21,48 @@
         <div class="main-page">
 
             <!-- Navigation bar -->
-            <nav>
-                <img src="../Images/menu (1).png">
-                <div class="title">Code Crafters</div>
-                <div class="box">
-                    <form name="search">
-                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-                    </form>
-                    <i class="fas fa-search"></i>
-                </div>
-            </nav>
+            <div class="nav-container">
+                <nav>
+                    <span style="cursor:pointer" onclick="openNav()"><img src="../Images/menu (1).png"></span>
+                    
+                    <div class="title">Code Crafters</div>
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </nav>
+            </div>
 
             <hr>
 
             <!-- Short summery of the website -->
             <div class="content1">
                 <h1>Explore the Heritage of India with us.</h1>
-                <p>Welcome to Explore India, your ultimate destination for discovering the rich and diverse heritage of this incredible country. Dive into the captivating history of India, tracing its journey from ancient civilizations to modern times. Celebrate the vibrant festivals that light up the nation with joy and color, each telling its unique story. Immerse yourself in the diverse cultural traditions, including regional cuisines and authentic recipes that tantalize the taste buds. Marvel at the intricate arts and crafts, and experience the rhythmic beats of traditional music and dance forms. Delve into the literary treasures that reflect the profound thoughts and emotions of this land. Join us on a journey through the heart of India, where every corner holds a story waiting to be told.</p>
+                <p>Welcome to Explore India, your ultimate destination for discovering the rich and diverse heritage of
+                    this incredible country. Dive into the captivating history of India, tracing its journey from
+                    ancient civilizations to modern times. Celebrate the vibrant festivals that light up the nation with
+                    joy and color, each telling its unique story. Immerse yourself in the diverse cultural traditions,
+                    including regional cuisines and authentic recipes that tantalize the taste buds. Marvel at the
+                    intricate arts and crafts, and experience the rhythmic beats of traditional music and dance forms.
+                    Delve into the literary treasures that reflect the profound thoughts and emotions of this land. Join
+                    us on a journey through the heart of India, where every corner holds a story waiting to be told.</p>
             </div>
 
             <!-- Shortcut links to explore quickly -->
             <div class="content2">
                 #shortcut_links
+            </div>
+
+            <!-- Side Menu -->
+            <div id="mySidenav" class="menu">
+                <a href="javascript:void(0)" id="slide-anim" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html" id="slide-anim">Home</a>
+                <a href="#" id="slide-anim">Histroy</a>
+                <a href="#" id="slide-anim">Monuments</a>
+                <a href="#" id="slide-anim">Culture</a>
+                <a href="#" id="slide-anim">Arts & Crafts</a>
             </div>
         </div>
     </div>
