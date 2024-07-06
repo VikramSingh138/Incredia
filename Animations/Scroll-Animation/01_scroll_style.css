@@ -1,0 +1,88 @@
+ /* PLEASE READ THE DESCRIPTION.TXT FILE FOR BETTER UNDERSTANDING OF THIS CODE  */
+
+/* FIRST WE'LL DO BASIC STYLING OF THE DIV BLOCKS WHICH CAN 
+BE CHANGED EASILY ACCORDING TO NEED */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.scroll_list{
+    padding-inline:0;
+    list-style: none;
+}
+
+.scroll_list li{
+    padding:1rem;
+    background: red;
+    box-shadow: 0.5rem 0.5rem 05.rem 05.rem black;
+    min-width: 150px;
+}
+
+.scroller{
+    max-width:1000px;
+    border: 3px solid black;
+}
+
+.scroller_inner{
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+
+/* BELOW IS THE ANIMATION CODE */
+
+.scroller[data-animated="true"]{
+    overflow: hidden;    
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent);
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent);
+}
+
+.scroller[data-animated="true"] .scroller_inner {
+    width: fit-content;
+    flex-wrap: nowrap;
+    animation: 
+        scroll 
+        var(--_animation-duration,40s) 
+        var(--_animation-direction,forwards)
+        linear infinite;
+}
+
+/* CUSTOM PROPERTIES BELOW :- DURATION , DIRECTION */
+
+.scroller[data-direction="right"]{
+    --_animation-direction:reverse;
+}
+
+.scroller[data-direction="left"]{
+    --_animation-direction:forwards;
+}
+
+.scroller[data-duration="fast"]{
+    --_animation-duration:20s;
+}
+
+.scroller[data-duration="slow"]{
+    --_animation-duration:60s;
+}
+
+/* BELOW CODE SPECIFIES KEYFRAMES */
+
+@keyframes scroll{
+    to{
+        transform: translate(calc(-50% - 0.5rem));
+        /* CAN PUT 100% INSTEAD FOR MOVING TO RIGHT */
+    }
+}
