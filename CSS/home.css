@@ -5,7 +5,6 @@ body {
 /* Background styling */
 .background {
     position: absolute;
-    background-image: url(../Images/360_F_499051346_2lzgknTzUH9aQlgMO4rAUmtwa1MWtXZX.jpg);
     background-repeat: no-repeat;
     top: 0;
     left: 0;
@@ -74,11 +73,24 @@ body {
 
 /* Home page ethics */
 .main-page {
+    background-image: url(../Images/360_F_499051346_2lzgknTzUH9aQlgMO4rAUmtwa1MWtXZX.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100vw;
+}
+
+.anim-bg {
+    opacity: 0;
+    animation: come-in 0.2s linear forwards;
+    animation-delay: 5s;
+}
+
+@keyframes come-in {
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Navigation bar */
@@ -88,7 +100,6 @@ nav-container {
 }
 
 nav {
-    /* position: fixed; */
     max-width: 100vw;
     padding: 30px;
     -webkit-backdrop-filter: blur(8px);
@@ -175,23 +186,83 @@ hr {
     border-radius: 3px;
 }
 
+/* Navbar animation */
+.anim-nav {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: movedown 1s linear forwards;
+    animation-delay: 5.3s;
+}
+
+@keyframes movedown {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 /* Short summery */
 .content1 {
     position: absolute;
     max-width: 800px;
     left: 10%;
     top: 25%;
-
 }
 
 .content1 h1 {
+    opacity: 0;
     font-family: 'Times New Roman', Times, serif;
     font-size: 45px;
+}
+
+.content1 h1:nth-child(1) {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 725px;
+    animation: 
+        type 4s steps(40, end) forwards, 
+        blink .75s step-end infinite;
+    animation-delay: 5.3s;
+}
+
+/* H1 typing animation */
+@keyframes type {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+
+    1%,
+    100% {
+        opacity: 1;
+        border-right: 4px solid rgb(255, 0, 0);
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .content1 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
+}
+
+.anim-paragraph {
+    opacity: 0;
+    transform: translatey(10%);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 5.3s;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translatey(0%);
+    }
 }
 
 .content2 {
@@ -206,6 +277,21 @@ hr {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    transition: .2s;
+}
+
+.anim-shortlinks {
+    opacity: 0;
+    transform: translateX(10%);
+    animation: moveleft 0.5s linear forwards;
+    animation-delay: 9.4s;
+}
+
+@keyframes moveleft {
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .menu {
@@ -224,44 +310,28 @@ hr {
     text-wrap: nowrap;
 }
 
-.menu a {
+.slide-anim {
     right: 25px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
-    transform: translateX(-100%);
-	opacity: 0;
-	animation: slide-in-anim 1.5s ease-out forwards;
-    animation-delay: .5s;
 }
 
-.menu a:hover {
+.slide-anim:hover {
     color: #000000;
+    font-size: 25px;
+    transform: translateX(10px);
 }
 
-.menu .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
+    text-decoration: none;
     margin-left: 50px;
-}
-
-@keyframes slide-in-anim {
-    20% {
-        opacity: 0;
-    }
-    60% {
-        transform: translateX(15%);
-    }
-    75% {
-        transform: translateX(0%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+    color: #818181;
 }
