@@ -7,7 +7,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(../Images/360_F_499051346_2lzgknTzUH9aQlgMO4rAUmtwa1MWtXZX.jpg);
+    background-image: url(../Images/martin-jernberg-nE2gf1scItI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -81,8 +81,7 @@ nav img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px 30px;
-    /* background-color: rgb(252, 202, 186, 0.6); */
-    /* border: 2px solid black; */
+    border: 2px solid black;
     border-radius: 50px;
     box-sizing: border-box;
     font-family: Comic Sans MS;
@@ -171,7 +170,7 @@ hr {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
 }
@@ -190,15 +189,4 @@ hr {
     text-decoration: none;
     margin-left: 50px;
     color: #818181;
-}
-
-.box1 {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    top: 0%;
-    left: 50px;
-    height: 1000px;
-    width: 100px;
-    background-color: #ff0000;
 }
