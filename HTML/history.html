@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History</title>
     <link rel="stylesheet" href="../CSS/history.css">
+    <script src="../JavaScript/nav-anim.js"></script>
+    <script src="../JavaScript/sticky-nav.js"></script>
 </head>
 <body>
-    <div class="history-page">
 
-        <!-- Navigation bar -->
-        <div class="nav-container anim-nav">
-            <nav>
-                <span style="cursor:pointer" onclick="openNav()"><img src="../Images/menu (1).png"></span>
-                
-                <div class="title">Code Crafters</div>
-                <div class="box">
-                    <form name="search">
-                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-                    </form>
-                    <i class="fas fa-search"></i>
-                </div>
-            </nav>
+    <div class="background anim-bg">
+
+        <div class="history-page">
+
+            <!-- Navigation bar -->
+            <div class="nav-container anim-nav">
+                <nav>
+                    <span style="cursor:pointer" onclick="openNav()"><img src="../Images/menu (1).png"></span>
+                    
+                    <div class="title">HISTORY</div>
+                    <div class="box">
+                        <form name="search">
+                            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                        </form>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </nav>
+            </div>
+            
+            <hr class="anim-nav">
+
+            <!-- Side Menu -->
+            <div id="mySidenav" class="menu anim">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="home.html" class="slide-anim">HOME</a>
+                <a href="#" class="slide-anim">HISTORY</a>
+                <a href="#" class="slide-anim">MONUMENTS</a>
+                <a href="#" class="slide-anim">CULTURE</a>
+                <a href="#" class="slide-anim">ARTS & CRAFTS</a>
+            </div>
+
+            <div class="box1"></div>
+
         </div>
-
-        <hr class="anim-nav">
 
     </div>
 </body>

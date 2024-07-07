@@ -3,11 +3,32 @@ body {
     padding: 0;
 }
 
-.history-page {
+.background {
+    position: relative;
     height: 100vh;
     width: 100vw;
+    background-image: url(../Images/martin-jernberg-nE2gf1scItI-unsplash.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.history-page {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
     background-position: center;
+}
+
+.anim-bg {
+    opacity: 0;
+    animation: come-in 0.2s linear forwards;
+}
+
+@keyframes come-in {
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Navigation bar */
@@ -17,10 +38,12 @@ nav-container {
 }
 
 nav {
+    overflow: hidden;
+    position: sticky;
     max-width: 100vw;
     padding: 30px;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    z-index: 100;
+    display: block;
 }
 
 nav img {
@@ -58,8 +81,7 @@ nav img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px 30px;
-    /* background-color: rgb(252, 202, 186, 0.6); */
-    /* border: 2px solid black; */
+    border: 2px solid black;
     border-radius: 50px;
     box-sizing: border-box;
     font-family: Comic Sans MS;
@@ -108,11 +130,63 @@ hr {
     opacity: 0;
     transform: translateY(-100%);
     animation: movedown 1s linear forwards;
+    animation-delay: 0.2s;
 }
 
 @keyframes movedown {
     100% {
         opacity: 1;
         transform: translateY(0%);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
     }
+}
+
+.sticky { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+} 
+
+/* Side navigation bar */
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    overflow-x: hidden;
+    transition: 0.2s steps(100);
+    padding-top: 60px;
+    text-wrap: nowrap;
+}
+
+.slide-anim {
+    right: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.slide-anim:hover {
+    color: #000000;
+    font-size: 25px;
+    transform: translateX(10px);
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    text-decoration: none;
+    margin-left: 50px;
+    color: #818181;
 }
