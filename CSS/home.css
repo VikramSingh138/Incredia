@@ -74,11 +74,10 @@ body {
 
 /* Home page ethics */
 .main-page {
-    background-image: url(../Images/martin-jernberg-nE2gf1scItI-unsplash.jpg);
+    background-image: url(../Images/360_F_499051346_2lzgknTzUH9aQlgMO4rAUmtwa1MWtXZX.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
 }
@@ -104,7 +103,8 @@ nav-container {
 nav {
     max-width: 100vw;
     padding: 30px;
-
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 }
 
 nav img {
@@ -143,7 +143,7 @@ nav img {
     background-position: center;
     background-size: 30px 30px;
     /* background-color: rgb(252, 202, 186, 0.6); */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 50px;
     box-sizing: border-box;
     font-family: Comic Sans MS;
@@ -199,8 +199,6 @@ hr {
     100% {
         opacity: 1;
         transform: translateY(0%);
-        -webkit-backdrop-filter: blur(8px);
-        backdrop-filter: blur(8px);
     }
 }
 
@@ -210,7 +208,6 @@ hr {
     max-width: 800px;
     left: 10%;
     top: 25%;
-    color: #ffffff;
 }
 
 .content1 h1 {
@@ -282,14 +279,13 @@ hr {
     align-items: center;
     font-size: 20px;
     transition: .2s;
-    color: white;
 }
 
 .anim-shortlinks {
     opacity: 0;
     transform: translateX(10%);
     animation: moveleft 0.5s linear forwards;
-    animation-delay: 5.3s;
+    animation-delay: 9.4s;
 }
 
 @keyframes moveleft {
@@ -320,7 +316,7 @@ hr {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: #818181;
     display: block;
     transition: 0.3s;
 }
@@ -358,12 +354,9 @@ hr {
 
 .scroller{
     /* align-self: center; */
-    max-width:1200px;
+    max-width:80%;
     /* border: 3px solid black; */
     margin:0 auto;
-    background: transparent;
-    position: relative;
-    top: 80%;
 }
 
 .scroller_inner{
@@ -426,19 +419,5 @@ hr {
     to{
         transform: translate(calc(-50% - 0.5rem));
         /* CAN PUT 100% INSTEAD FOR MOVING TO RIGHT */
-    }
-}
-
-.anim-scroller {
-    opacity: 0;
-    transform: translateY(10%);
-    animation: moveup 0.2s linear forwards;
-    animation-delay: 5.3s;
-}
-
-@keyframes moveup {
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
     }
 }
