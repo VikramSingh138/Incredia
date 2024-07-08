@@ -16,62 +16,6 @@ body {
     background-position: center;
 }
 
-/* Greetings */
-.greet {
-    overflow: hidden;
-    position: absolute;
-    top: 35%;
-    left: 43%;
-    color: black;
-}
-
-.greet p {
-    width: 0%;
-    overflow: hidden;
-    margin: 0 auto;
-    white-space: nowrap;
-    font-size: 70px;
-    font-weight: 450;
-    border-right: .15em solid rgb(255, 255, 255);
-    border-color: transparent;
-    letter-spacing: 0em;
-    animation:
-        typing 2s steps(100, end) 2s,
-        blink-caret .75s step-end 6;
-}
-
-/* The typing effect */
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-
-    20% {
-        width: 100%;
-    }
-
-    80% {
-        width: 100%;
-    }
-
-    100% {
-        width: 0;
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: rgb(255, 0, 0);
-    }
-}
-
 /* Home page ethics */
 .main-page {
     background-image: url(../Images/martin-jernberg-nE2gf1scItI-unsplash.jpg);
@@ -86,7 +30,6 @@ body {
 .anim-bg {
     opacity: 0;
     animation: come-in 0.2s linear forwards;
-    animation-delay: 5s;
 }
 
 @keyframes come-in {
@@ -192,7 +135,7 @@ hr {
     opacity: 0;
     transform: translateY(-100%);
     animation: movedown 1s linear forwards;
-    animation-delay: 5.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes movedown {
@@ -259,7 +202,7 @@ hr {
     opacity: 0;
     transform: translatey(10%);
     animation: moveup 0.5s linear forwards;
-    animation-delay: 5.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes moveup {
@@ -289,7 +232,7 @@ hr {
     opacity: 0;
     transform: translateX(10%);
     animation: moveleft 0.5s linear forwards;
-    animation-delay: 5.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes moveleft {
@@ -433,7 +376,7 @@ hr {
     opacity: 0;
     transform: translateY(10%);
     animation: moveup 0.2s linear forwards;
-    animation-delay: 5.3s;
+    animation-delay: 0.3s;
 }
 
 @keyframes moveup {
