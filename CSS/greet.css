@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: black;
+}
+
 /* Greetings */
 .greet {
     overflow: hidden;
@@ -13,6 +17,7 @@
 }
 
 .greet p {
+    color: orange;
     width: 0%;
     overflow: hidden;
     margin: 0 auto;
@@ -55,6 +60,6 @@
     }
 
     50% {
-        border-color: rgb(255, 0, 0);
+        border-color: orange;
     }
 }
