@@ -4,64 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>HOME</title>
     <link rel="stylesheet" href="../CSS/home.css">
     <script src="../JavaScript/nav-anim.js"></script>
     <script src="../Animations/Scroll-Animation/01_scroll_script.js" defer></script>
 </head>
 
 <body>
-    <div class="background">
 
-        <div class="main-page anim-bg">
+    <header>
 
-            <!-- Navigation bar -->
-            <div class="nav-container anim-nav">
-                <nav>
-                    <span style="cursor:pointer" onclick="openNav()"><img src="../Images/menu (1).png"></span>
-                    
-                    <div class="title">INDIAN HERITAGE</div>
-                    <div class="box">
-                        <form name="search">
-                            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-                        </form>
-                        <i class="fas fa-search"></i>
-                    </div>
-                </nav>
+        <nav class="anim-nav">
+            <span style="cursor:pointer" onclick="openNav()"><img
+                    src="../Images/menu_24dp_F19E39_FILL0_wght400_GRAD0_opsz24.png"></span>
+
+            <div class="title baskervville-sc-regular">INDIAN HERITAGE</div>
+            <div class="box">
+                <form name="search">
+                    <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                </form>
+                <i class="fas fa-search"></i>
             </div>
+        </nav>
 
-            <hr class="anim-nav">
+        <!-- Side Menu -->
+        <div id="mySidenav" class="menu anim">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html" class="slide-anim">HOME</a>
+            <a href="history.html" class="slide-anim">HISTORY</a>
+            <a href="#" class="slide-anim">MONUMENTS</a>
+            <a href="#" class="slide-anim">CULTURE</a>
+            <a href="#" class="slide-anim">ARTS & CRAFTS</a>
+        </div>
 
-            <!-- Short summery of the website -->
-            <div class="content1">
-                <h1>Explore the Heritage of India with us.</h1>
-                <p class="anim-paragraph">Welcome to Explore India, your ultimate destination for discovering the rich and diverse heritage of
-                    this incredible country. Dive into the captivating history of India, tracing its journey from
-                    ancient civilizations to modern times. Celebrate the vibrant festivals that light up the nation with
-                    joy and color, each telling its unique story. Immerse yourself in the diverse cultural traditions,
-                    including regional cuisines and authentic recipes that tantalize the taste buds. Marvel at the
-                    intricate arts and crafts, and experience the rhythmic beats of traditional music and dance forms.
-                    Delve into the literary treasures that reflect the profound thoughts and emotions of this land. Join
-                    us on a journey through the heart of India, where every corner holds a story waiting to be told.</p>
-            </div>
+    </header>
 
-            <!-- Shortcut links to explore quickly -->
-            <div class="content2 anim-shortlinks">
-                #shortcut_links
-            </div>
+    <main>
 
-            <!-- Side Menu -->
-            <div id="mySidenav" class="menu anim">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="home.html" class="slide-anim">HOME</a>
-                <a href="history.html" class="slide-anim">HISTORY</a>
-                <a href="#" class="slide-anim">MONUMENTS</a>
-                <a href="#" class="slide-anim">CULTURE</a>
-                <a href="#" class="slide-anim">ARTS & CRAFTS</a>
-            </div>
+        <div class="heading  lxgw-wenkai-mono-tc-regular">
+            <h1>Explore the Heritage of India with us.</h1>
+        </div>
 
-            <!-- <h1>HELLO</h1> -->
-            <!-- THE SCROLLING ANIMATIONS START FROM HERE -->
+        <div class="paragraph">
+            <p class="anim-paragraph  baskervville-sc-regular">Welcome to Explore India, your gateway to the rich
+                heritage of this incredible country. Discover captivating history, vibrant festivals, diverse
+                traditions, regional cuisines, intricate arts, traditional music, dance, and literary treasures. Join us
+                on a journey through the heart of India, where every corner tells a story.</p>
+        </div>
+
+        <div class="scroller-pos">
             <div class="scroller anim-scroller">
                 <ul class="scroller_inner scroll_list">
                     <li>DIV 1 </li>
@@ -72,7 +63,10 @@
                 </ul>
             </div>
         </div>
-    </div>
+
+    </main>
+
+
 </body>
 
 </html>
