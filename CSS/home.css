@@ -7,10 +7,16 @@
 }
 
 body {
-    background: linear-gradient(rgb(6, 61, 179), black);
+    
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .baskervville-sc-regular {
@@ -25,10 +31,11 @@ body {
 }
 
 header {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid rgb(0, 0, 0);
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: #000000;
 }
 
 nav {
@@ -95,7 +102,7 @@ nav img {
     right: 15px;
     transform: translate(-50%, -50%);
     font-size: 26px;
-    color: #ffffff;
+    color: orange;
     transition: .1s;
 }
 
@@ -128,7 +135,7 @@ nav img {
     z-index: 2;
     top: 0;
     left: 0;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     overflow-x: hidden;
@@ -139,16 +146,16 @@ nav img {
 
 .slide-anim {
     right: 25px;
-    padding: 8px 8px 8px 32px;
+    padding: 20px 20px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #ffffff;
+    color: white;
     display: block;
     transition: 0.3s;
 }
 
 .slide-anim:hover {
-    color: orange;
+    color: black;
     font-size: 25px;
     transform: translateX(10px);
 }
@@ -164,21 +171,47 @@ nav img {
 }
 
 main {
-    position: absolute;
+    position: relative;
     background-size: cover;
     background-position: center;
 }
 
+.arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 75px;
+}
+
+.arrow .shape-fill {
+    fill: #000000;
+}
+
+.intro {
+    position: relative;
+    background-color: orange;
+    padding: 100px 50px;
+}
+
 .heading h1 {
     cursor: default;
-    color: orange;
+    color: rgb(0, 0, 0);
     opacity: 0;
-    font-size: 55px;
+    font-size: 75px;
     font-weight: bold;
-    margin: 50px 100px;
+    margin-left: 100px;
     white-space: nowrap;
     overflow: hidden;
-    width: 1050px;
+    width: 1430px;
     animation:
         type 4s steps(40, end) forwards,
         blink .75s step-end infinite;
@@ -194,7 +227,7 @@ main {
     1%,
     100% {
         opacity: 1;
-        border-right: 4px solid orange;
+        border-right: 4px solid rgb(0, 0, 0);
     }
 }
 
@@ -205,13 +238,13 @@ main {
 }
 
 .paragraph p {
+    padding: 30px 0px;
     cursor: default;
-    color: orange;
+    color: rgb(0, 0, 0);
     margin-left: 100px;
-    margin-right: 100px;
-    position: absolute;
+    max-width: 1300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .anim-paragraph {
@@ -228,6 +261,52 @@ main {
     }
 }
 
+.scroller-section {
+    position: relative;
+    background-color: pink;
+}
+
+.layered-wave-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.layered-wave-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.layered-wave-1 .shape-fill {
+    fill: #F5A623;
+}
+
+.layered-wave-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.layered-wave-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 123px;
+}
+
+.layered-wave-2 .shape-fill {
+    fill: #000000;
+}
+
 .scroller-pos {
     text-align: center;
     width: 100vw;
@@ -240,18 +319,18 @@ main {
 
 .scroll_list li {
     padding: 1rem;
-    background: linear-gradient(orange, rgb(48, 0, 48));
-    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem black;
+    background-color: #ffffff;
+    /* box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(255, 255, 255); */
+    border: 2px solid black;
     min-width: 300px;
     min-height: 300px
 }
 
 .scroller {
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto;
     background: transparent;
-    position: relative;
-    top: 250px;
+    padding: 200px;    
 }
 
 .scroller_inner {
@@ -316,6 +395,23 @@ main {
         opacity: 1;
         transform: translateY(0%);
     }
+}
+
+.foot {
+    position: relative;
+    background-color: #000000;
+    top: 150%;
+    height: 400px;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Media Queries for Responsiveness */
