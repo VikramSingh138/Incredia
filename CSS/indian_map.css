@@ -25,6 +25,17 @@ main {
     overflow: hidden;
 }
 
+.description-box {
+    position: absolute;
+    top: 10px;
+    left: 60%;
+    width: 30%;
+    padding: 10px;
+    background: rgba(145, 87, 87, 0.8);
+    border: 1px solid #ccc;
+    display: none;
+}
+
 .container {
     position: absolute;
     top: 0;
@@ -39,9 +50,4 @@ main {
 svg path{
     position: relative;
     transition: transform 0.3s ease;
-}
-
-svg path:hover {
-    fill: rgb(0, 0, 0);
-    transition: 0.3s;
 }
