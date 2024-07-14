@@ -35,7 +35,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #000000;
+    background-color: #2E2E2E;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav img {
     transform: translateX(-50%);
     font-size: 35px;
     font-weight: 500;
-    color: orange;
+    color: #F4F1DE;
 }
 
 /* Search Box */
@@ -74,16 +74,16 @@ nav img {
     width: 50px;
     height: 50px;
     background: none;
-    background-image: url(../Images/search_24dp_F19E39_FILL0_wght400_GRAD0_opsz24.png);
+    background-image: url(../Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px 30px;
-    border: 2px solid orange;
+    border: 2px solid #F4F1DE;
     border-radius: 50px;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: orange;
+    color: #F4F1DE;
     outline: none;
     transition: .5s;
 }
@@ -91,8 +91,8 @@ nav img {
 .box:hover input {
     width: 350px;
     background: transparent;
-    border-right: 4px solid orange;
-    border-bottom: 4px solid orange;
+    border-right: 4px solid #F4F1DE;
+    border-bottom: 4px solid #F4F1DE;
     border-radius: 10px;
 }
 
@@ -102,7 +102,7 @@ nav img {
     right: 15px;
     transform: translate(-50%, -50%);
     font-size: 26px;
-    color: orange;
+    color: #F4F1DE;
     transition: .1s;
 }
 
@@ -136,8 +136,9 @@ nav img {
     top: 0;
     left: 0;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background-color: #2E2E2E;
+    /* -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); */
     overflow-x: hidden;
     transition: 0.2s steps(100);
     padding-top: 60px;
@@ -147,16 +148,18 @@ nav img {
 .slide-anim {
     right: 25px;
     padding: 20px 20px 8px 32px;
+    margin-bottom: 10px;
     text-decoration: none;
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    font-weight:bold;
+    color: #F4F1DE;
     display: block;
     transition: 0.3s;
 }
 
 .slide-anim:hover {
-    color: black;
-    font-size: 25px;
+    color: #E54848;
+    font-size: 27px;
     transform: translateX(10px);
 }
 
@@ -176,35 +179,16 @@ main {
     background-position: center;
 }
 
-.arrow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.arrow svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 75px;
-}
-
-.arrow .shape-fill {
-    fill: #000000;
-}
-
 .intro {
     position: relative;
-    background-color: orange;
+    /* background-color: #E0E2DB; */
+    background-color: #F4F1DE;
     padding: 100px 50px;
 }
 
 .heading h1 {
     cursor: default;
-    color: rgb(0, 0, 0);
+    color: #2E2E2E;
     opacity: 0;
     font-size: 75px;
     font-weight: bold;
@@ -227,7 +211,7 @@ main {
     1%,
     100% {
         opacity: 1;
-        border-right: 4px solid rgb(0, 0, 0);
+        border-right: 6px solid #2E2E2E;
     }
 }
 
@@ -240,7 +224,7 @@ main {
 .paragraph p {
     padding: 30px 0px;
     cursor: default;
-    color: rgb(0, 0, 0);
+    color: #2E2E2E;
     margin-left: 100px;
     max-width: 1300px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -263,48 +247,7 @@ main {
 
 .scroller-section {
     position: relative;
-    background-color: pink;
-}
-
-.layered-wave-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.layered-wave-1 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 123px;
-}
-
-.layered-wave-1 .shape-fill {
-    fill: #F5A623;
-}
-
-.layered-wave-2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.layered-wave-2 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 123px;
-}
-
-.layered-wave-2 .shape-fill {
-    fill: #000000;
+    background-color: #E54848;
 }
 
 .scroller-pos {
@@ -321,7 +264,8 @@ main {
     padding: 1rem;
     background-color: #ffffff;
     /* box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(255, 255, 255); */
-    border: 2px solid black;
+    border: 2px solid;
+    border-radius: 10px;
     min-width: 300px;
     min-height: 300px
 }
@@ -399,11 +343,11 @@ main {
 
 .foot {
     position: relative;
-    background-color: #000000;
+    background-color: #2E2E2E;
     top: 150%;
     height: 400px;
     width: 100vw;
-    color: white;
+    color: #F4F1DE;
     display: flex;
     justify-content: center;
     align-items: center;
