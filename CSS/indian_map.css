@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,49 +7,123 @@
 
 body {
     /* background: linear-gradient(rgb(1, 0, 66), black); */
+    background-color: #2E2E2E;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
 }
 
+.baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 main {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .map {
     position: relative;
-    left: 25%;
+    /* left: 25%; */
     height: 100vh;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
-}
-
-.description-box {
-    position: absolute;
-    top: 10px;
-    left: 60%;
-    width: 30%;
-    padding: 10px;
-    background: rgba(145, 87, 87, 0.8);
-    border: 1px solid #ccc;
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
+    /* background-color: black; */
     position: absolute;
     top: 0;
-    left: 13.5%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 37vw;
+    width: 100%;
+}
+
+.description-box {
+    cursor: default;
+    color: #F4F1DE;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    width: 30%;
+    padding: 10px;
+    display: none;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transform-origin: bottom;
+    transform: rotateZ(-180deg);
+    animation: pop-up .3s ease forwards;
+}
+
+@keyframes pop-up {
+    100% {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
 }
 
 svg path{
     position: relative;
     transition: transform 0.3s ease;
+}
+
+.path1-description{
+    position: absolute;
+    text-align: right;
+    top: 25%;
+    left: 12%;
+}
+
+.path2-description{
+    position: absolute;
+    top: 37%;
+    left: 45%;
+}
+
+.path3-4-description{
+    position: absolute;
+    top: 30%;
+    left: 62%;
+    width: 30%;
+}
+
+/* .path4-description{
+    position: absolute;
+    top: 0%;
+    left: 55%;
+} */
+
+.path5-description{
+    position: absolute;
+    top: 40%;
+    left: 53%;
+}
+
+.path6-description{
+    text-align: right;
+    position: absolute;
+    top: 52%;
+    left: 12%;
+}
+
+.path7-description{
+    position: absolute;
+    top: 67%;
+    left: 42%;
 }
