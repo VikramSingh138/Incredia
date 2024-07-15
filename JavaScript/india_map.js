@@ -77,9 +77,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (path.classList.contains('path3') || path.classList.contains('path4')) {
-                document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = '#000');
+                document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = 'transparent');
+                document.querySelectorAll('.path3, .path4').forEach(p => p.style.stroke = 'black');
             } else {
-                path.style.fill = '#000';
+                path.style.fill = 'transparent';
+                path.style.stroke = 'black';
             }
         });
 
