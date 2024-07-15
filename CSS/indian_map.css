@@ -59,6 +59,7 @@ main {
     padding: 10px;
     display: block;
     z-index: 100;
+    opacity: 0;
 }
 
 img {
