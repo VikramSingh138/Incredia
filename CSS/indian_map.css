@@ -6,7 +6,6 @@
 }
 
 body {
-    /* background: linear-gradient(rgb(1, 0, 66), black); */
     background-color: #2E2E2E;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -31,7 +30,6 @@ main {
 
 .map {
     position: relative;
-    /* left: 25%; */
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -41,7 +39,6 @@ main {
 }
 
 .container {
-    /* background-color: black; */
     position: absolute;
     top: 0;
     display: flex;
@@ -52,14 +49,16 @@ main {
 }
 
 .description-box {
-    cursor: default;
+    cursor: pointer;
+    pointer-events: none;
     color: #F4F1DE;
     font-size: 40px;
     font-weight: bold;
     position: absolute;
     width: 30%;
     padding: 10px;
-    display: none;
+    display: block;
+    z-index: 100;
 }
 
 img {
@@ -78,52 +77,196 @@ img {
     }
 }
 
-svg path{
+svg path {
+    stroke: transparent;
     position: relative;
     transition: transform 0.3s ease;
 }
 
-.path1-description{
+.path1-description {
     position: absolute;
     text-align: right;
     top: 25%;
     left: 12%;
 }
 
-.path2-description{
+.path2-description {
     position: absolute;
-    top: 37%;
+    top: 35%;
     left: 45%;
 }
 
-.path3-4-description{
+.path3-4-description {
     position: absolute;
     top: 30%;
     left: 62%;
     width: 30%;
 }
 
-/* .path4-description{
+.path5-description {
     position: absolute;
-    top: 0%;
-    left: 55%;
-} */
-
-.path5-description{
-    position: absolute;
-    top: 40%;
+    top: 43%;
     left: 53%;
 }
 
-.path6-description{
+.path6-description {
     text-align: right;
     position: absolute;
     top: 52%;
     left: 12%;
 }
 
-.path7-description{
+.path7-description {
     position: absolute;
     top: 67%;
     left: 42%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .description-box {
+        font-size: 35px;
+        width: 35%;
+    }
+
+    .path1-description {
+        top: 22%;
+        left: 10%;
+    }
+
+    .path2-description {
+        top: 32%;
+        left: 42%;
+    }
+
+    .path3-4-description {
+        top: 28%;
+        left: 58%;
+    }
+
+    .path5-description {
+        top: 40%;
+        left: 50%;
+    }
+
+    .path6-description {
+        top: 48%;
+        left: 10%;
+    }
+
+    .path7-description {
+        top: 63%;
+        left: 40%;
+    }
+}
+
+@media (max-width: 992px) {
+    .description-box {
+        font-size: 30px;
+        width: 40%;
+    }
+
+    .path1-description {
+        top: 20%;
+        left: 8%;
+    }
+
+    .path2-description {
+        top: 30%;
+        left: 40%;
+    }
+
+    .path3-4-description {
+        top: 26%;
+        left: 55%;
+    }
+
+    .path5-description {
+        top: 38%;
+        left: 48%;
+    }
+
+    .path6-description {
+        top: 45%;
+        left: 8%;
+    }
+
+    .path7-description {
+        top: 60%;
+        left: 38%;
+    }
+}
+
+@media (max-width: 768px) {
+    .description-box {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .path1-description {
+        top: 18%;
+        left: 6%;
+    }
+
+    .path2-description {
+        top: 28%;
+        left: 38%;
+    }
+
+    .path3-4-description {
+        top: 24%;
+        left: 52%;
+    }
+
+    .path5-description {
+        top: 36%;
+        left: 46%;
+    }
+
+    .path6-description {
+        top: 42%;
+        left: 6%;
+    }
+
+    .path7-description {
+        top: 57%;
+        left: 36%;
+    }
+}
+
+@media (max-width: 576px) {
+    .description-box {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .path1-description {
+        top: 16%;
+        left: 4%;
+    }
+
+    .path2-description {
+        top: 26%;
+        left: 36%;
+    }
+
+    .path3-4-description {
+        top: 22%;
+        left: 50%;
+    }
+
+    .path5-description {
+        top: 34%;
+        left: 44%;
+    }
+
+    .path6-description {
+        top: 40%;
+        left: 4%;
+    }
+
+    .path7-description {
+        top: 55%;
+        left: 34%;
+    }
 }
