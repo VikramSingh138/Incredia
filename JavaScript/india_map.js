@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (descriptionBox) {
                 descriptionBox.style.display = 'block';
+                descriptionBox.style.opacity=1;
             }
 
             if (path.classList.contains('path3') || path.classList.contains('path4')) {
@@ -91,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (descriptionBox) {
                 descriptionBox.style.display = 'none';
+                descriptionBox.style.opacity=0;
             }
 
             if (path.classList.contains('path3') || path.classList.contains('path4')) {
