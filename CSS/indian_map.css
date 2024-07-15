@@ -7,7 +7,8 @@
 
 body {
     /* background: linear-gradient(rgb(1, 0, 66), black); */
-    background-color: #2E2E2E;
+    background-color: #F4F1DE;
+    /* background-color: #2E2E2E; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
@@ -52,14 +53,16 @@ main {
 }
 
 .description-box {
+    background-color:blue;
     cursor: default;
-    color: #F4F1DE;
+    color: #2E2E2E;
     font-size: 40px;
     font-weight: bold;
     position: absolute;
     width: 30%;
     padding: 10px;
     display: none;
+    z-index: -1;
 }
 
 img {
@@ -79,6 +82,7 @@ img {
 }
 
 svg path{
+    stroke: transparent;
     position: relative;
     transition: transform 0.3s ease;
 }
