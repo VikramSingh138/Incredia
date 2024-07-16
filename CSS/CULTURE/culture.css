@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
 
 * {
     margin: 0;
@@ -11,6 +12,11 @@ body {
     background-attachment: fixed;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .baskervville-sc-regular {
@@ -19,38 +25,213 @@ body {
     font-style: normal;
 }
 
+.lxgw-wenkai-mono-tc-regular {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-style: normal;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    max-width: 100vw;
+    padding: 20px;
+}
+
+nav img {
+    position: relative;
+    display: inline-block;
+    left: 5%;
+    height: 45px;
+    width: 45px;
+}
+
+.title {
+    cursor: default;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    font-size: 35px;
+    font-weight: 500;
+    color: #F4F1DE;
+}
+
+/* Search Box */
+.box {
+    position: relative;
+    float: right;
+    right: 5%;
+}
+
+.input {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    background-image: url(../../Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    border: 2px solid #F4F1DE;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #F4F1DE;
+    outline: none;
+    transition: .5s;
+}
+
+.box:hover input {
+    width: 350px;
+    background: transparent;
+    border-right: 4px solid #F4F1DE;
+    border-bottom: 4px solid #F4F1DE;
+    border-radius: 10px;
+}
+
+.box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #F4F1DE;
+    transition: .1s;
+}
+
+.box:hover i {
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Navbar animation */
+.anim-nav {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: movedown 1s linear forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes movedown {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+    }
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: #2E2E2E;
+    /* -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); */
+    overflow-x: hidden;
+    transition: 0.2s steps(100);
+    padding-top: 60px;
+    text-wrap: nowrap;
+}
+
+.slide-anim {
+    right: 25px;
+    padding: 20px 20px 8px 32px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #F4F1DE;
+    display: block;
+    transition: 0.3s;
+}
+
+.slide-anim:hover {
+    color: #E54848;
+    font-size: 27px;
+    transform: translateX(10px);
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    text-decoration: none;
+    margin-left: 50px;
+    color: #818181;
+}
+
 main {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.map {
-    float: right;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: right;
 }
 
 .init {
+    position: relative;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; */
     display: flex;
+    align-items: center;
+}
+
+.map {
+    /* background-color: #F4F1DE; */
+    position: absolute;
+    /* left: 0; */
+    top: 0px;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.short-intro {
+    position: absolute;
+    margin: 2.5vw;
+    top: 5vh;
+    left: 50%;
+    height: 75vh;
+    width: 45vw;
+    background-color: #2E2E2E;
+    color: #F4F1DE;
+    line-height: 1.5;
+}
+
+.short-intro h1 {
+    font-size: 70px;
+}
+
+.short-intro h3 {
+    font-size: 40px;
+}
+
+.short-intro p {
+    font-size: 30px;
 }
 
 .container {
-    position: absolute;
+    background-color: aqua;
+    position: relative;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 50%;
+    width: 100%;
 }
 
 .description-box {
@@ -82,6 +263,9 @@ img {
         transform: rotateZ(0deg);
     }
 }
+/* svg {
+    height: 100px;
+} */
 
 svg path {
     stroke: transparent;
@@ -128,6 +312,7 @@ svg path {
     top: 67%;
     left: 35%;
 }
+
 
 
 
