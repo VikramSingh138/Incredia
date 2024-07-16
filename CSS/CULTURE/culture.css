@@ -223,6 +223,20 @@ main {
     font-size: 30px;
 }
 
+.anim-intro {
+    opacity: 0;
+    transform: translatey(10%);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+
 .container {
     background-color: aqua;
     position: relative;
@@ -314,153 +328,85 @@ svg path {
 }
 
 
-
-
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media (max-width: 1200px) {
-    .description-box {
-        font-size: 35px;
-        width: 35%;
+    .short-intro h1 {
+        font-size: 50px;
     }
 
-    .path1-description {
-        top: 22%;
-        left: 10%;
-    }
-
-    .path2-description {
-        top: 32%;
-        left: 42%;
-    }
-
-    .path3-4-description {
-        top: 28%;
-        left: 58%;
-    }
-
-    .path5-description {
-        top: 40%;
-        left: 50%;
-    }
-
-    .path6-description {
-        top: 48%;
-        left: 10%;
-    }
-
-    .path7-description {
-        top: 63%;
-        left: 40%;
-    }
-}
-
-@media (max-width: 992px) {
-    .description-box {
+    .short-intro h3 {
         font-size: 30px;
-        width: 40%;
     }
 
-    .path1-description {
-        top: 20%;
-        left: 8%;
-    }
-
-    .path2-description {
-        top: 30%;
-        left: 40%;
-    }
-
-    .path3-4-description {
-        top: 26%;
-        left: 55%;
-    }
-
-    .path5-description {
-        top: 38%;
-        left: 48%;
-    }
-
-    .path6-description {
-        top: 45%;
-        left: 8%;
-    }
-
-    .path7-description {
-        top: 60%;
-        left: 38%;
+    .short-intro p {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .description-box {
+    .title {
         font-size: 25px;
-        width: 50%;
     }
 
-    .path1-description {
-        top: 18%;
-        left: 6%;
+    .input {
+        width: 30px;
+        height: 30px;
     }
 
-    .path2-description {
-        top: 28%;
-        left: 38%;
+    .box:hover input {
+        width: 200px;
     }
 
-    .path3-4-description {
-        top: 24%;
-        left: 52%;
+    .short-intro {
+        width: 90vw;
+        height: auto;
+        top: 10vh;
+        left: 5vw;
     }
 
-    .path5-description {
-        top: 36%;
-        left: 46%;
+    .short-intro h1 {
+        font-size: 40px;
     }
 
-    .path6-description {
-        top: 42%;
-        left: 6%;
+    .short-intro h3 {
+        font-size: 25px;
     }
 
-    .path7-description {
-        top: 57%;
-        left: 36%;
+    .short-intro p {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 576px) {
-    .description-box {
+@media (max-width: 480px) {
+    .title {
         font-size: 20px;
-        width: 60%;
     }
 
-    .path1-description {
-        top: 16%;
-        left: 4%;
+    .input {
+        width: 20px;
+        height: 20px;
     }
 
-    .path2-description {
-        top: 26%;
-        left: 36%;
+    .box:hover input {
+        width: 150px;
     }
 
-    .path3-4-description {
-        top: 22%;
-        left: 50%;
+    .short-intro {
+        width: 90vw;
+        height: auto;
+        top: 10vh;
+        left: 5vw;
     }
 
-    .path5-description {
-        top: 34%;
-        left: 44%;
+    .short-intro h1 {
+        font-size: 30px;
     }
 
-    .path6-description {
-        top: 40%;
-        left: 4%;
+    .short-intro h3 {
+        font-size: 20px;
     }
 
-    .path7-description {
-        top: 55%;
-        left: 34%;
+    .short-intro p {
+        font-size: 15px;
     }
 }
