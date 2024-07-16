@@ -23,34 +23,47 @@ main {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+}
+
+.init {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.map {
+    /* background-color: #F4F1DE; */
+    position: absolute;
+    /* left: 0; */
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.map {
-    float: right;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-
-.init {
-    display: flex;
+.short-intro {
+    position: absolute;
+    margin: 2.5vw;
+    top: 10vh;
+    left: 50%;
+    height: 75vh;
+    width: 45vw;
+    background-color: #F4F1DE;
 }
 
 .container {
-    position: absolute;
+    background-color: aqua;
+    position: relative;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 50%;
+    width: 100%;
 }
 
 .description-box {
@@ -128,6 +141,7 @@ svg path {
     top: 67%;
     left: 35%;
 }
+
 
 
 
