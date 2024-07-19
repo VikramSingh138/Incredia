@@ -369,7 +369,7 @@ main {
     /* background-color: #FF6500; */
     background-color: #C40C0C;
     /* color:#ffc25a; */
-    color: #FFC100; 
+    /* color: #FFC100;  */
     display: flex;
     line-height: 1.4;
     font-family: "Baskervville SC", serif;
@@ -380,12 +380,15 @@ main {
 .dance1 h2 {
     margin: 30px 50px;
     font-size: 70px;
-    color:#f8d290;
+    /* color:#f8d290; */
+    color:#fff
 }
 
 .dance1 p {
     margin: 0 50px;
     font-size: 30px;
+    color:#f8d290;
+    font-weight: 500;
 }
 
 .dance1 img {
@@ -431,7 +434,7 @@ main {
     color: #F4F1DE; */
     background-color: #C40C0C;
     /* color:#ffc25a; */
-    color: #FFC100;
+    /* color: #FFC100; */
     display: flex;
     line-height: 1.4;
     font-family: "Baskervville SC", serif;
@@ -442,11 +445,14 @@ main {
 .dance3 h2 {
     margin: 30px 50px;
     font-size: 50px;
+    color:#fff;
 }
 
 .dance3 p {
     margin: 0px 50px 30px 50px;
     font-size: 30px;
+    font-weight:500;
+    color:#f8d290;
 }
 
 .dance3 img {
