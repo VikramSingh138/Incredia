@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURE: WEST-INDIA</title>
+    <link rel="stylesheet" href="../../CSS/CULTURE/west.css">
+    <script src="../../JavaScript/nav-anim.js"></script>
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="back to top">
+        <img src="../../Images/keyboard_arrow_up_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png">
+    </button>
+
+    <header>
+
+        <nav class="anim-nav">
+            <span style="cursor:pointer" onclick="openNav()"><img
+                    src="/Indian-Heritage-Code-Crafters/Images/menu_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png"></span>
+
+            <div class="title baskervville-sc-regular">WEST-INDIAN HERITAGE</div>
+            <div class="box">
+                <form name="search">
+                    <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                </form>
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+
+        <!-- Side Menu -->
+        <div id="mySidenav" class="menu anim">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../HTML/home.html" class="slide-anim baskervville-sc-regular">HOME</a>
+            <a href="../../HTML/MONUMENTS/monuments.html" class="slide-anim baskervville-sc-regular">MONUMENTS</a>
+            <a href="../../HTML/CULTURE/culture.html" class="slide-anim baskervville-sc-regular">CULTURE</a>
+            <a href="/Indian-Heritage-Code-Crafters/HTML/home.html" class="slide-anim baskervville-sc-regular">ARTS &
+                CRAFTS</a>
+        </div>
+
+
+
+    </header>
+
+    <main>
+
+        <!-- <section class="shortcuts" id="shortcuts">
+            <div class="dance baskervville-sc-regular">
+                <a href="#dance" data-replace="DANCE"><span>DANCE</span></a>
+            </div>
+            <div class="dance baskervville-sc-regular">
+                <a href="#cuisine" data-replace="CUISINES"><span>CUISINES</span></a>
+                </div>
+        </section> -->
+
+        <!-- <section id="dance"></section> -->
+
+        <section class="dance">
+
+            <div class="intro-dance">
+                <!-- style="color: #E54848;">Rhythms</span></strong></h1> -->
+                <h1 class="bebas-neue-regular">Unveiling The <strong><span>Rhythms</span></strong></h1>
+                <p class="anim-paragraph baskervville-sc-regular">Delve Into The Exquisite Dance Culture of West India.</p>
+            </div>
+
+            <div class="dance1 card">
+                <div class="description">
+                    <h2>GARBA</h2>
+                    <p>Garba is a traditional dance form performed during the nine-night Navratri festival. It involves rhythmic circular movements around a central lamp or deity, symbolizing the cycle of life. Dancers, dressed in vibrant, colorful attire, perform to the beats of dhol and other traditional instruments. Garba is characterized by its lively steps, clapping, and twirls.</p>
+                </div>
+                <div class="image">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-West-India-Garba-Gujarat.jpg" alt="Garba">
+                </div>
+            </div>
+
+            <div class="dance2 card">
+                <div class="image">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-West-India-Dandiya-Gujarat.jpg" alt="Dandiya">
+                </div>
+                <div class="description">
+                    <h2>DANDIYA RAAS</h2>
+                    <p>Dandiya Raas is another popular dance form from Gujarat, often performed during Navratri. Dancers use decorated wooden sticks (dandiyas) to perform rhythmic strikes and intricate patterns in pairs. The dance is energetic and synchronized, with participants dressed in traditional costumes, creating a festive and vibrant atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="dance3 card">
+                <div class="description">
+                    <h2>LAVANI</h2>
+                    <p>Lavani is a traditional dance form of Maharashtra known for its powerful rhythm, expressive movements, and compelling lyrics. It is performed to the beats of the dholki drum and is a combination of traditional song and dance, performed by women wearing nine-yard saris. Lavani often addresses social issues and is characterized by its fast-paced tempo and graceful gestures.</p>
+                </div>
+                <div class="image">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-West-India-Lavani-Maharashtra.jpg" alt="Lavani">
+                </div>
+            </div>
+
+            <div class="dance4 card">
+                <div class="image">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-West-India-Dekhni-Goa.jpg" alt="Dekhni">
+                </div>
+                <div class="description">
+                    <h2>DEKHNNI</h2>
+                    <p>Dekhnni is a traditional Goan dance form that showcases a blend of Indian and Western influences. It is performed by women dressed in colorful costumes, and the dance tells stories of Goan life and traditions. The movements are graceful and expressive, set to the music of traditional Goan instruments.</p>
+                </div>
+            </div>
+
+            <div style="opacity: 0;">.</div>
+            <div style="opacity: 0;">.</div>
+
+        </section>
+
+        <section id="cuisine"></section>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet distinctio tempore beatae laborum provident quis, tenetur soluta ipsum molestiae? Atque nam pariatur veniam ab et hic id magnam ipsa obcaecati.</p>
+        </div>
+    </footer>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
