@@ -4,53 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="../../CSS/01 Home page/home.css"> -->
     <link rel="stylesheet" href="../Parallax Effect/01_Taj_Parallax.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../../JavaScript/nav-anim.js"></script>
     <!-- <script src="../JavaScript/01_Taj_Parallax.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
 </head>
 <body>
-    <header class="hide"> 
-        <nav>
-            <img src="../../Images/lotus_cutout.png" alt="logo" class="logo">
-            <ul>
-                <li>
-                    <a href="#">Login</a>
-                </li>
-                <li>
-                    <a href="#">Sign Up</a>
-                </li>
-                <li class="search">
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </li>
-                <li class="hamburger">
-                    <a href="#">
-                        <div class="bar"></div>
-                    </a>
-                </li>
-            </ul>
+    <header class="hide">
+        <nav class="anim-nav">
+            <span style="cursor:pointer" onclick="openNav()"><img
+                    src="../../Images/menu_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png"></span>
+
+            <div class="title baskervville-sc-regular">INDIAN HERITAGE</div>
+            <div class="box">
+                <form name="search">
+                    <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                </form>
+                <i class="fas fa-search"></i>
+            </div>
         </nav>
+
+        <!-- Side Menu -->
+        <div id="mySidenav" class="menu anim">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../01 Home page/home.html" class="slide-anim baskervville-sc-regular">HOME</a>
+            <a href="../MONUMENTS/monuments.html" class="slide-anim baskervville-sc-regular">MONUMENTS</a>
+            <a href="../HTML/CULTURE/culture.html" class="slide-anim baskervville-sc-regular">CULTURE</a>
+            <a href="../indian_map.html" class="slide-anim baskervville-sc-regular">ARTS & CRAFTS</a>
+        </div>
+
     </header>
     <main>
-        <!-- <div class="container"> -->
-        <img src="../../Images/Taj Parallax Images/01_Blue_Background.png" data-speedx="0.12" data-speedy="0.05" data-distance="-200" alt="" class="parallax layer-6 bg-img">
-        <img src="../../Images/Taj Parallax Images/02_Pillar_Left.png" data-speedx="0.1" data-speedy="0.036" data-distance="800" alt="" class="parallax layer-5">
-        <img src="../../Images/Taj Parallax Images/02_Pillar_Right.png" data-speedx="0.095" data-speedy="0.034" data-distance="800" alt="" class="parallax layer-5">
-        <div class="text parallax" data-speedx="0.14" data-speedy="0.05" data-distance="-200">
-            <h2>Taj</h2>
-            <h1>Mahal</h1>
-        </div>    
-        <img src="../../Images/Taj Parallax Images/03_Center.png" data-speedx="0.085" data-speedy="0.032" data-distance="1000" alt="" class="parallax layer-4">
-        <img src="../../Images/Taj Parallax Images/04_Pillar_Left_Front.png" data-speedx="0.045" data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
-        <img src="../../Images/Taj Parallax Images/04_Pillar_Right_Front.png" data-speedx="0.045" data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
-        <img src="../../Images/Taj Parallax Images/05_Front_White.png" data-speedx="0.04" data-speedy="0.025" data-distance="1800" alt="" class="parallax layer-2">
-        <img src="../../Images/Taj Parallax Images/06_Front_Red.png" data-speedx="0.03" data-speedy="0.02" data-distance="2000" alt="" class="parallax layer-1">
+        
+        <section class="Taj_Parallax content-block">
+        <!-- <img src="../../Images/Taj Parallax Images/01_Blue_Background.png" data-speedx="0.12" data-speedy="0.05" data-distance="-200" alt="" class="parallax layer-6 bg-img"> -->
+            <div data-speedx="0.12" data-speedy="0.05" data-distance="-200" alt="" class="parallax layer-6 bg-img" style="background-color: #FFBF78;"></div> 
+            <img src="../../Images/Taj Parallax Images/02_Pillar_Left.png" data-speedx="0.1" data-speedy="0.036" data-distance="800" alt="" class="parallax layer-5">
+            <img src="../../Images/Taj Parallax Images/02_Pillar_Right.png" data-speedx="0.095" data-speedy="0.034" data-distance="800" alt="" class="parallax layer-5">
+            <div class="text parallax" data-speedx="0.14" data-speedy="0.05" data-distance="-200">
+                <h2>EXPLORE</h2>
+                <h1>INDIA</h1>
+            </div>    
+            <img src="../../Images/Taj Parallax Images/03_Center.png" data-speedx="0.085" data-speedy="0.032" data-distance="1000" alt="" class="parallax layer-4">
+            <img src="../../Images/Taj Parallax Images/04_Pillar_Left_Front.png" data-speedx="0.045" data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
+            <img src="../../Images/Taj Parallax Images/04_Pillar_Right_Front.png" data-speedx="0.045" data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
+            <img src="../../Images/Taj Parallax Images/05_Front_White.png" data-speedx="0.04" data-speedy="0.025" data-distance="1800" alt="" class="parallax layer-2">
+            <img src="../../Images/Taj Parallax Images/06_Front_Red.png" data-speedx="0.03" data-speedy="0.02" data-distance="2000" alt="" class="parallax layer-1">
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="../Parallax Effect/01_Taj_Parallax.js"></script>
+        
+        <section class="intro content-block">
+            <div class="heading  lxgw-wenkai-mono-tc-regular">
+                <h1>Explore the Heritage of India with us.</h1>
+            </div>
+    
+            <div class="paragraph">
+                <p class="anim-paragraph  baskervville-sc-regular">Welcome to Explore India, your gateway to the rich
+                    heritage of this incredible country. Discover captivating history, vibrant festivals, diverse
+                    traditions, regional cuisines, intricate arts, traditional music, dance, and literary treasures. Join us
+                    on a journey through the heart of India, where every corner tells a story.</p>
+            </div>
+        </section>
+        
+        <section class="scroller-section content-block">
+            <div class="scroller-pos">
+                <div class="scroller anim-scroller">
+                    <ul class="scroller_inner scroll_list">
+                        <li>DIV 1 </li>
+                        <li>DIV 2 </li>
+                        <li>DIV 3 </li>
+                        <li>DIV 4 </li>
+                        <li>DIV 5 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script src="../../Animations/Scroll-Animation/01_scroll_script.js" defer></script>
+
     </main>
     <!-- <script src="../JavaScript/01_Taj_Parallax.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="../Parallax Effect/01_Taj_Parallax.js"></script>
     <!-- </div> -->
 </body>
 </html>
