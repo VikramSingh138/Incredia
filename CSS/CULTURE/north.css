@@ -73,12 +73,6 @@ body {
     font-style: normal;
 }
 
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 header {
     border-bottom: 2px solid rgb(0, 0, 0);
     position: sticky;
@@ -230,6 +224,8 @@ main {
 }
 
 .shortcuts {
+    /* background-color: #2E2E2E; */
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,9 +233,10 @@ main {
 
 .shortcuts a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    color: #2E2E2E;
+    color: #000000;
+    /* color: #2E2E2E; */
 }
 
 .shortcuts a::before,
@@ -289,7 +286,7 @@ main {
 
 .dance {
     position: relative;
-    margin: 100px;
+    margin: 50px;
     overflow: hidden;
 }
 
@@ -365,9 +362,9 @@ main {
     transition: transform 0.3s;
 }
 
-.card:hover img {
+.card:hover img{
     transition: transform 0.3s;
-    transform: scale(1.05);
+    transform: scale(1.05); 
 }
 
 .dance1 {
@@ -387,13 +384,13 @@ main {
     margin: 30px 50px;
     font-size: 70px;
     /* color:#f8d290; */
-    color: #fff
+    color:#fff
 }
 
 .dance1 p {
     margin: 0 50px;
     font-size: 30px;
-    color: #f8d290;
+    color:#f8d290;
     font-weight: 500;
 }
 
@@ -419,7 +416,7 @@ main {
 .dance2 h2 {
     margin: 30px 50px;
     font-size: 50px;
-    color: #E54848;
+    color:#E54848;
 }
 
 .dance2 p {
@@ -451,14 +448,14 @@ main {
 .dance3 h2 {
     margin: 30px 50px;
     font-size: 50px;
-    color: #fff;
+    color:#fff;
 }
 
 .dance3 p {
     margin: 0px 50px 30px 50px;
     font-size: 30px;
-    font-weight: 500;
-    color: #f8d290;
+    font-weight:500;
+    color:#f8d290;
 }
 
 .dance3 img {
@@ -481,7 +478,7 @@ main {
 .dance4 h2 {
     margin: 30px 50px;
     font-size: 50px;
-    color: #E54848;
+    color:#E54848;
 }
 
 .dance4 p {
