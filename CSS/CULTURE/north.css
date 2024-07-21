@@ -573,7 +573,7 @@ main {
     height: 100%;
     top: 0;
     left: 0;
-    perspective: 1500px;
+    perspective: 2000px;
 }
 
 .front,
@@ -602,9 +602,6 @@ main {
 .back-content {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 }
 
 .back-content {
@@ -641,13 +638,85 @@ main {
 
 /* Paper stack order */
 #p1 {
-    z-index: 3;
+    z-index: 5;
 }
 
 #p2 {
-    z-index: 2;
+    z-index: 4;
 }
 
 #p3 {
+    z-index: 3;
+}
+
+#p4 {
+    z-index: 2;
+}
+
+#p5 {
     z-index: 1;
+}
+
+#f1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#b1 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right; padding: 10px;
+}
+
+#f2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 40px;
+}
+
+#b2 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right; padding: 10px;
+}
+
+#b3 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right; padding: 10px;
+}
+
+#f4 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#b4 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right; padding: 10px;
+}
+
+#f5 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#b5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
