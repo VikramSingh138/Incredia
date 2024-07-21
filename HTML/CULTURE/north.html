@@ -7,6 +7,8 @@
     <title>CULTURE: NORTH-INDIA</title>
     <link rel="stylesheet" href="../../CSS/CULTURE/north.css">
     <script src="../../JavaScript/nav-anim.js"></script>
+    <script src="../../JavaScript/flip-book.js" defer></script>
+    <!-- <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -17,11 +19,10 @@
 
     <header>
 
-        <nav class="anim-nav">
+        <nav>
             <span style="cursor:pointer" onclick="openNav()"><img
-                    src="/Indian-Heritage-Code-Crafters/Images/menu_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png"></span>
-
-            <div class="title baskervville-sc-regular">NORTH-INDIAN HERITAGE</div>
+                    src="../../Images/menu_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png"></span>
+            <div class="title baskervville-sc-regular" style="color: white;">INDIAN HERITAGE</div>
             <div class="box">
                 <form name="search">
                     <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
@@ -33,34 +34,33 @@
         <!-- Side Menu -->
         <div id="mySidenav" class="menu anim">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../../HTML/home.html" class="slide-anim baskervville-sc-regular">HOME</a>
+            <a href="../../HTML/01 Home page/home.html" class="slide-anim baskervville-sc-regular">HOME</a>
             <a href="../../HTML/MONUMENTS/monuments.html" class="slide-anim baskervville-sc-regular">MONUMENTS</a>
             <a href="../../HTML/CULTURE/culture.html" class="slide-anim baskervville-sc-regular">CULTURE</a>
             <a href="/Indian-Heritage-Code-Crafters/HTML/home.html" class="slide-anim baskervville-sc-regular">ARTS &
                 CRAFTS</a>
         </div>
 
-
-
     </header>
 
     <main>
 
-        <!-- <section class="shortcuts" id="shortcuts">
+        <section class="shortcuts" id="shortcuts">
             <div class="dance baskervville-sc-regular">
                 <a href="#dance" data-replace="DANCE"><span>DANCE</span></a>
             </div>
             <div class="dance baskervville-sc-regular">
                 <a href="#cuisine" data-replace="CUISINES"><span>CUISINES</span></a>
-                </div>
-        </section> -->
+            </div>
+        </section>
 
-        <!-- <section id="dance"></section> -->
+        <section id="dance" style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
 
         <section class="dance">
 
             <div class="intro-dance">
-                <!-- style="color: #E54848;">Rhythms</span></strong></h1> -->
                 <h1 class="bebas-neue-regular">Unveiling The <strong><span>Rhythms</span></strong></h1>
                 <p class="anim-paragraph baskervville-sc-regular">Discover The Rich Dance Culture of North India.</p>
             </div>
@@ -68,55 +68,166 @@
             <div class="dance1 card">
                 <div class="description">
                     <h2>DUMHAL</h2>
-                    <p>Dumhal is the most popular folk dance of Kashmir. Men with conical caps and colorful robes perform this folk dance with a drum and singing. The dance is conducted on set locations as the men carry a banner around which the dance begins. The other folk dance of Kashmir is the Rauf that is performed by the women of the valley and usually occurs during the spring season</p>
+                    <p>Dumhal is the most popular folk dance of Kashmir. Men with conical caps and colorful robes
+                        perform this folk dance with a drum and singing. The dance is conducted on set locations as the
+                        men carry a banner around which the dance begins. The other folk dance of Kashmir is the Rauf
+                        that is performed by the women of the valley and usually occurs during the spring season</p>
                 </div>
                 <div class="image">
-                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Jammu-and-Kashmir-Dumhal.jpg" alt="Dumhal">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Jammu-and-Kashmir-Dumhal.jpg"
+                        alt="Dumhal">
                 </div>
             </div>
 
             <div class="dance2 card">
                 <div class="image">
-                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Himachal-Pradesh-Nati.jpg" alt="Nati">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Himachal-Pradesh-Nati.jpg"
+                        alt="Nati">
                 </div>
                 <div class="description">
                     <h2>NATI</h2>
-                    <p>From the land of Himachal come various folk dances, such as the Nati which is also the largest folk dance. Hikat performed by women while they hold each other's waist to move round and round and the Namagen danced by both men and women are other folk dances of Himachal. In fact, The Gaddis with colorful woolen costumes and the Charba during Dussehra are other dances of the region.</p>
+                    <p>From the land of Himachal come various folk dances, such as the Nati which is also the largest
+                        folk dance. Hikat performed by women while they hold each other's waist to move round and round
+                        and the Namagen danced by both men and women are other folk dances of Himachal. In fact, The
+                        Gaddis with colorful woolen costumes and the Charba during Dussehra are other dances of the
+                        region.</p>
                 </div>
             </div>
 
             <div class="dance3 card">
                 <div class="description">
                     <h2>DHAMYAL</h2>
-                    <p>The Dhamyal also known as Dhup is a popular folk dance of Haryana. Men or women alone can perform it. The Dhup is the drum that is played in the center of the dance. Lahoor is performed by women and is a question answer lyrical dance form, Saang, Ragini, Ghoomar, Jhoomar, Khoria and Rasleela are other folk dance forms performed here. </p>
+                    <p>The Dhamyal also known as Dhup is a popular folk dance of Haryana. Men or women alone can perform
+                        it. The Dhup is the drum that is played in the center of the dance. Lahoor is performed by women
+                        and is a question answer lyrical dance form, Saang, Ragini, Ghoomar, Jhoomar, Khoria and
+                        Rasleela are other folk dance forms performed here. </p>
                 </div>
                 <div class="image">
-                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Dhamyal-Haryana.jpg" alt="Dhamyal">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Dhamyal-Haryana.jpg"
+                        alt="Dhamyal">
                 </div>
             </div>
 
             <div class="dance4 card">
                 <div class="image">
-                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Bhangra-Punjab.jpg" alt="Bhangra">
+                    <img src="../../Images/Dance images/Folk-Dance-Forms-of-North-India-Bhangra-Punjab.jpg"
+                        alt="Bhangra">
                 </div>
                 <div class="description">
                     <h2>BHANGRA</h2>
-                    <p>The Bhangra is the face of folk dance in Punjab. Identified by its typical steps, style and costume bhangra is the quintessential folk dance that is associated with all things happy, loud and musical. The other folk dances of Punjab are Gidha performed by women, Luddi, Jalli and Jhoomer. </p>
+                    <p>The Bhangra is the face of folk dance in Punjab. Identified by its typical steps, style and
+                        costume bhangra is the quintessential folk dance that is associated with all things happy, loud
+                        and musical. The other folk dances of Punjab are Gidha performed by women, Luddi, Jalli and
+                        Jhoomer. </p>
                 </div>
             </div>
 
-            <div style="opacity: 0;">.</div>
-            <div style="opacity: 0;">.</div>
 
         </section>
-
         <section id="cuisine"></section>
+        <div style="opacity: 0;">.</div>
+        <div style="opacity: 0;">.</div>
+        <div style="opacity: 0;">.</div>
+        <div style="opacity: 0;">.</div>
+
+
+        <section class="cuisine">
+
+            <div class="intro-cuisine">
+                <h1>India on Your Plate</h1>
+                <p>Iconic Dishes and Their Origins</p>
+            </div>
+
+            <div class="book-container">
+                <button id="prev-btn">
+                    <!-- <i class="fas fa-arrow-circle-left"></i> -->
+                    <img src="../../Images/arrow_back_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+
+                <div id="book" class="book">
+                    <!-- Paper 1 -->
+                    <div id="p1" class="paper">
+                        <div class="front">
+                            <div id="f1" class="front-content">
+                                <h1 style="font-size: 70px;">THE<br>CUISINE<br>CULTURE<br>OF<br>NORTH INDIA</h1>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b1" class="back-content">
+                                <h1 style="font-size: 50px;">GEOGRAPHICAL<br>AND<br>CULTURAL<br>INFLUENCES</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 2 -->
+                    <div id="p2" class="paper">
+                        <div class="front">
+                            <div id="f2" class="front-content">
+                                <p>There is an abundance of fresh seasonal fruit and vegetable to be had. Its geographical position with relation to the rest of the Sub-continent means that this region of the country has had strong Central Asian influences both in its culture and its food. Mughlai and Kashmiri styles of cooking are not just prevalent; they are also popular.</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b2" class="back-content">
+                                <h1 style="font-size: 70px;">STYLE<br>OF<br>FOOD</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 3 -->
+                    <div id="p3" class="paper">
+                        <div class="front">
+                            <div id="f3" class="front-content">
+                                <p>North Indian curries usually have thick, moderately spicy and creamy gravies. The use of dried fruits and nuts is fairly common even in everyday foods. Dairy products like milk, cream, cottage cheese, ghee (clarified butter) and yogurt play an important role in the cooking of both savory and sweet dishes. Thanks to the fact that such a rich variety of fruit and vegetable is available at all times of the year, the region produces a dazzling array of vegetarian dishes.</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b3" class="back-content">
+                                <h1 style="font-size: 50px;">STAPLE<br>FOODS<br>NORTH INDIANS<br>SEEM<br>TO PREFER</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 4 -->
+                    <div id="p4" class="paper">
+                        <div class="front">
+                            <div id="f4" class="front-content">
+                                <p>Indian bread is preferred over rice if the rich variety is anything to go by. This region is home to the tandoori roti and naans (bread made in a clay tandoor oven), stuffed parathas (flaky Indian bread with different kinds of vegetarian and non-vegetarian fillings) and kulchas (bread made from the fermented dough). Rice is also popular and made into elaborate biryanis and pulaos (pilafs).</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b4" class="back-content">
+                                <h1 style="font-size: 50px;">COOKING<br>OILS<br>COMMONLY<br>USED</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 5 -->
+                    <div id="p5" class="paper">
+                        <div class="front">
+                            <div id="f5" class="front-content">
+                                <p>Vegetable oils like sunflower and canola. Mustard oil is rarely used and only in some states of the region. Ghee is normally reserved for special occasion cooking</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b5" class="back-content">
+                                <h1 style="font-size: 70px;">The End.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Button -->
+                <button id="next-btn">
+                    <!-- <i class="fas fa-arrow-circle-right"></i> -->
+                    <img src="../../Images/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+            </div>
+
+        </section>
 
     </main>
 
     <footer>
         <div class="foot">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet distinctio tempore beatae laborum provident quis, tenetur soluta ipsum molestiae? Atque nam pariatur veniam ab et hic id magnam ipsa obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet distinctio tempore beatae laborum
+                provident quis, tenetur soluta ipsum molestiae? Atque nam pariatur veniam ab et hic id magnam ipsa
+                obcaecati.</p>
         </div>
     </footer>
 
