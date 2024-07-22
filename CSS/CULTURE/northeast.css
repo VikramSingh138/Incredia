@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -83,40 +84,36 @@ header {
     border-bottom: 2px solid rgb(0, 0, 0);
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100;
     background-color: #2E2E2E;
-    /* background-color: #454545; */
 }
 
 nav {
     max-width: 100vw;
-    padding: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav img {
     position: relative;
-    display: inline-block;
-    left: 5%;
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
 }
 
 .title {
     cursor: default;
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translateX(-50%);
+    position: relative;
+    /* transform: translateX(-50%); */
     font-size: 35px;
     font-weight: 500;
     color: #F4F1DE;
 }
 
-/* Search Box */
 .box {
     position: relative;
-    float: right;
-    right: 5%;
+    right: 0;
 }
 
 .input {
@@ -124,7 +121,7 @@ nav img {
     width: 50px;
     height: 50px;
     background: none;
-    background-image: url(/Indian-Heritage-Code-Crafters/Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
+    background-image: url(../../Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px 30px;
@@ -230,6 +227,8 @@ main {
 }
 
 .shortcuts {
+    /* background-color: #2E2E2E; */
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,9 +236,10 @@ main {
 
 .shortcuts a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    color: #2E2E2E;
+    color: #000000;
+    /* color: #2E2E2E; */
 }
 
 .shortcuts a::before,
@@ -494,4 +494,247 @@ main {
     width: 700px;
     /* border-top-left-radius: 20px; */
     /* border-bottom-left-radius: 20px; */
+}
+
+.cuisine {
+    position: relative;
+    /* margin: 50px; */
+    overflow: hidden;
+}
+
+.intro-cuisine {
+    margin: 50px;
+    overflow: hidden;
+    position: relative;
+    color: #2E2E2E;
+}
+
+.intro-cuisine h1 {
+    cursor: default;
+    width: 1050px;
+    opacity: 0;
+    font-size: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        type 4s steps(40, end) forwards,
+        blink .75s step-end infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes type {
+    0% {
+        opacity: 1;
+        width: 0;
+    }
+
+    1%,
+    100% {
+        opacity: 1;
+        border-right: 6px solid #2E2E2E;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.intro-cuisine p {
+    position: relative;
+    cursor: default;
+    padding: 20px;
+    padding-left: 0;
+    font-size: 40px;
+    /* text-transform: uppercase; */
+}
+
+.book-intro {
+    display: flex;
+    justify-content: center;
+}
+
+.book-container {
+    margin: 50px 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.book {
+    position: relative;
+    width: 550px;
+    height: 700px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 2000px;
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+.cuisine>.book-container>button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.cuisine>.book-container>button:focus {
+    outline: none;
+}
+
+.cuisine>.book-container>button:hover .cuisine>.book-container>button>img {
+    color: #636363;
+}
+
+.cuisine>.book-container>button>i {
+    font-size: 50px;
+    color: gray;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 5;
+}
+
+#p2 {
+    z-index: 4;
+}
+
+#p3 {
+    z-index: 3;
+}
+
+#p4 {
+    z-index: 2;
+}
+
+#p5 {
+    z-index: 1;
+}
+
+#f1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#b1 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    padding: 10px;
+}
+
+#f2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#b2 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    padding: 10px;
+}
+
+#f3 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 40px;
+}
+
+#b3 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    padding: 10px;
+}
+
+#f4 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#b4 {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    padding: 10px;
+}
+
+#f5 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#b5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

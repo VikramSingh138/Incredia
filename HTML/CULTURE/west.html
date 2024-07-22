@@ -7,6 +7,7 @@
     <title>CULTURE: WEST-INDIA</title>
     <link rel="stylesheet" href="../../CSS/CULTURE/west.css">
     <script src="../../JavaScript/nav-anim.js"></script>
+    <script src="../../JavaScript/flip-book.js" defer></script>
 </head>
 
 <body>
@@ -46,16 +47,16 @@
 
     <main>
 
-        <!-- <section class="shortcuts" id="shortcuts">
+        <section class="shortcuts" id="shortcuts">
             <div class="dance baskervville-sc-regular">
                 <a href="#dance" data-replace="DANCE"><span>DANCE</span></a>
             </div>
             <div class="dance baskervville-sc-regular">
                 <a href="#cuisine" data-replace="CUISINES"><span>CUISINES</span></a>
-                </div>
-        </section> -->
+            </div>
+        </section>
 
-        <!-- <section id="dance"></section> -->
+        <section id="dance"></section>
 
         <section class="dance">
 
@@ -110,7 +111,102 @@
 
         </section>
 
-        <section id="cuisine"></section>
+        <section id="cuisine" style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+
+
+        <section class="cuisine">
+
+            <div class="intro-cuisine">
+                <h1>India on Your Plate</h1>
+                <p>Iconic Dishes and Their Origins</p>
+            </div>
+
+            <div class="book-container">
+                <button id="prev-btn">
+                    <!-- <i class="fas fa-arrow-circle-left"></i> -->
+                    <img src="../../Images/arrow_back_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+
+                <div id="book" class="book">
+                    <!-- Paper 1 -->
+                    <div id="p1" class="paper">
+                        <div class="front">
+                            <div id="f1" class="front-content">
+                                <h1 style="font-size: 70px;">THE<br>CUISINE<br>CULTURE<br>OF<br>NORTH INDIA</h1>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b1" class="back-content">
+                                <h1 style="font-size: 50px;">GEOGRAPHICAL<br>AND<br>CULTURAL<br>INFLUENCES</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 2 -->
+                    <div id="p2" class="paper">
+                        <div class="front">
+                            <div id="f2" class="front-content">
+                                <p>Western Indian cuisine, influenced by the coastal states of Gujarat, Maharashtra, Goa, and the arid regions of Rajasthan, features a rich variety of seafood, grains, and pulses. The diverse cultural heritage, including Hindu, Jain, Parsi, and Portuguese influences, is evident in the cuisine. This results in a mix of sweet vegetarian dishes, spicy coconut-based curries, and hearty meat-centric fare.</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b2" class="back-content">
+                                <h1 style="font-size: 70px;">STYLE<br>OF<br>FOOD</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 3 -->
+                    <div id="p3" class="paper">
+                        <div class="front">
+                            <div id="f3" class="front-content">
+                                <p>Western Indian cuisine is known for its diverse and vibrant styles. Coastal regions like Goa and parts of Maharashtra feature seafood and use a lot of coconut and spices. Gujarat offers a unique blend of sweet and savory vegetarian dishes with a distinctive use of sugar and jaggery. Each area emphasizes regional ingredients and cooking techniques, creating a rich and varied culinary landscape.</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b3" class="back-content">
+                                <h1 style="font-size: 50px;">STAPLE<br>FOODS<br>WESTERN INDIANS<br>SEEM<br>TO PREFER</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 4 -->
+                    <div id="p4" class="paper">
+                        <div class="front">
+                            <div id="f4" class="front-content">
+                                <p>Western Indians prefer a variety of staple foods. In Gujarat, the focus is on grains like millet, sorghum, and rice, accompanied by lentils and vegetables. Maharashtra features rice, wheat, and a range of pulses, often paired with fish or chicken. In coastal Goa, rice and seafood are primary staples, along with coconut-based dishes. Rajasthan, with its arid climate, relies on hardier grains like millet and sorghum, and legumes like chickpeas, often cooked in spicy and flavorful preparations.</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b4" class="back-content">
+                                <h1 style="font-size: 50px;">COOKING<br>OILS<br>COMMONLY<br>USED</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 5 -->
+                    <div id="p5" class="paper">
+                        <div class="front">
+                            <div id="f5" class="front-content">
+                                <p>In Western Indian cuisine, the commonly used cooking oils vary by region. Gujarat primarily uses peanut oil due to the abundant cultivation of peanuts. Maharashtra and Goa often use coconut oil, especially in coastal areas, where coconuts are plentiful. Mustard oil is also used in some parts, particularly in dishes requiring a strong, pungent flavor. Additionally, ghee (clarified butter) is widely used across the region for its rich taste and aroma.</p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div id="b5" class="back-content">
+                                <h1 style="font-size: 70px;">The End.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Button -->
+                <button id="next-btn">
+                    <!-- <i class="fas fa-arrow-circle-right"></i> -->
+                    <img src="../../Images/arrow_forward_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+                </button>
+            </div>
+
+        </section>
 
     </main>
 
