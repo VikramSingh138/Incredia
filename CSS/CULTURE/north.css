@@ -685,6 +685,14 @@ main {
     text-align: right; padding: 10px;
 }
 
+#f3 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    font-size: 30px;
+}
+
 #b3 {
     display: flex;
     align-items: center;
