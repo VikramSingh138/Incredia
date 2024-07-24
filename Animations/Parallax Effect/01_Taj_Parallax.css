@@ -261,34 +261,6 @@ nav img {
     color: #818181;
 }
 
-/* NAVBAR STYLING OVER */
-
-/* main{
-    position: relative;
-    height:100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column; 
-} */
-
-/* section {
-    width: 100%;
-    min-height: 100vh; /* Adjust if you want different height behavior */
-    /* position: relative; */
-/* } */ 
-
-/* .content-block{
-    position: relative;
-    z-index: 1;
-}
-.intro{
-    z-index:1;
-}
-.scroller-section{
-    z-index:1;
-} */
-
 main {
     /* position: relative; */
     /* height: 100vh;
@@ -304,10 +276,15 @@ main {
 
 section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+}
+
+.Taj_Parallax{
+    height:700px;
 }
 
 /* .intro,
@@ -329,8 +306,8 @@ section {
 
 .bg-img{
     position:absolute;
-    width:195%;
-    height:195%;
+    width:150%;
+    height:150%;
     top:50%;
     left:50.7%;
     /* transform: translate(-50%,-50%); */
@@ -486,19 +463,24 @@ section {
     background-color: #FF8243;
     z-index:10;
     /* border :5px solid black; */
+    padding-top:50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .intro h1{
     font-family:'Bona+Nova+SC';
     font-size: 5rem;
-    color:#ffffff;
+    /* color:#ffffff; */
+    color:#fefc78;
     border-right: 5px solid black;
     padding-left: 20px;
 }
 
 .paragraph p {
     /* width:70%; */
-    padding: 30px 30px;
+    /* padding: 30px 30px; */
     cursor: default;
     color: #2E2E2E;
     margin-left: 100px;
