@@ -262,17 +262,9 @@ nav img {
 }
 
 main {
-    /* position: relative; */
-    /* height: 100vh;
-    width: 100vw; */
-    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
 }
-
-/* .content-block {
-    position: relative;
-} */
 
 section {
     width: 100%;
@@ -284,18 +276,13 @@ section {
 }
 
 .Taj_Parallax{
-    height:700px;
+    height:100vh;
 }
 
 /* .intro,
 .scroller-section {
     z-index: 1;
 } */
-
-.scroller-section {
-    background-color: #C40C0C;
-    z-index:10;
-}
 
 .parallax{
     pointer-events: none;
@@ -327,7 +314,7 @@ section {
 .text{
     position:absolute;
     width:1610px;
-    top:30%;
+    top:40%;
     left:50%;
     /* transform: translate(-50%,-50%); */
     z-index:3;
@@ -457,39 +444,58 @@ section {
     }
 }
 
-/* INTRO SECTION BEWLO THIS */
+/* INTRO SECTION BELOW THIS */
 
 .intro {
-    background-color: #FF8243;
+    background-color: #ff8a50;
     z-index:10;
-    /* border :5px solid black; */
-    padding-top:50px;
-    padding-bottom: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
 }
 
-.intro h1{
+.text-container-intro{
+    height: 100%;
+    width:100%;
+    position:relative;
+    display: flex;
+}
+
+.intro .heading{
     font-family:'Bona+Nova+SC';
-    font-size: 5rem;
+    font-size: 3rem;
     /* color:#ffffff; */
     color:#fefc78;
     border-right: 5px solid black;
-    padding-left: 20px;
+    box-sizing: border-box;
+    margin:20px 0 20px 20px; /*TOP RIGHT BOTTOM LEFT*/
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+    justify-content: center;
+    max-width:50%;
 }
 
-.paragraph p {
-    /* width:70%; */
-    /* padding: 30px 30px; */
+.intro .paragraph{
+    /* border: 5px solid black; */
+    max-width:50%;
+    padding: 30px 30px;
     cursor: default;
-    color: #2E2E2E;
+    /* color: #2E2E2E; */
+    /* color:#ffd792; */
+    color: #F0F0F0;
     margin-left: 100px;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* BELOW IS THE SCROLLER SECTION */
+
+
+.scroller-section {
+    background-color: #C40C0C;
+    z-index:10;
+    padding: 0;
+}
 
 .scroller-pos {
     text-align: center;
@@ -524,7 +530,8 @@ section {
     max-width: 1100px;
     margin: 0 auto;
     background: transparent;
-    padding: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     border-color: black;
 }
 
@@ -532,7 +539,8 @@ section {
     font-family:'Bona+Nova+SC';
     font-weight: 500;
     font-size: 5rem;
-    color:#ffffff;
+    /* color:#ffffff; */
+    color: #F5F5DC;
 }
 
 .scroller_inner {
