@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+.bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.bona-nova-sc-bold {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
 *,*::before,*::after{
     margin:0;
@@ -349,12 +362,14 @@ section {
 }
 
 .text h2{
+    font-family:'Bona+Nova+SC';
     font-weight: 200;
     font-size: 6.5rem;
     line-height: 0.88;
 }
 
 .text h1{
+    font-family:'Bona+Nova+SC';
     font-weight: 800;
     font-size: 10rem;
     line-height: 0.88;
@@ -473,42 +488,17 @@ section {
     /* border :5px solid black; */
 }
 
-/* .heading h1 {
-    cursor: default;
-    color: #2E2E2E;
-    opacity: 0;
-    font-size: 75px;
-    font-weight: bold;
-    margin-left: 100px;
-    overflow: hidden;
-    width: 1430px;
-    /* animation:
-        type 4s steps(40, end) forwards,
-        blink .75s step-end infinite;
-    animation-delay: 0.3s;
-} */
-/*
-@keyframes type {
-    0% {
-        opacity: 1;
-        width: 0;
-    }
-
-    1%,
-    100% {
-        opacity: 1;
-        border-right: 6px solid #2E2E2E;
-    }
+.intro h1{
+    font-family:'Bona+Nova+SC';
+    font-size: 5rem;
+    color:#ffffff;
+    border-right: 5px solid black;
+    padding-left: 20px;
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-} */
-
 .paragraph p {
-    padding: 30px 0px;
+    /* width:70%; */
+    padding: 30px 30px;
     cursor: default;
     color: #2E2E2E;
     margin-left: 100px;
@@ -538,6 +528,7 @@ section {
     background-color: #ffffff;
     /* box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(255, 255, 255); */
     border: 2px solid;
+    border-radius: 20px;
     min-width: 300px;
     min-height: 300px;
     transition: .3s;
@@ -556,6 +547,7 @@ section {
 }
 
 .scroller h1{
+    font-family:'Bona+Nova+SC';
     font-weight: 500;
     font-size: 5rem;
     color:#ffffff;
@@ -638,7 +630,7 @@ footer{
 }
 
 .footer-container{
-    width:1140px;
+    width:80%;
     margin:auto;
     display: flex;
     justify-content: center;
@@ -646,6 +638,7 @@ footer{
 
 .footer-content{
     width: 33.3%;
+    /* border-right: 2px solid #343434; */
 }
 
 .footer-container h3 {
@@ -733,4 +726,12 @@ a:hover{
     margin:0;
     font-size: 16px;
     padding: 7px;
+}
+
+.Contact{
+    border-right:2px solid #ffffff;
+}
+
+.Quick-links{
+    border-right:2px solid #ffffff;
 }
