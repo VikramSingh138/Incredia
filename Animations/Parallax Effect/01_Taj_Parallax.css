@@ -26,97 +26,6 @@ body{
     overflow-x: hidden;
 }
 
-/* NAVBAR STYLING BELOW THIS */
-
-/* .logo{
-    width:100px;
-}
-
-.header{
-    position: absolute;
-    z-index:1000;
-    width:100%;
-    padding:0.9rem 0;
-    top:0;
-    left:0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    background:transparent;
-}
-
-header nav{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-header ul a{
-    text-decoration: none;
-    color: #fff;
-    padding: 0 1.5rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 0.83rem;
-    text-transform: uppercase;
-}
-
-.search a{
-    font-size: 1.05rem;
-    padding : 0 3rem;
-}
-
-.hamburger{
-    padding-left: 1.5rem;
-}
-
-.hamburger a{
-    padding:0;
-    width: 37px;
-    height: 37px;
-    display:flex;
-    border-radius: 50%;
-    background-color: rgba(115,115,115,0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    justify-content: center;
-    align-items: center;
-} 
-
-.hamburger .bar{
-    position: relative;
-    width: 52%;
-    height: 1.3px;
-    background-color: #fff;
-    border-radius: 2px;
-}
-
-.hamburger .bar::before,.hamburger .bar::after{
-    content: "";
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    width:60%;
-    height: 100%;
-    background-color: inherit;
-    border-radius: 2px;
-}
-
-.hamburger .bar::before{
-    top:-4.5px;
-}
-
-.hamburger .bar::after{
-    top:4.5px;
-} */
-
 header {
     border-bottom: 2px solid rgb(0, 0, 0);
     position: sticky;
@@ -261,53 +170,25 @@ nav img {
     color: #818181;
 }
 
-/* NAVBAR STYLING OVER */
-
-/* main{
-    position: relative;
-    height:100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column; 
-} */
-
-/* section {
-    width: 100%;
-    min-height: 100vh; /* Adjust if you want different height behavior */
-    /* position: relative; */
-/* } */ 
-
-/* .content-block{
-    position: relative;
-    z-index: 1;
-}
-.intro{
-    z-index:1;
-}
-.scroller-section{
-    z-index:1;
-} */
-
 main {
-    /* position: relative; */
-    /* height: 100vh;
-    width: 100vw; */
-    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
 }
 
-/* .content-block {
-    position: relative;
-} */
-
 section {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    /* z-index: 10; */
+}
+
+.Taj_Parallax{
+    height: 90vh;
+    overflow-x: hidden;
+    background-color: #FFBF78;
 }
 
 /* .intro,
@@ -315,27 +196,23 @@ section {
     z-index: 1;
 } */
 
-.scroller-section {
-    background-color: #C40C0C;
-    z-index:10;
-}
-
 .parallax{
     pointer-events: none;
     transform: translate(-50%,-50%);
     transition: 0.45s cubic-bezier(0.2,0.49,0.32,0.99);
     /* opacity:0.6; */
 }
-
+/* 
 .bg-img{
     position:absolute;
-    width:195%;
-    height:195%;
+    width:100%;
+    height:100%;
     top:50%;
     left:50.7%;
     /* transform: translate(-50%,-50%); */
+/*
     z-index:1;
-}
+} */
 
 .layer-5{
     position:absolute;
@@ -350,7 +227,7 @@ section {
 .text{
     position:absolute;
     width:1610px;
-    top:30%;
+    top:35%;
     left:50%;
     /* transform: translate(-50%,-50%); */
     z-index:3;
@@ -414,100 +291,60 @@ section {
     /* opacity:0.5; */
 }
 
-@media (max-width: 1400px) {
-    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
-        width: 1000px;
-    }
-
-    .text {
-        width: 1500px;
-    }
-}
-
-@media (max-width: 1100px) {
-    .text h1 {
-        font-size: 5.8rem;
-    }
-
-    .text h2 {
-        font-size: 4.7rem;
-    }
-
-    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
-        width: 800px;
-    }
-
-    .text {
-        width: 1200px;
-    }
-}
-
-@media (max-width: 725px) {
-    .text h1 {
-        font-size: 5rem;
-        line-height: 1.1;
-    }
-
-    .text h2 {
-        font-size: 4.1rem;
-        line-height: 1.1;
-    }
-
-    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
-        width: 600px;
-    }
-
-    .text {
-        width: 900px;
-    }
-}
-
-@media (max-width: 520px) {
-    .text h1 {
-        font-size: 3.3rem;
-    }
-
-    .text h2 {
-        font-size: 2.6rem;
-    }
-
-    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
-        width: 400px;
-    }
-
-    .text {
-        width: 650px;
-    }
-}
-
-/* INTRO SECTION BEWLO THIS */
+/* INTRO SECTION BELOW THIS */
 
 .intro {
-    background-color: #FF8243;
+    background-color: #ff8a50;
     z-index:10;
-    /* border :5px solid black; */
+    border-top:2px solid black;
+    border-bottom:2px solid black;
 }
 
-.intro h1{
+.text-container-intro{
+    height: 100%;
+    width:100%;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.intro .heading{
     font-family:'Bona+Nova+SC';
-    font-size: 5rem;
-    color:#ffffff;
-    border-right: 5px solid black;
-    padding-left: 20px;
+    font-size: 3rem;
+    /* color:#ffffff; */
+    color:#fefc78;
+    border-right: 5px dashed black;
+    box-sizing: border-box;
+    margin:30px 0 30px 15px; /*TOP RIGHT BOTTOM LEFT*/
+    padding: 0px 20px 0px 25px;
+    align-items: center;
+    justify-content: center;
+    max-width:50%;
+    text-align: center;
 }
 
-.paragraph p {
-    /* width:70%; */
+.intro .paragraph{
+    /* border: 5px solid black; */
+    max-width:50%;
     padding: 30px 30px;
     cursor: default;
-    color: #2E2E2E;
+    /* color: #2E2E2E; */
+    /* color:#ffd792; */
+    color: #F0F0F0;
     margin-left: 100px;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* BELOW IS THE SCROLLER SECTION */
+
+
+.scroller-section {
+    background-color: #C40C0C;
+    z-index:10;
+    padding: 0;
+}
 
 .scroller-pos {
     text-align: center;
@@ -542,7 +379,8 @@ section {
     max-width: 1100px;
     margin: 0 auto;
     background: transparent;
-    padding: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     border-color: black;
 }
 
@@ -550,7 +388,8 @@ section {
     font-family:'Bona+Nova+SC';
     font-weight: 500;
     font-size: 5rem;
-    color:#ffffff;
+    /* color:#ffffff; */
+    color: #F5F5DC;
 }
 
 .scroller_inner {
@@ -734,4 +573,238 @@ a:hover{
 
 .Quick-links{
     border-right:2px solid #ffffff;
+}
+
+/* MAKING THINGS RESPONSIVE */
+
+@media (max-width: 1400px) {
+    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
+        width: 75vw;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .text h1 {
+        font-size: 5.8rem;
+    }
+
+    .text h2 {
+        font-size: 4.7rem;
+    }
+
+    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
+        width: 75vw;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text-container-intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .heading,
+    .intro .paragraph{
+        max-width: 100%;
+        margin-left: 0;
+        border-right: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .intro .paragraph{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .intro .heading{
+        font-size: 2.5rem;
+        border-bottom: 2px dashed black;
+    }
+
+    .scroller h1{
+        font-size:3.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .text h1 {
+        font-size: 5.4rem;
+    }
+
+    .text h2 {
+        font-size: 4.35rem;
+    }
+
+    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
+        width: 75vw;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text-container-intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .heading,
+    .intro .paragraph{
+        max-width: 100%;
+        margin-left: 0;
+        border-right: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .intro .paragraph{
+        margin-top: 20px;
+        font-size: 22.5px;
+    }
+
+    .intro .heading{
+        font-size: 2.25rem;
+        border-bottom: 2px dashed black;
+    }
+
+    .scroller h1{
+        font-size:3.25rem;
+    }
+}
+
+@media (max-width: 775px) {
+    .Taj_Parallax{
+        height:70vh;
+    }
+    
+    .text h1 {
+        font-size: 5rem;
+        line-height: 1.1;
+    }
+
+    .text h2 {
+        font-size: 4.1rem;
+        line-height: 1.1;
+    }
+
+    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
+        width: 80vw;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text-container-intro{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .heading,
+    .intro .paragraph{
+        max-width: 100%;
+        margin-left: 0;
+        border-right: none;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .intro .paragraph{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .intro .heading{
+        font-size: 2rem;
+        border-bottom: 2px dashed black;
+    }
+    .scroller h1{
+        font-size:3rem;
+    }
+
+    .footer-container{
+        width:100%;
+    }
+}
+
+@media(max-width:650px){
+
+    .scroller-section{
+        border-bottom: 2px solid #ffffff;    
+    }
+
+    .footer-container{
+        /* border-top: 2px solid white; */
+        width:80%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content{
+        width: 100%;
+    }
+
+    .Contact{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right:0px;
+        /* border-top:2px solid #fff; */
+    }
+
+    /* .Contact h3{
+        padding-bottom: 10px;
+    } */
+    
+    .Quick-links{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right: 0px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .Social{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bottom-bar{
+        border-top: 2px solid #ffffff;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .Taj_Parallax{
+        height:60vh;
+    }
+    .text h1 {
+        font-size: 3.3rem;
+    }
+
+    .text h2 {
+        font-size: 2.6rem;
+    }
+
+    .layer-5, .layer-4, .layer-3, .layer-2, .layer-1 {
+        width: 80vw;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .scroller h1{
+        font-size:2.5rem;
+    }
 }
