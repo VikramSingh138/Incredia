@@ -570,6 +570,7 @@ main {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    background-image:url("../../Images/Plate.png");
 }
 
 .book {
