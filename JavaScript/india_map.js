@@ -79,9 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (path.classList.contains('path3') || path.classList.contains('path4')) {
                 document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = 'transparent');
+                //document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = '#f1f4de');
                 document.querySelectorAll('.path3, .path4').forEach(p => p.style.stroke = 'black');
             } else {
                 path.style.fill = 'transparent';
+                //path.style.fill = "#f1f4de";
                 path.style.stroke = 'black';
             }
         });
