@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: #F4F1DE;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
@@ -182,6 +183,8 @@ p {
 
 .intro {
     margin: 100px 50px;
+    background-color:#FFEEA9;
+    padding: 25px; 
 }
 
 .intro .heading1 {
@@ -226,7 +229,10 @@ p {
 }
 
 .about {
-    margin: 100px 50px;
+    /* margin: 100px 50px; */
+    background-color:#FFEEA9;
+    margin:100px 50px;
+    padding: 25px;
 }
 
 .about .heading2 h1 {
@@ -243,6 +249,8 @@ p {
 
 .explore {
     margin: 100px 50px;
+    background-color:#FFEEA9;
+    padding: 25px;
 }
 
 .explore .heading3 h1 {
@@ -267,7 +275,7 @@ p {
     width: 400px;
     height: 400px;
     margin: 10px;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
 .explore .historical-art .content1 .box1 p {
