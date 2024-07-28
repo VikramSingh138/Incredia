@@ -17,7 +17,7 @@ html {
 body {
     /* background-color: #F4F1DE; */
     /* background-color: #FFEEA9; */
-    background-color: #f8f8d3;
+    background-color: #FFBF78;
 }
 
 ::-webkit-scrollbar {
@@ -353,7 +353,8 @@ main {
     position: relative;
     top: 100px;
     height: 600px;
-    /* border-radius: 20px; */
+    border: 2px solid black;
+    border-radius: 5px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     transition: transform 0.3s;
@@ -362,6 +363,13 @@ main {
 .card:hover img{
     transition: transform 0.3s;
     transform: scale(1.05); 
+}
+
+.dance-section{
+    background-color:#ff8a50;
+    border-radius: 25px;
+    padding:25px 0px 25px 25px;
+    border: 5px solid black;
 }
 
 .dance1 {
@@ -379,14 +387,14 @@ main {
 
 .dance1 h2 {
     margin: 30px 50px;
-    font-size: 70px;
+    font-size: 45px;
     /* color:#f8d290; */
     color:#fff
 }
 
 .dance1 p {
     margin: 0 50px;
-    font-size: 30px;
+    font-size: 24px;
     color:#f8d290;
     font-weight: 500;
 }
@@ -412,13 +420,13 @@ main {
 
 .dance2 h2 {
     margin: 30px 50px;
-    font-size: 50px;
+    font-size: 45px;
     color:#E54848;
 }
 
 .dance2 p {
     margin: 0px 50px 30px 50px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .dance2 img {
@@ -444,13 +452,13 @@ main {
 
 .dance3 h2 {
     margin: 30px 50px;
-    font-size: 50px;
+    font-size: 45px;
     color:#fff;
 }
 
 .dance3 p {
     margin: 0px 50px 30px 50px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight:500;
     color:#f8d290;
 }
@@ -474,13 +482,13 @@ main {
 
 .dance4 h2 {
     margin: 30px 50px;
-    font-size: 50px;
+    font-size: 45px;
     color:#E54848;
 }
 
 .dance4 p {
     margin: 0px 50px 30px 50px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .dance4 img {
@@ -492,8 +500,12 @@ main {
 
 .cuisine {
     position: relative;
-    /* margin: 50px; */
+    margin: 50px;
     overflow: hidden;
+    background-color:#ff8a50;
+    border-radius: 25px;
+    padding:25px 0px 25px 25px;
+    border: 5px solid black;
 }
 
 .intro-cuisine {
@@ -558,6 +570,7 @@ main {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    background-image:url("../../Images/Plate.png");
 }
 
 .book {
