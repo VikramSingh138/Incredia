@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURE: CENTRAL-INDIA</title>
+    <link rel="stylesheet" href="../../CSS/CULTURE/central.css">
+    <script src="../../JavaScript/nav-anim.js"></script>
+    <script src="../../JavaScript/flip-book.js" defer></script>
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="back to top">
+        <img src="../../Images/keyboard_arrow_up_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png">
+    </button>
+
+    <header>
+
+        <nav>
+            <span style="cursor:pointer" onclick="openNav()"><img
+                    src="../../Images/menu_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png"></span>
+            <div class="title baskervville-sc-regular" style="color: white;">INDIAN HERITAGE</div>
+            <div class="box">
+                <form name="search">
+                    <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                </form>
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+
+        <!-- Side Menu -->
+        <div id="mySidenav" class="menu anim">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../../HTML/home.html" class="slide-anim baskervville-sc-regular">HOME</a>
+            <a href="../../HTML/MONUMENTS/monuments.html" class="slide-anim baskervville-sc-regular">MONUMENTS</a>
+            <a href="../../HTML/CULTURE/culture.html" class="slide-anim baskervville-sc-regular">CULTURE</a>
+            <a href="/Indian-Heritage-Code-Crafters/HTML/home.html" class="slide-anim baskervville-sc-regular">ARTS &
+                CRAFTS</a>
+        </div>
+
+
+
+    </header>
+
+    <main>
+
+        <section id="monument"></section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+
+        <section class="monument">
+
+            <div class="intro-monument">
+                <h1 class="bebas-neue-regular">Every stone tells a <strong><span>Story</span></strong></h1>
+                <p class="anim-paragraph baskervville-sc-regular">A Journey throguh Central India</p>
+            </div>
+
+            <div class="monument1 card">
+                <div class="description">
+                    <h2>KEDARNATH TEMPLE</h2>
+                    <p>Kedarnath Temple is one of the holiest Hindu shrines dedicated to Lord Shiva. Located in the Himalayas near the Mandakini river in Kedarnath, it is part of the Char Dham Yatra and one of the twelve Jyotirlingas. The temple, believed to be constructed by the Pandavas, is renowned for its ancient architecture and religious significance.</p>
+                </div>
+                <div class="image">
+                    <img src="" alt="Kedarnath">
+                </div>
+            </div>
+
+            <div class="monument2 card">
+                <div class="image">
+                    <img src="" alt="Taj Mahal">
+                </div>
+                <div class="description">
+                    <h2>TAJ MAHAL</h2>
+                    <p>The Taj Mahal, situated in Agra, is an iconic symbol of love built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. This white marble mausoleum, completed in 1653, is a UNESCO World Heritage Site and one of the New Seven Wonders of the World. Its exquisite beauty, intricate inlay work, and symmetrical gardens attract millions of visitors annually.</p>
+                </div>
+            </div>
+
+            <div class="monument3 card">
+                <div class="description">
+                    <h2>KHAJURAHO TEMPLES</h2>
+                    <p>The Khajuraho Group of Monuments, a UNESCO World Heritage Site, is famous for its stunning temples adorned with intricate erotic sculptures. Built between 950 and 1050 AD by the Chandela dynasty, these temples are an exceptional example of Indian architecture and art. The complex originally contained 85 temples, of which about 25 survive today.</p>
+                </div>
+                <div class="image">
+                    <img src="" alt="Khajuraho">
+                </div>
+            </div>
+
+            <div class="monument4 card">
+                <div class="image">
+                    <img src="" alt="Chitrakoot">
+                </div>
+                <div class="description">
+                    <h2></h2>
+                    <p>Also known as the "Niagara Falls of India," Chitrakoot Falls is located on the Indravati River in Bastar district. It is the widest waterfall in India and presents a spectacular sight, especially during the monsoon season. The surrounding natural beauty and the sound of the cascading water make it a popular tourist destination.</p>
+                </div>
+            </div>
+
+            <div style="opacity: 0;">.</div>
+            <div style="opacity: 0;">.</div>
+
+        </section>
+
+        <section id="cuisine" style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+        <section style="opacity: 0;">.</section>
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet distinctio tempore beatae laborum provident quis, tenetur soluta ipsum molestiae? Atque nam pariatur veniam ab et hic id magnam ipsa obcaecati.</p>
+        </div>
+    </footer>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
