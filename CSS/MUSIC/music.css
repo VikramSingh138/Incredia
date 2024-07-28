@@ -240,7 +240,7 @@ p {
 .explore .row1 {
     display: flex;
     justify-content: center;
-    align-items: centers;
+    align-items: center;
 }
 
 .explore .heading2 h1 {
@@ -311,31 +311,46 @@ p {
     margin: 100px 50px;
 }
 
-.events .heading3 {
-    max-width: fit-content;
-}
-
 .events .heading3 h1 {
     font-size: 50px;
     margin: 30px 0;
+    text-align: center;
+}
+
+.events .flex1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card2 {
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 20px;
 }
 
 .events .festivals h3 {
     font-size: 30px;
     margin: 10px 0;
+    text-align: center;
 }
 
 .events .festivals p {
     font-size: 25px;
+    text-align: center;
+    margin: 20px;
 }
 
 .events .culture h3 {
     font-size: 30px;
     margin: 10px 0;
+    text-align: center;
 }
 
 .events .culture p {
     font-size: 25px;
+    text-align: center;
+    margin: 20px;
 }
 
 .community {
@@ -345,10 +360,13 @@ p {
 .community .social h1 {
     font-size: 50px;
     margin: 30px 0;
+    text-align: center;
 }
 
 .community .social p {
     font-size: 25px;
+    text-align: center;
+    margin: 20px 200px;
 }
 
 .foot {
