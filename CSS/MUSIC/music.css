@@ -183,45 +183,21 @@ p {
 
 .intro {
     margin: 100px 50px;
+    background-color: rgb(221, 176, 93);
+    padding: 20px;
 }
 
 .intro .heading1 {
     max-width: fit-content;
 }
 
-.intro .heading1 h1{
+.intro .heading1 h1 {
     /* color: white; */
     /* background-color: #000000; */
     cursor: default;
-    opacity: 0;
     margin: 10px 0;
-    white-space: nowrap;
-    overflow: hidden;
     width: 100%;
     font-size: 70px;
-    animation:
-        type 4s steps(40, end) forwards,
-        blink .75s step-end infinite;
-    animation-delay: 0.3s;
-}
-
-@keyframes type {
-    0% {
-        opacity: 1;
-        width: 0;
-    }
-
-    1%,
-    100% {
-        opacity: 1;
-        border-right: 6px solid #2E2E2E;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
 }
 
 .intro .paragraph p {
@@ -235,6 +211,8 @@ p {
 
 .explore {
     margin: 100px 50px;
+    /* background-color: rgb(221, 176, 93); */
+    padding: 20px;
 }
 
 .explore .row1 {
@@ -253,7 +231,79 @@ p {
     height: 600px;
     width: 600px;
     margin: 20px;
-    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        transition: opacity .2s ease-out;
+        z-index: -1;
+    }
+}
+
+.card1 a,
+.card2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    vertical-align: top;
+}
+
+.card1 a, .card2 a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.card1 a::before, .card2 a::before,
+.card1 a::after, .card2 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.card1 a::before, .card2 a::before {
+    background-color: yellow;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.card1 a::after, .card2 a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: yellow;
+}
+
+.card1 a:hover::before, .card2 a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}
+
+.card1 a:hover::after, .card2 a:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.card1 a span, .card2 a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.card1 a:hover span, .card2 a:hover span {
+    transform: translate3d(-200%, 0, 0);
 }
 
 .card1 h3 {
@@ -325,7 +375,24 @@ p {
 .card2 {
     height: 600px;
     width: 600px;
-    border: 2px solid black;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        transition: opacity .2s ease-out;
+        z-index: -1;
+    }
+}
+
+.card2 p {
     margin: 20px;
 }
 

@@ -190,35 +190,9 @@ p {
 
 .intro .heading1 h1 {
     cursor: default;
-    opacity: 0;
     margin: 30px 0;
-    white-space: nowrap;
-    overflow: hidden;
     width: 100%;
     font-size: 70px;
-    animation:
-        type 4s steps(40, end) forwards,
-        blink .75s step-end infinite;
-    animation-delay: 0.3s;
-}
-
-@keyframes type {
-    0% {
-        opacity: 1;
-        width: 0;
-    }
-
-    1%,
-    100% {
-        opacity: 1;
-        border-right: 6px solid #2E2E2E;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
 }
 
 .intro .paragraph1 p {

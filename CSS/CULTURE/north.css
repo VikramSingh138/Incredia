@@ -296,33 +296,7 @@ main {
 .intro-dance h1 {
     cursor: default;
     width: 1050px;
-    opacity: 0;
     font-size: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        type 4s steps(40, end) forwards,
-        blink .75s step-end infinite;
-    animation-delay: 0.3s;
-}
-
-@keyframes type {
-    0% {
-        opacity: 1;
-        width: 0;
-    }
-
-    1%,
-    100% {
-        opacity: 1;
-        border-right: 6px solid #2E2E2E;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
 }
 
 .intro-dance p {
@@ -518,33 +492,7 @@ main {
 .intro-cuisine h1 {
     cursor: default;
     width: 1050px;
-    opacity: 0;
     font-size: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        type 4s steps(40, end) forwards,
-        blink .75s step-end infinite;
-    animation-delay: 0.3s;
-}
-
-@keyframes type {
-    0% {
-        opacity: 1;
-        width: 0;
-    }
-
-    1%,
-    100% {
-        opacity: 1;
-        border-right: 6px solid #2E2E2E;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
 }
 
 .intro-cuisine p {
