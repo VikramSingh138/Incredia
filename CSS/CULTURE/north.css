@@ -15,30 +15,13 @@ html {
 }
 
 body {
-    /* background-color: #F4F1DE; */
+    background-color: #F4F1DE;
     /* background-color: #FFEEA9; */
-    background-color: #FFBF78;
+    /* background-color: #FFBF78; */
 }
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-.foot {
-    position: relative;
-    background-color: #2E2E2E;
-    top: 150%;
-    height: 400px;
-    width: 100vw;
-    color: #F4F1DE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.foot p {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #myBtn {
@@ -49,11 +32,11 @@ body {
     z-index: 99;
     font-size: 10px;
     outline: none;
-    background-color: #E54848;
+    background-color: #2E2E2E;
     color: white;
     cursor: pointer;
     padding: 15px;
-    border: none;
+    border: 2px solid white;
     border-radius: 50%;
     scale: 0.6;
     transition: 0.3s;
@@ -285,6 +268,7 @@ main {
     position: relative;
     margin: 50px;
     overflow: hidden;
+    background-color:#FFEEA9;
 }
 
 .intro-dance {
@@ -328,7 +312,7 @@ main {
     top: 100px;
     height: 600px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 2px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     transition: transform 0.3s;
@@ -341,9 +325,9 @@ main {
 
 .dance-section{
     background-color:#ff8a50;
-    border-radius: 25px;
+    border-radius: 5px;
     padding:25px 0px 25px 25px;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 .dance1 {
@@ -477,9 +461,13 @@ main {
     margin: 50px;
     overflow: hidden;
     background-color:#ff8a50;
-    border-radius: 25px;
+    border-radius: 5px;
     padding:25px 0px 25px 25px;
-    border: 5px solid black;
+    border: 2px solid black;
+    background-image:url("../../Images/Plate.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
 }
 
 .intro-cuisine {
@@ -493,6 +481,10 @@ main {
     cursor: default;
     width: 1050px;
     font-size: 100px;
+}
+
+.intro-cuisine{
+    color: #000000;
 }
 
 .intro-cuisine p {
@@ -518,13 +510,12 @@ main {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background-image:url("../../Images/Plate.png");
 }
 
 .book {
     position: relative;
-    width: 550px;
-    height: 700px;
+    width: 500px;
+    height: 600px;
     transition: transform 0.5s;
 }
 
@@ -535,6 +526,7 @@ main {
     top: 0;
     left: 0;
     perspective: 2000px;
+    /* background-color: #FFD07F; */
 }
 
 .front,
@@ -547,12 +539,33 @@ main {
     left: 0;
     transform-origin: left;
     transition: transform 0.5s;
+    /* background-color: #FFD07F; */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cover-page{
+    background-color: rgb(223, 213, 213);
+}
+
+.content-page-front{
+    background-color: #FFD07F;
+    padding: 20px;
+}
+
+.content-page-back{
+    background-color: #ffb769;
+    padding: 20px;
+}
+
+.cover-page-back{
+    background-color: rgb(223, 213, 213);
 }
 
 .front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    /* border-left: 3px solid powderblue; */
 }
 
 .back {
@@ -636,7 +649,7 @@ main {
     align-items: center;
     justify-content: left;
     padding: 10px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #b2 {
@@ -688,4 +701,121 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer{
+    margin:0;
+    padding:0;
+    background-color: #2E2E2E;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    z-index:10;
+}
+
+.footer-container{
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 33.3%;
+    /* border-right: 2px solid #343434; */
+}
+
+.footer-container h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    width:190px;
+    margin:auto;
+    padding:7px;
+}
+
+.footer-content ul{
+    text-align: center;
+}
+
+.footer-list{
+    padding:0;
+}
+
+.footer-list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding:7px;
+    position: relative;
+}
+
+.footer-list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.footer-list li:hover::before{
+    width:70px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color:white; 
+    font-size: 25px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+
+.social-icons i:hover{
+    color:#f18930;
+}
+
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin:0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.Contact{
+    border-right:2px solid #ffffff;
+}
+
+.Quick-links{
+    border-right:2px solid #ffffff;
 }

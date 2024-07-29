@@ -436,19 +436,119 @@ p {
     margin: 20px 200px;
 }
 
-.foot {
-    position: relative;
+footer{
+    margin:0;
+    padding:0;
     background-color: #2E2E2E;
-    top: 150%;
-    height: 400px;
-    width: 100vw;
-    color: #F4F1DE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    z-index:10;
 }
 
-.foot p {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.footer-container{
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 33.3%;
+    /* border-right: 2px solid #343434; */
+}
+
+.footer-container h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p {
+    width:190px;
+    margin:auto;
+    padding:7px;
+}
+
+.footer-content ul{
+    text-align: center;
+}
+
+.footer-list{
+    padding:0;
+}
+
+.footer-list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding:7px;
+    position: relative;
+}
+
+.footer-list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.footer-list li:hover::before{
+    width:70px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color:white; 
+    font-size: 25px;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f18930;
+}
+
+.social-icons i:hover{
+    color:#f18930;
+}
+
+.bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin:0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.Contact{
+    border-right:2px solid #ffffff;
+}
+
+.Quick-links{
+    border-right:2px solid #ffffff;
 }
