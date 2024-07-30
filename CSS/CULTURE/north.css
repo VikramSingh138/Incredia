@@ -88,7 +88,7 @@ nav img {
     color: #F4F1DE;
 }
 
-.box {
+/* .box {
     position: relative;
     right: 0;
 }
@@ -133,7 +133,7 @@ nav img {
 .box:hover i {
     opacity: 0;
     z-index: -1;
-}
+} */
 
 /* Navbar animation */
 .anim-nav {
