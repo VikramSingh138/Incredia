@@ -763,10 +763,6 @@ a:hover{
 
 @media(max-width:650px){
 
-    .scroller-section{
-        border-bottom: 2px solid #ffffff;    
-    }
-
     .footer-container{
         /* border-top: 2px solid white; */
         width:80%;
