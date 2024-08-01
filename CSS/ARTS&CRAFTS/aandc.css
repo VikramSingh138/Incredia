@@ -723,7 +723,6 @@ p {
     font-size: 25px;
     text-align: center;
 }
-
 footer{
     margin:0;
     padding:0;
@@ -732,9 +731,12 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
     z-index:10;
+    color:#D3D3D3;
+    border-top: 2px solid #504f4f;
 }
 
 .footer-container{
+    /* border-top: 2px solid white; */
     width:80%;
     margin:auto;
     display: flex;
@@ -750,6 +752,7 @@ footer{
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
+    /* border-top: 2px solid white; */
 }
 
 .footer-content p {
@@ -807,7 +810,7 @@ footer{
 }
 
 a{
-    color:black;
+    color:#D3D3D3;
     text-decoration: none;
 }
 
