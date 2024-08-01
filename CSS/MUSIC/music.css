@@ -60,7 +60,7 @@ nav img {
     font-weight: 500;
     color: #F4F1DE;
 }
-
+/* 
 .box {
     position: relative;
     right: 0;
@@ -106,7 +106,7 @@ nav img {
 .box:hover i {
     opacity: 0;
     z-index: -1;
-}
+} */
 
 /* Navbar animation */
 .anim-nav {
@@ -211,7 +211,7 @@ p {
 
 .explore {
     margin: 100px 50px;
-    /* background-color: rgb(221, 176, 93); */
+    background-color: rgb(221, 176, 93);
     padding: 20px;
 }
 
@@ -241,10 +241,29 @@ p {
         height: 100%;
         top: 0;
         left: 0;
-        opacity: 0.6;
-        transition: opacity .2s ease-out;
-        z-index: -1;
+        opacity: 0.5;
+        transform-origin: left;
+        transition: .5s;
     }
+}
+
+.card1 p {
+    transform-origin: right;
+    transform: rotateY(90deg);
+    transition: .5s;
+}
+
+.card1:hover {
+    background-color: black;
+    color: white;
+}
+
+.card1:hover p{
+    transform: rotateY(0deg);
+}
+
+.card1:hover img{
+    transform: rotateY(90deg);
 }
 
 .card1 a,
@@ -359,6 +378,8 @@ p {
 
 .events {
     margin: 100px 50px;
+    padding: 20px;
+    background-color: rgb(221, 176, 93);
 }
 
 .events .heading3 h1 {
@@ -386,14 +407,30 @@ p {
         height: 100%;
         top: 0;
         left: 0;
-        opacity: 0.6;
-        transition: opacity .2s ease-out;
-        z-index: -1;
+        opacity: 0.5;
+        transform-origin: left;
+        transition: .5s;
     }
 }
 
 .card2 p {
     margin: 20px;
+    transform-origin: right;
+    transform: rotateY(90deg);
+    transition: .5s;
+}
+
+.card2:hover {
+    background-color: black;
+    color: white;
+}
+
+.card2:hover p{
+    transform: rotateY(0deg);
+}
+
+.card2:hover img{
+    transform: rotateY(90deg);
 }
 
 .events .festivals h3 {
@@ -422,6 +459,8 @@ p {
 
 .community {
     margin: 100px 50px;
+    padding: 20px;
+    background-color: rgb(221, 176, 93);
 }
 
 .community .social h1 {
