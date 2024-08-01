@@ -402,7 +402,8 @@ main {
     /* background-color: #E54848; */
     /* background-color: #c63131;
     color: #F4F1DE; */
-    background-color: #C40C0C;
+    /* background-color: #C40C0C; */
+    background-color: #024;
     /* color:#ffc25a; */
     /* color: #FFC100; */
     display: flex;
@@ -433,7 +434,8 @@ main {
 }
 
 .dance4 {
-    background-color: #FFD07F;
+    /* background-color: #FFD07F; */
+    background-color: powderblue;
     color: #E26A2C;
     display: flex;
     line-height: 1.4;
@@ -445,12 +447,14 @@ main {
 .dance4 h2 {
     margin: 30px 50px;
     font-size: 45px;
-    color:#E54848;
+    /* color:#E54848; */
+    color:#2e3a43;
 }
 
 .dance4 p {
     margin: 0px 50px 30px 50px;
     font-size: 24px;
+    color:#494642;
 }
 
 .dance4 img {
