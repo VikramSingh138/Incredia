@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: #2E2E2E;
+    /* background-color: #2E2E2E; */
+    background-color: #22f0ff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
@@ -213,13 +214,20 @@ svg path {
     left: 40%;
 }
 
+.intro{
+    height: 100vh;
+    background-color:#F0F8FF;
+}
+
 /* Intro Section */
 .short-intro {
-    height: 75vh;
-    margin: 20px;
-    background-color: #2E2E2E;
+    /* height: 100vh; */
+    width: 100vw;
+    /* background-color: #2E2E2E; */
     color: #F4F1DE;
     line-height: 1.5;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .short-intro h1 {
