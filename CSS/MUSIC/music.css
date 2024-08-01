@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #F0F8FF;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
@@ -183,12 +183,13 @@ p {
 
 .intro {
     margin: 100px 50px;
-    background-color: rgb(221, 176, 93);
+    background-color: #0FA4AF;
     padding: 20px;
 }
 
 .intro .heading1 {
     max-width: fit-content;
+    color:#36454F;
 }
 
 .intro .heading1 h1 {
@@ -211,7 +212,7 @@ p {
 
 .explore {
     margin: 100px 50px;
-    background-color: rgb(221, 176, 93);
+    background-color: #0FA4AF;
     padding: 20px;
 }
 
@@ -233,6 +234,7 @@ p {
     margin: 20px;
     overflow: hidden;
     position: relative;
+    color: white;
 
     img {
         position: absolute;
@@ -241,7 +243,7 @@ p {
         height: 100%;
         top: 0;
         left: 0;
-        opacity: 0.5;
+        opacity: 0.8;
         transform-origin: left;
         transition: .5s;
     }
@@ -379,7 +381,7 @@ p {
 .events {
     margin: 100px 50px;
     padding: 20px;
-    background-color: rgb(221, 176, 93);
+    background-color:#0FA4AF;
 }
 
 .events .heading3 h1 {
@@ -399,6 +401,7 @@ p {
     margin: 20px;
     overflow: hidden;
     position: relative;
+    color: white;
 
     img {
         position: absolute;
@@ -407,7 +410,7 @@ p {
         height: 100%;
         top: 0;
         left: 0;
-        opacity: 0.5;
+        opacity: 1;
         transform-origin: left;
         transition: .5s;
     }
@@ -460,7 +463,8 @@ p {
 .community {
     margin: 100px 50px;
     padding: 20px;
-    background-color: rgb(221, 176, 93);
+    color: #F0F8FF;
+    background-color: #024;
 }
 
 .community .social h1 {
