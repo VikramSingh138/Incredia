@@ -720,6 +720,7 @@ footer{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
+    color:#D3D3D3;
     z-index:10;
 }
 
@@ -796,7 +797,7 @@ footer{
 }
 
 a{
-    color:black;
+    color:#D3D3D3;
     text-decoration: none;
 }
 

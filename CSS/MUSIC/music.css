@@ -487,6 +487,7 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
     z-index:10;
+    color:#D3D3D3;
 }
 
 .footer-container{
@@ -562,7 +563,7 @@ footer{
 }
 
 a{
-    color:black;
+    color:#D3D3D3;
     text-decoration: none;
 }
 
