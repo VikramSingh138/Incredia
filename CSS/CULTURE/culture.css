@@ -170,6 +170,7 @@ main {
 .short-intro {
     /* height: 100vh; */
     width: 100vw;
+    height: auto;
     /* background-color: #2E2E2E; */
     /* color: #F4F1DE; */
     line-height: 1.5;
@@ -200,16 +201,30 @@ main {
 
 /* Map and Description box styling */
 /* mapp is SECTION */
-.mapp {
+.map-section {
     top: 0;
     position: relative;
-    min-height: 100vh; /* Ensures that content is visible even if it overflows */
+    /* min-height: 100vh; Ensures that content is visible even if it overflows */
     overflow: auto; /* Allows scrolling if content exceeds the section height */
-    padding: 20px; /* Add some padding to prevent content from touching edges */
+    /* padding: 20px; Add some padding to prevent content from touching edges */
     display: flex;
     justify-content: center;
     background-color: #2e4d58;
     border-top: 5px solid black;
+    /* width: 50%; Adjust the width as needed */
+    height: 100vh;
+    margin: 0 auto; /* Center the SVG */
+}
+
+
+svg {
+    width: 100%; /* Make the SVG take the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.path{
+    stroke: rgb(0, 0, 0);
+    stroke-width: 2px;
 }
 
 .description-box {
@@ -269,7 +284,7 @@ svg path {
     position: absolute;
     /* font-size: 15px; */
     top: 30%;
-    left: 65%;
+    left: 60%;
     width: 30%;
 }
 
@@ -516,14 +531,3 @@ a:hover {
     border-right: 2px solid #ffffff;
 }
 
-@media (max-width: 1400px) {
-    .init {
-        flex-direction: column;
-    }
-    .map {
-        top: 75vh;
-    }
-    .short-intro {
-        width: 100vw;
-    }
-}
