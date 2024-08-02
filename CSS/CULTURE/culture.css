@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
@@ -19,6 +20,35 @@ body {
     width: 100vw;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
+}
+
+.inter-normal{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter-heading{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.inter-scroll{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.inter-uniquifier{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -133,7 +163,7 @@ main {
 
 .intro{
     height: 100vh;
-    background-color:#F0F8FF;
+    background-color:#c5f5fa;
 }
 
 /* Intro Section */
@@ -149,7 +179,7 @@ main {
 
 .short-intro h1 {
     font-size: 70px;
-    color: #36454F;
+    color: #22292d;
 }
 
 .short-intro h3 {
@@ -169,6 +199,7 @@ main {
 }
 
 /* Map and Description box styling */
+/* mapp is SECTION */
 .mapp {
     top: 0;
     position: relative;
@@ -177,7 +208,8 @@ main {
     padding: 20px; /* Add some padding to prevent content from touching edges */
     display: flex;
     justify-content: center;
-    background-color: #22f0ff;
+    background-color: #2e4d58;
+    border-top: 5px solid black;
 }
 
 .description-box {
@@ -270,20 +302,24 @@ svg path {
 .demo a {
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 40%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    color: #fff;
-    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    color: #000000;
+    /* font-size: 100px; */
+    font: normal 400 30px/1 'Josefin Sans', sans-serif;
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
+    height: 100px;
+    margin: auto;
 }
 
 .demo a:hover {
-    opacity: .5;
+    color: #000000;
+    font-weight: 500;
 }
 
 #section03 a {
@@ -297,7 +333,7 @@ svg path {
     width: 46px;
     height: 46px;
     margin-left: -23px;
-    border: 1px solid #fff;
+    border: 5px solid #474747;
     border-radius: 100%;
     box-sizing: border-box;
 }
@@ -310,8 +346,8 @@ svg path {
     width: 16px;
     height: 16px;
     margin: -12px 0 0 -8px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-left: 5px solid #585858;
+    border-bottom: 5px solid #585858;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
@@ -320,12 +356,12 @@ svg path {
 #section03 a span::before {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10%;
     z-index: -1;
     content: '';
     width: 44px;
     height: 44px;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+    box-shadow: 0 0 0 0 rgb(64, 64, 64);
     border-radius: 100%;
     opacity: 0;
     -webkit-animation: sdb03 3s infinite;
