@@ -75,16 +75,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (descriptionBox) {
                 descriptionBox.style.display = 'block';
                 descriptionBox.style.opacity=1;
+                descriptionBox.style.backgroundColor='transparent';
             }
 
             if (path.classList.contains('path3') || path.classList.contains('path4')) {
-                document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = 'transparent');
+                document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = 'black');
                 //document.querySelectorAll('.path3, .path4').forEach(p => p.style.fill = '#f1f4de');
-                document.querySelectorAll('.path3, .path4').forEach(p => p.style.stroke = 'black');
+                // document.querySelectorAll('.path3, .path4').forEach(p => p.style.stroke = 'black');
             } else {
-                path.style.fill = 'transparent';
+                path.style.fill = 'black';
                 //path.style.fill = "#f1f4de";
-                path.style.stroke = 'black';
+                // path.style.stroke = 'black';
             }
         });
 
