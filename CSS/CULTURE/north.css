@@ -557,12 +557,14 @@ main {
 }
 
 .content-page-front{
-    background-color: #FFD07F;
+    /* background-color: #FFD07F; */
+    background-color: powderblue;
     padding: 20px;
 }
 
 .content-page-back{
-    background-color: #ffb769;
+    /* background-color: #ffb769; */
+    background-color: #14c5d2;
     padding: 20px;
 }
 
