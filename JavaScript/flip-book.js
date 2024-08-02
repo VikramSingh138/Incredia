@@ -21,10 +21,10 @@ let numOfPapers = 5;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
-    book.style.transform = "translateX(50%)";
+    book.style.transform = "translateX(35%)";
     prevBtn.style.display = "block";
-    prevBtn.style.transform = "translateX(-280px)";
-    nextBtn.style.transform = "translateX(280px)";
+    prevBtn.style.transform = "translateX(-300px)";
+    nextBtn.style.transform = "translateX(160px)";
 }
 
 function closeBook(isAtBeginning) {

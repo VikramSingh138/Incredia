@@ -558,13 +558,13 @@ main {
 
 .content-page-front{
     /* background-color: #FFD07F; */
-    background-color: powderblue;
+    background-color: #c9f9ff;
     padding: 20px;
 }
 
 .content-page-back{
     /* background-color: #ffb769; */
-    background-color: #14c5d2;
+    background-color: powderblue;
     padding: 20px;
 }
 
