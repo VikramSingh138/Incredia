@@ -13,7 +13,6 @@ html {
 
 body {
     /* background-color: #2E2E2E; */
-    background-color: #22f0ff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
@@ -140,12 +139,14 @@ main {
     padding: 20px; /* Add some padding to prevent content from touching edges */
     display: flex;
     justify-content: center;
+    background-color: #22f0ff;
 }
 
 .description-box {
+    background-color:transparent;
     cursor: pointer;
     pointer-events: none;
-    color: #F4F1DE;
+    color: #f9f9f9;
     font-size: 25px;
     font-weight: bold;
     position: absolute;
@@ -153,6 +154,10 @@ main {
     padding: 10px;
     z-index: 100;
     opacity: 0;
+}
+
+.path3-4-description{
+    font-size: 25px;
 }
 
 img {
@@ -192,7 +197,7 @@ svg path {
 
 .path3-4-description {
     position: absolute;
-    font-size: 15px;
+    /* font-size: 15px; */
     top: 30%;
     left: 65%;
     width: 30%;
@@ -366,6 +371,7 @@ svg path {
 
 /* Footer Section */
 footer {
+    border-top: 2px solid white;
     background-color: #2E2E2E;
     padding-top: 50px;
     z-index: 10;
