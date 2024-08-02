@@ -48,7 +48,6 @@ nav {
     max-width: 100vw;
     padding: 30px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -257,10 +256,14 @@ svg path {
     }
 }
 
+.demo {
+    display: flex;
+    justify-content: center;
+}
+ 
 .demo a {
     position: absolute;
     bottom: 20px;
-    left: 50%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
