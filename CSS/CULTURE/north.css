@@ -558,13 +558,13 @@ main {
 
 .content-page-front{
     /* background-color: #FFD07F; */
-    background-color: powderblue;
+    background-color: #c9f9ff;
     padding: 20px;
 }
 
 .content-page-back{
     /* background-color: #ffb769; */
-    background-color: #14c5d2;
+    background-color: powderblue;
     padding: 20px;
 }
 
@@ -720,6 +720,7 @@ footer{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
+    color:#D3D3D3;
     z-index:10;
 }
 
@@ -796,7 +797,7 @@ footer{
 }
 
 a{
-    color:black;
+    color:#D3D3D3;
     text-decoration: none;
 }
 
