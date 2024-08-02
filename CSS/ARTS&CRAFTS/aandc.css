@@ -9,7 +9,7 @@
 
 body {
     /* background-color: #ffffff; */
-    background-color: #F4F1DE;
+    background-color: #e5ebf0;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
@@ -61,53 +61,6 @@ nav img {
     font-weight: 500;
     color: #F4F1DE;
 }
-
-/* .box {
-    position: relative;
-    right: 0;
-}
-
-.input {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    background: none;
-    background-image: url(../../Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px 30px;
-    border: 2px solid #F4F1DE;
-    border-radius: 50px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: #F4F1DE;
-    outline: none;
-    transition: .5s;
-}
-
-.box:hover input {
-    width: 350px;
-    background: transparent;
-    border-right: 4px solid #F4F1DE;
-    border-bottom: 4px solid #F4F1DE;
-    border-radius: 10px;
-}
-
-.box i {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translate(-50%, -50%);
-    font-size: 26px;
-    color: #F4F1DE;
-    transition: .1s;
-}
-
-.box:hover i {
-    opacity: 0;
-    z-index: -1;
-} */
 
 /* Navbar animation */
 .anim-nav {
@@ -177,25 +130,27 @@ main {
     background-position: center;
 }
 
-p {
-    margin-right: 300px;
-}
-
 .intro {
-    margin: 100px 50px;
-    background-color:#FFEEA9;
-    padding: 25px; 
+    /* margin: 100px 50px; */
+    /* background-color:powderblue; */
+    padding: 50px 25px 50px 25px; 
+    border-radius: 20px;
+    text-align: center;
 }
 
 .intro .heading1 {
     max-width: fit-content;
+    padding-bottom: 50px;
+    /* text-align: center; */
 }
 
 .intro .heading1 h1 {
     cursor: default;
-    margin: 30px 0;
+    /* margin: 30px 0; */
     width: 100%;
     font-size: 70px;
+    color: #263138;
+    text-align: center;
 }
 
 .intro .paragraph1 p {
@@ -205,24 +160,26 @@ p {
 .about {
     /* margin: 100px 50px; */
     background-color:#FFEEA9;
-    margin:100px 50px;
+    /* margin:100px 50px; */
     padding: 25px;
 }
 
+
+
 .about .heading2 h1 {
     font-size: 40px;
-    margin: 30px 0;
+    /* margin: 30px 0; */
     text-align: center;
 }
 
 .about .paragraph2 p {
-    margin: 0 100px;
+    /* margin: 0 100px; */
     text-align: center;
     font-size: 25px;
 }
 
 .explore {
-    margin: 100px 50px;
+    /* margin: 100px 50px; */
     background-color:#FFEEA9;
     padding: 25px;
 }
@@ -231,13 +188,13 @@ p {
     text-decoration: underline solid;
     text-align: center;
     font-size: 70px;
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .explore .historical-art .heading4 h1 {
     text-align: center;
     font-size: 50px;
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .explore .historical-art .content1 {
@@ -248,7 +205,7 @@ p {
 .explore .historical-art .content1 .box1 {
     width: 400px;
     height: 400px;
-    margin: 10px;
+    /* margin: 10px; */
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -317,7 +274,7 @@ p {
 }
 
 .explore .contemporary-art {
-    margin: 100px;
+    /* margin: 100px; */
 }
 
 .explore .contemporary-art .heading5 {
@@ -331,7 +288,7 @@ p {
 
 .explore .contemporary-art .heading5 h1 {
     font-size: 50px;
-    margin: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .explore .contemporary-art .content2 {
@@ -344,11 +301,11 @@ p {
 
 .explore .contemporary-art .content2 p {
     font-size: 25px;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .explore .folk-art .heading6 h1 {
-    margin: 30px 0;
+    /* margin: 30px 0; */
     font-size: 50px;
     text-align: center;
 }
@@ -361,7 +318,7 @@ p {
 .explore .folk-art .content3 .box2 {
     width: 350px;
     height: 350px;
-    margin: 10px;
+    /* margin: 10px; */
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -423,7 +380,7 @@ p {
 }
 
 .explore .performing-art .heading7 h1 {
-    margin: 30px 0;
+    /* margin: 30px 0; */
     text-align: center;
     font-size: 50px;
 }
@@ -440,7 +397,7 @@ p {
 .explore .performing-art .content4 .box3 {
     width: 350px;
     height: 350px;
-    margin: 10px;
+    /* margin: 10px; */
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -498,7 +455,7 @@ p {
 }
 
 .explore .literature .heading8 h1 {
-    margin: 30px 0;
+    /* margin: 30px 0; */
     font-size: 50px;
     text-align: center;
 }
