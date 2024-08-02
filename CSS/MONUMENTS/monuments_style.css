@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #2E2E2E;
     background-repeat: no-repeat;
@@ -127,18 +131,22 @@ main {
 }
 
 /* Map and Description box styling */
+
 .mapp {
+    /* background-color: #fff; */
     top: 0;
     position: relative;
-    min-height: 100vh; /* Ensures that content is visible even if it overflows */
-    overflow: auto; /* Allows scrolling if content exceeds the section height */
-    padding: 20px; /* Add some padding to prevent content from touching edges */
+    min-height: 100vh;
+    /* Ensures that content is visible even if it overflows */
+    overflow: auto;
+    /* Allows scrolling if content exceeds the section height */
+    padding: 20px;
+    /* Add some padding to prevent content from touching edges */
     display: flex;
     justify-content: center;
 }
 
 .description-box {
-    background-color: #818181;
     cursor: pointer;
     pointer-events: none;
     color: #F4F1DE;
@@ -246,6 +254,110 @@ svg path {
     100% {
         opacity: 1;
         transform: translatey(0%);
+    }
+}
+
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.demo a:hover {
+    opacity: .5;
+}
+
+#section03 a {
+    padding-top: 60px;
+}
+
+#section03 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#section03 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#section03 a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb03 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sdb03 {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -361,9 +473,11 @@ a:hover {
     .init {
         flex-direction: column;
     }
+
     .map {
         top: 75vh;
     }
+
     .short-intro {
         width: 100vw;
     }
