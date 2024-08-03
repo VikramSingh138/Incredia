@@ -473,7 +473,7 @@ main {
     width: 100%;
 }
 
-/* Responsive Flipbook */
+/* Responsive Cards */
 @media (max-aspect-ratio: 1200/600){
     .intro-dance{
         display: flex;
@@ -499,7 +499,7 @@ main {
         font-size: 1.5rem;
     }
     .description, .image{
-        width: 80%;
+        width: 100%;
     }
     .image{
         display: flex;
@@ -517,12 +517,10 @@ main {
         margin-right: 30px;
         margin-top: 20px;
         margin-bottom: 0px;
+        height: 800px;
     }
     .dance-section{
         margin: 0px;
-    }
-    .description, .image{
-        width: 100%;
     }
 }
 
@@ -539,6 +537,18 @@ main {
     }
     #myBtn img{
         max-width: 50px;
+    }
+    .description p{
+        font-size: 1rem;
+    }
+    .description h2{
+        font-size: 1.5rem;
+    }
+    .card{
+        height: 650px;
+    }
+    .image img{
+        max-height: 200px;
     }
 }
 
@@ -558,7 +568,6 @@ main {
     .intro-dance > p{
         font-size: 1.5em;
     }
-
 }
 
 @media (max-aspect-ratio: 400/600){
@@ -570,6 +579,42 @@ main {
     }
     .card{
         padding: 0px 0px 0px 0px;
+    }
+    .dance1 h2{
+        margin: 10px;
+    }
+    .dance1 p{
+        margin: 10px;
+    }
+    .dance2 h2{
+        margin: 10px;
+    }
+    .dance2 p{
+        margin: 10px;
+    }
+    .dance3 h2{
+        margin: 10px;
+    }
+    .dance3 p{
+        margin: 10px;
+    }
+    .dance4 h2{
+        margin: 10px;
+    }
+    .dance4 p{
+        margin: 10px;
+    }
+}
+
+@media (max-aspect-ratio: 350/600){
+    .description p{
+        font-size: 0.8rem;
+    }
+    .description h2{
+        font-size: 1.2rem;
+    }
+    .image img{
+        max-height: 150px;
     }
 }
 
@@ -701,6 +746,10 @@ main {
     transform: rotateY(180deg)
 }
 
+.back-content > h1{
+    font-size: 50px;
+}
+
 /* Paper flip effect */
 .flipped .front,
 .flipped .back {
@@ -754,6 +803,10 @@ main {
     display: flex;
     align-items: center;
     padding: 10px;
+}
+
+#f1 > h1{
+    font-size: 70px;;
 }
 
 #b1 {
@@ -820,6 +873,102 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Responsive Flipbook */
+@media (max-aspect-ratio: 1250/600){
+    .intro-cuisine{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .intro-cuisine > h1{
+        font-size: 3rem;
+    }
+    .intro-cuisine > p{
+        font-size: 2rem;
+    }
+    .book{
+        height: 400px;
+        width: 300px;
+    }
+    .back-content > h1{
+        font-size: 30px;
+    }
+    .front-content > p{
+        font-size: 18px;
+    }
+    #f1 > h1{
+        font-size: 50px;
+    }
+    #b5 > h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-aspect-ratio: 850/600){
+    .cuisine-section{
+        margin: 20px 0px 0px 0px;
+    }
+    .intro-cuisine{
+        margin: 25px;
+    }
+}
+
+@media (max-aspect-ratio: 630/600){
+    .book{
+        height: 300px;
+        width: 200px;
+    }
+    .back-content > h1{
+        font-size: 20px;
+    }
+    .front-content > p{
+        font-size: 12px;
+    }
+    #f1 > h1{
+        font-size: 30px;
+    }
+    #b5 > h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-aspect-ratio: 500/600){
+    .intro-dance > h1{
+        font-size: 2.5em;
+    }
+    .intro-dance > p{
+        font-size: 1.5em;
+    }
+    .book{
+        height: 250px;
+        width: 150px;
+    }
+    .content-page-front, .content-page-back{
+        padding: 5px;
+    }
+    .front-content > p{
+        font-size: 9px;
+    }
+    #f1 > h1{
+        font-size: 20px;
+    }
+    #b1 > h1{
+        font-size: 10px;
+    }
+    .intro-cuisine{
+        margin: 10px;
+    }
+}
+
+@media (max-aspect-ratio: 400/600){
+    .intro-cuisine > h1{
+        font-size: 2rem;
+    }
+    .intro-cuisine > p{
+        font-size: 1rem;
+    }
 }
 
 footer{
