@@ -875,6 +875,10 @@ main {
     justify-content: center;
 }
 
+#b5 > h1{
+    font-size: 70px;
+}
+
 /* Responsive Flipbook */
 @media (max-aspect-ratio: 1250/600){
     .intro-cuisine{
