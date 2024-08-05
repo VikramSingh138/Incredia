@@ -19,11 +19,6 @@
                     src="../../Images/menu_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png"></span>
 
             <div class="title baskervville-sc-regular">INDIAN MUSIC HERITAGE</div>
-            <!-- <div class="box">
-                <form name="search">
-                    <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-                </form>
-            </div> -->
         </nav>
 
         <!-- Side Menu -->
@@ -38,7 +33,7 @@
 
     </header>
 
-    <main>
+    <main onclick="closeNav()">
 
         <section class="intro">
             <div class="heading1">
@@ -64,49 +59,57 @@
                     <h1>Explore Our Musical Treasures</h1>
                 </div>
                 <div class="row1">
-                    <div class="music1 card1">
-                        <img src="../../Images/MUSIC/classical_music.jpg">
-                        <h3>Classical Music</h3>
-                        <p>
-                            Delve into the timeless world of Indian classical music, where every note tells a story of
-                            centuries-old traditions and masterful artistry.<br><br>
-                        </p>
-                        <p><span style="text-decoration: underline;">Hindustani Classical</span><br>Experience the grandeur of North Indian classical music with maestros like Ravi Shankar and Zakir Hussain.<br></p>
-                        <p><span style="text-decoration: underline;">Carnatic Classical</span><br>Immerse yourself in the intricate melodies of South Indian classical music with legends like M.S. Subbulakshmi and L. Subramaniam.<br><br></p>
+                    <div class="music1 card1 card">
+                        <div class="image"><img src="../../Images/MUSIC/classical_music.jpg"></div>
+                        <div class="description">
+                            <h3>Classical Music</h3>
+                            <p>
+                                Delve into the timeless world of Indian classical music, where every note tells a story of
+                                centuries-old traditions and masterful artistry.
+                            </p>
+                            <p><span style="text-decoration: underline;">Hindustani Classical</span><br>Experience the grandeur of North Indian classical music with maestros like Ravi Shankar and Zakir Hussain.<br></p>
+                            <p><span style="text-decoration: underline;">Carnatic Classical</span><br>Immerse yourself in the intricate melodies of South Indian classical music with legends like M.S. Subbulakshmi and L. Subramaniam.<br><br></p>
+                        </div>
                     </div>
-                    <div class="music2 card1">
-                        <img src="../../Images/MUSIC/folk_music.webp">
-                        <h3>Folk Music</h3>
-                        <p>
-                            Journey through the heartlands of India with our diverse folk music traditions, each echoing the
-                            unique cultural essence of its region.<br><br>
-                        </p>
-                        <p><a href="../CULTURE/north.html#bhangra" title="Learn More" data-replace="Punjab’s Bhangra"><span>Punjab’s Bhangra</span></a><br>Feel the energy of Punjab with the vibrant beats of Bhangra and Giddha.<br></p>
-                        <p><a href="../CULTURE/west.html#garba" title="Learn More" data-replace="Gujarat’s Garba"><span>Gujarat’s Garba</span></a><br>Dance to the rhythmic circles of Garba and Dandiya during festive seasons.<br></p>
-                        <p><a href="../CULTURE/west.html#lavani" title="Learn More" data-replace="Maharashtra’s Lavani"><span>Maharashtra’s Lavani</span></a><br>Enjoy the storytelling dance and music of Lavani.<br><br></p>
+                    <div class="music2 card1 card">
+                        <div class="image"><img src="../../Images/MUSIC/folk_music.jpg"></div>
+                        <div class="description">
+                            <h3>Folk Music</h3>
+                            <p>
+                                Journey through the heartlands of India with our diverse folk music traditions, each echoing the
+                                unique cultural essence of its region.<br><br>
+                            </p>
+                            <p><a href="../CULTURE/north.html#bhangra" title="Learn More" data-replace="Punjab’s Bhangra"><span>Punjab’s Bhangra</span></a><br>Feel the energy of Punjab with the vibrant beats of Bhangra and Giddha.<br></p>
+                            <p><a href="../CULTURE/west.html#garba" title="Learn More" data-replace="Gujarat’s Garba"><span>Gujarat’s Garba</span></a><br>Dance to the rhythmic circles of Garba and Dandiya during festive seasons.<br></p>
+                            <p><a href="../CULTURE/west.html#lavani" title="Learn More" data-replace="Maharashtra’s Lavani"><span>Maharashtra’s Lavani</span></a><br>Enjoy the storytelling dance and music of Lavani.<br><br></p>
+                        </div>
                     </div>
                 </div>
                 <div class="row2">
-                    <div class="music3 card1">
-                        <img src="../../Images/MUSIC/popular_music.jpg">
-                        <h3>Popular Music</h3>
-                        <p>
-                            From Bollywood to Indie bands, explore the sounds that define modern Indian music.<br><br>
-                        </p>
-                        <p><span style="text-decoration: underline;">Bollywood Hits</span><br>Sing along to the latest chartbusters and evergreen classics from Bollywood.<br></p>
-                        <p><span style="text-decoration: underline;">Indie and Fusion</span><br>Discover the new wave of Indian music blending traditional and global influences
-                        with artists like Indian Ocean and Nucleya.<br><br></p>
+                    <div class="music3 card1 card">
+                        <div class="image"><img src="../../Images/MUSIC/popular_music.jpg"></div>
+                        <div class="description">
+                            <h3>Popular Music</h3>
+                            <p>
+                                From Bollywood to Indie bands, explore the sounds that define modern Indian music.<br><br>
+                            </p>
+                            <p><span style="text-decoration: underline;">Bollywood Hits</span><br>Sing along to the latest chartbusters and evergreen classics from Bollywood.<br></p>
+                            <p><span style="text-decoration: underline;">Indie and Fusion</span><br>Discover the new wave of Indian music blending traditional and global influences
+                            with artists like Indian Ocean and Nucleya.<br><br></p>
+                        </div>
                     </div>
-                    <div class="music4 card1">
-                        <img src="../../Images/MUSIC/religous _music.webp">
-                        <h3>Religious and Devotional Music</h3>
-                        <p>
-                            Experience the spiritual side of Indian music through devotional songs and hymns that uplift the
-                            soul.<br><br>
-                        </p>
-                        <p><span style="text-decoration: underline;">Bhajans</span><br>Listen to the soulful praises sung in Hindu temples.<br></p>
-                        <p><span style="text-decoration: underline;">Qawwalis</span><br>Feel the mystical aura of Sufi devotional music.<br></p>
-                        <p><span style="text-decoration: underline;">Kirtans</span><br>Join the melodic worship in Sikh Gurdwaras.<br></p>
+                    <div class="music4 card1 card">
+                        <div class="image"><img src="../../Images/MUSIC/religous _music.webp"></div>
+                        <div class="description">
+                            <h3>Religious and Devotional Music</h3>
+                            <p>
+                                Experience the spiritual side of Indian music through devotional songs and hymns that uplift the
+                                soul.<br><br>
+                            </p>
+                            <p><span style="text-decoration: underline;">Bhajans</span><br>Listen to the soulful praises sung in Hindu temples.<br></p>
+                            <p><span style="text-decoration: underline;">Qawwalis</span><br>Feel the mystical aura of Sufi devotional music.<br></p>
+                            <p><span style="text-decoration: underline;">Kirtans</span><br>Join the melodic worship in Sikh Gurdwaras.<br></p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -118,25 +121,29 @@
                 <h1>Learn and Participate</h1>
             </div>
             <div class="flex1">
-                <div class="festivals card2">
-                    <img src="../../Images/MUSIC/musicFestival.avif">
-                    <h3>Music Festivals and Events</h3>
-                    <p>
-                        India is home to numerous music festivals that celebrate its rich heritage and contemporary talent.
-                        Don’t miss out on these musical extravaganzas:<br><br>
-    
-                        <p><span style="text-decoration: underline;">Classical Music Festivals</span><br>Tyagaraja Aradhana, Sawai Gandharva Bhimsen Festival.<br></p>
-                        <p><span style="text-decoration: underline;">Modern Music Festivals</span><br>Sunburn Festival, NH7 Weekender.<br><br></p>
-                    </p>
+                <div class="festivals card2 card">
+                    <div class="image"><img src="../../Images/MUSIC/musicFestival.jpeg"></div>
+                    <div class="description">
+                        <h3>Music Festivals and Events</h3>
+                        <p>
+                            India is home to numerous music festivals that celebrate its rich heritage and contemporary talent.
+                            Don’t miss out on these musical extravaganzas:<br><br>
+        
+                            <p><span style="text-decoration: underline;">Classical Music Festivals</span><br>Tyagaraja Aradhana, Sawai Gandharva Bhimsen Festival.<br></p>
+                            <p><span style="text-decoration: underline;">Modern Music Festivals</span><br>Sunburn Festival, NH7 Weekender.<br><br></p>
+                        </p>
+                    </div>
                 </div>
-                <div class="culture card2">
-                    <img src="../../Images/MUSIC/danceandmusic.webp">
-                    <h3>Dance and Music</h3>
-                    <p>
-                        Explore the inseparable bond between dance and music in India. Learn about classical dance forms
-                        like <a href="../CULTURE/south.html#bharatnatyam" title="Learn More" data-replace="Bharatanatyam"><span>Bharatanatyam</span></a> and <a href="../CULTURE/south.html#kathakali" title="Learn More" data-replace="Kathak"><span>Kathak</span></a>, and enjoy folk dances such as <a href="../CULTURE/north.html#bhangra" title="Learn More" data-replace="Bhangra"><span>Bhangra</span></a> and <a href="../CULTURE/west.html#garba" title="Learn More" data-replace="Garba"><span>Garba</span></a>, each with its unique
-                        musical accompaniment.
-                    </p>
+                <div class="culture card2 card">
+                    <div class="image"><img src="../../Images/MUSIC/danceandmusic.jpg"></div>
+                    <div class="description">
+                        <h3>Dance and Music</h3>
+                        <p>
+                            Explore the inseparable bond between dance and music in India. Learn about classical dance forms
+                            like <a href="../CULTURE/south.html#bharatnatyam" title="Learn More" data-replace="Bharatanatyam"><span>Bharatanatyam</span></a> and <a href="../CULTURE/south.html#kathakali" title="Learn More" data-replace="Kathak"><span>Kathak</span></a>, and enjoy folk dances such as <a href="../CULTURE/north.html#bhangra" title="Learn More" data-replace="Bhangra"><span>Bhangra</span></a> and <a href="../CULTURE/west.html#garba" title="Learn More" data-replace="Garba"><span>Garba</span></a>, each with its unique
+                            musical accompaniment.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
