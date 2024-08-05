@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
@@ -9,12 +10,42 @@
 
 body {
     /* background-color: #ffffff; */
-    background-color: #e5ebf0;
+    background-color: #F0F8FF;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
+.inter-normal{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .inter-heading{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+  }
+  
+  .inter-scroll{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+  }
+  
+  
+  .inter-uniquifier{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+  }
+  
 
 ::-webkit-scrollbar {
     display: none;
@@ -131,13 +162,13 @@ main {
 }
 
 .intro {
-    margin: 100px 50px;
-    background-color: #FFEEA9;
+    margin: 50px 50px;
+    background-color: #5ff4ff;
     padding: 25px;
     /* margin: 100px 50px; */
     /* background-color:powderblue; */
     padding: 50px 25px 50px 25px; 
-    border-radius: 20px;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -162,9 +193,10 @@ main {
 
 .about {
     /* margin: 100px 50px; */
-    background-color: #FFEEA9;
+    background-color: #32d6e2;
     margin: 100px 50px;
     padding: 25px;
+    border-radius: 5px;
 }
 
 
@@ -173,31 +205,39 @@ main {
     font-size: 40px;
     /* margin: 30px 0; */
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .about .paragraph2 p {
     /* margin: 0 100px; */
     text-align: center;
     font-size: 25px;
+    padding-bottom: 20px;
 }
 
 .explore {
     margin: 100px 50px;
-    background-color: #FFEEA9;
+    background-color: #14c5d2;
     padding: 25px;
+    border-radius: 5px;
 }
 
 .explore .heading3 h1 {
-    text-decoration: underline solid;
+    text-decoration: 2px underline dashed;
     text-align: center;
     font-size: 70px;
+    padding-bottom: 20px;
     /* margin: 30px 0; */
 }
 
 .explore .historical-art .heading4 h1 {
     text-align: center;
     font-size: 50px;
+    text-decoration: 2px underline dashed;
     /* margin: 30px 0; */
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .content1 {
@@ -273,7 +313,9 @@ main {
 
 .explore .contemporary-art .heading5 h1 {
     font-size: 50px;
-    /* margin: 30px 0; */
+    margin: 30px 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .explore .contemporary-art .content2 {
@@ -286,13 +328,16 @@ main {
 
 .explore .contemporary-art .content2 p {
     font-size: 25px;
-    /* margin: 20px; */
+    margin: 20px 0px;
 }
 
 .explore .folk-art .heading6 h1 {
     /* margin: 30px 0; */
     font-size: 50px;
     text-align: center;
+    text-decoration: 2px underline dashed;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .explore .folk-art .content3 {
@@ -361,6 +406,9 @@ main {
     /* margin: 30px 0; */
     text-align: center;
     font-size: 50px;
+    text-decoration: 2px underline dashed;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .explore .performing-art .content4 {
@@ -420,6 +468,9 @@ main {
     /* margin: 30px 0; */
     font-size: 50px;
     text-align: center;
+    text-decoration: 2px underline dashed;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .explore .literature .content5 {
@@ -479,6 +530,9 @@ main {
     margin: 30px 0;
     font-size: 50px;
     text-align: center;
+    text-decoration: 2px underline dashed;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .explore .crafts .content6 {
