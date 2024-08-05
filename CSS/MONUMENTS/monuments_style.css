@@ -486,3 +486,54 @@ a:hover {
         width: 100vw;
     }
 }
+
+@media(max-width:775px){
+    .footer-container{
+        width: 100%;
+    }
+}
+
+@media(max-width:650px){
+
+    .footer-container{
+        /* border-top: 2px solid white; */
+        width:80%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content{
+        width: 100%;
+    }
+
+    .Contact{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right:0px;
+        /* border-top:2px solid #fff; */
+    }
+
+    /* .Contact h3{
+        padding-bottom: 10px;
+    } */
+    
+    .Quick-links{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right: 0px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .Social{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bottom-bar{
+        border-top: 2px solid #ffffff;
+    }
+}

@@ -310,12 +310,13 @@ main {
     margin: 50px 100px 100px;
     position: relative;
     top: 100px;
-    height: 600px;
+    height: 700px;
     border: 2px solid black;
     border-radius: 2px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     transition: transform 0.3s;
+    padding: 10px 10px 10px 10px;
 }
 
 .card:hover img{
@@ -353,14 +354,14 @@ main {
 }
 
 .dance1 p {
-    margin: 0 50px;
+    margin: 30px 50px 0 50px;
     font-size: 24px;
     color:#f8d290;
     font-weight: 500;
 }
 
 .dance1 img {
-    height: 600px;
+    height: 700px;
     width: 700px;
     /* border-top-right-radius: 20px; */
     /* border-bottom-right-radius: 20px; */
@@ -392,7 +393,7 @@ main {
 }
 
 .dance2 img {
-    height: 600px;
+    height: 700px;
     width: 700px;
     /* border-top-left-radius: 20px; */
     /* border-bottom-left-radius: 20px; */
@@ -427,7 +428,7 @@ main {
 }
 
 .dance3 img {
-    height: 600px;
+    height: 700px;
     width: 700px;
     /* border-top-right-radius: 20px; */
     /* border-bottom-right-radius: 20px; */
@@ -458,10 +459,168 @@ main {
 }
 
 .dance4 img {
-    height: 600px;
+    height: 700px;
     width: 700px;
     /* border-top-left-radius: 20px; */
     /* border-bottom-left-radius: 20px; */
+}
+
+.description, .image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+/* Responsive Cards */
+@media (max-aspect-ratio: 1200/600){
+    .intro-dance{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .intro-dance > h1{
+        font-size: 3rem;
+    }
+    .intro-dance > p{
+        font-size: 2rem;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0px;
+    }
+    .description h2{
+        font-size: 2.5rem;
+    }
+    .description p{
+        font-size: 1.5rem;
+    }
+    .description, .image{
+        width: 100%;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+    .image img{
+        width: auto;
+        max-height: 300px;
+    }
+}
+
+@media (max-aspect-ratio: 850/600){
+    .card{
+        margin-left: 20px;
+        margin-right: 30px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        height: 800px;
+    }
+    .dance-section{
+        margin: 0px;
+    }
+}
+
+@media (max-aspect-ratio: 700/600){
+    .title{
+        display: none;
+    }
+}
+
+@media (max-aspect-ratio: 630/600){
+    #myBtn{
+        max-height: 100px;
+        max-width: 100px;
+    }
+    #myBtn img{
+        max-width: 50px;
+    }
+    .description p{
+        font-size: 1rem;
+    }
+    .description h2{
+        font-size: 1.5rem;
+    }
+    .card{
+        height: 650px;
+    }
+    .image img{
+        max-height: 200px;
+    }
+}
+
+@media (max-aspect-ratio: 500/600){
+    .card{
+        margin: 10px 10px 10px 10px;
+        height: 750px;
+    }
+    .dance-section{
+        padding: 0px 0px 0px 0px;
+    }
+    .intro-dance{
+        margin: 10px 20px 10px 20px;
+    }
+    .intro-dance > h1{
+        font-size: 2.5em;
+    }
+    .intro-dance > p{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-aspect-ratio: 400/600){
+    .description p{
+        font-size: 1rem;
+    }
+    .description h2{
+        font-size: 1.5rem;
+    }
+    .card{
+        padding: 0px 0px 0px 0px;
+        height: 850px;
+    }
+    .dance1 h2{
+        margin: 10px;
+    }
+    .dance1 p{
+        margin: 10px;
+    }
+    .dance2 h2{
+        margin: 10px;
+    }
+    .dance2 p{
+        margin: 10px;
+    }
+    .dance3 h2{
+        margin: 10px;
+    }
+    .dance3 p{
+        margin: 10px;
+    }
+    .dance4 h2{
+        margin: 10px;
+    }
+    .dance4 p{
+        margin: 10px;
+    }
+}
+
+@media (max-aspect-ratio: 350/600){
+    .description p{
+        font-size: 0.8rem;
+    }
+    .description h2{
+        font-size: 1.2rem;
+    }
+    .image img{
+        max-height: 150px;
+    }
+    .card{
+        height: 900px;
+    }
 }
 
 .cuisine {
@@ -592,6 +751,10 @@ main {
     transform: rotateY(180deg)
 }
 
+.back-content > h1{
+    font-size: 50px;
+}
+
 /* Paper flip effect */
 .flipped .front,
 .flipped .back {
@@ -645,6 +808,10 @@ main {
     display: flex;
     align-items: center;
     padding: 10px;
+}
+
+#f1 > h1{
+    font-size: 70px;;
 }
 
 #b1 {
@@ -711,6 +878,106 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#b5 > h1{
+    font-size: 70px;
+}
+
+/* Responsive Flipbook */
+@media (max-aspect-ratio: 1250/600){
+    .intro-cuisine{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .intro-cuisine > h1{
+        font-size: 3rem;
+    }
+    .intro-cuisine > p{
+        font-size: 2rem;
+    }
+    .book{
+        height: 400px;
+        width: 300px;
+    }
+    .back-content > h1{
+        font-size: 30px;
+    }
+    .front-content > p{
+        font-size: 18px;
+    }
+    #f1 > h1{
+        font-size: 50px;
+    }
+    #b5 > h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-aspect-ratio: 850/600){
+    .cuisine-section{
+        margin: 20px 0px 0px 0px;
+    }
+    .intro-cuisine{
+        margin: 25px;
+    }
+}
+
+@media (max-aspect-ratio: 630/600){
+    .book{
+        height: 300px;
+        width: 200px;
+    }
+    .back-content > h1{
+        font-size: 20px;
+    }
+    .front-content > p{
+        font-size: 12px;
+    }
+    #f1 > h1{
+        font-size: 30px;
+    }
+    #b5 > h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-aspect-ratio: 500/600){
+    .intro-cuisine > h1{
+        font-size: 2.5em;
+    }
+    .intro-cuisine > p{
+        font-size: 1.5em;
+    }
+    .book{
+        height: 250px;
+        width: 150px;
+    }
+    .content-page-front, .content-page-back{
+        padding: 5px;
+    }
+    .front-content > p{
+        font-size: 9px;
+    }
+    #f1 > h1{
+        font-size: 20px;
+    }
+    #b1 > h1{
+        font-size: 10px;
+    }
+    .intro-cuisine{
+        margin: 10px;
+    }
+}
+
+@media (max-aspect-ratio: 400/600){
+    .intro-cuisine > h1{
+        font-size: 2rem;
+    }
+    .intro-cuisine > p{
+        font-size: 1rem;
+    }
 }
 
 footer{
@@ -829,4 +1096,55 @@ a:hover{
 
 .Quick-links{
     border-right:2px solid #ffffff;
+}
+
+@media(max-width:775px){
+    .footer-container{
+        width: 100%;
+    }
+}
+
+@media(max-width:650px){
+
+    .footer-container{
+        /* border-top: 2px solid white; */
+        width:80%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content{
+        width: 100%;
+    }
+
+    .Contact{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right:0px;
+        /* border-top:2px solid #fff; */
+    }
+
+    /* .Contact h3{
+        padding-bottom: 10px;
+    } */
+    
+    .Quick-links{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right: 0px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .Social{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bottom-bar{
+        border-top: 2px solid #ffffff;
+    }
 }
