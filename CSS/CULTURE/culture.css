@@ -368,8 +368,8 @@ svg path {
     /* top: 0; */
     bottom: 120px;
     right: 0;
-    min-width: 300px;
-    height: auto;
+    width: auto;
+    height: 300px;
     z-index: -10;
     /* padding-bottom: 120px; */
 }
@@ -379,8 +379,8 @@ svg path {
     /* top: 0; */
     bottom:120px;
     left: 0;
-    min-width: 300px;
-    height: auto;
+    width: auto;
+    height: 300px;
     z-index: -10;
     /* padding-bottom: 120px; */
     /* transform: scaleX(-1); */
@@ -560,6 +560,16 @@ footer {
     width: 70px;
 }
 
+.Social{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Social iframe{
+    width: 100%;
+}
+
 .social-icons {
     text-align: center;
     padding: 0;
@@ -648,6 +658,10 @@ a:hover {
     .short-intro p{
         width: 95vw;
     }
+    .map-bg1, .map-bg2{
+        height: 250px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -684,6 +698,10 @@ a:hover {
     .footer-container{
         width: 100%;
     }
+
+    .map-bg1,.map-bg2{
+        height: 200px;
+    }
 }
 
 @media(max-width:650px){
@@ -699,6 +717,10 @@ a:hover {
 
     .short-intro p{
         font-size: 17px;
+    }
+
+    .map-bg1,.map-bg2{
+        height: 150px;
     }
 
     .footer-container{
@@ -757,5 +779,9 @@ a:hover {
 
     .short-intro p{
         font-size: 15px;
+    }
+
+    .map-bg1,.map-bg2{
+        height: 100px;
     }
 }
