@@ -644,6 +644,12 @@ a:hover {
     }
 }
 
+@media (max-width: 1000px){
+    .short-intro p{
+        width: 95vw;
+    }
+}
+
 @media (max-width: 900px) {
     .short-intro h1{
         font-size: 47px;
