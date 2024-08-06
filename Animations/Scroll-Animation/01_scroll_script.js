@@ -1,4 +1,3 @@
-// PLEASE READ THE DESCRIPTION.TXT FILE FOR BETTER UNDERSTANDING OF THIS CODE 
 
 const scrollers = document.querySelectorAll(".scroller");
 
