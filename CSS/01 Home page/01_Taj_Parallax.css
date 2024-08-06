@@ -131,6 +131,12 @@ nav img {
     }
 }
 
+@media (max-width: 800px) {
+    .title {
+        display: none;
+    }
+}
+
 .menu {
     height: 100%;
     width: 0;
@@ -179,7 +185,6 @@ nav img {
 main {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 section {
