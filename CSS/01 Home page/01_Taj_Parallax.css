@@ -114,53 +114,6 @@ nav img {
     color: #F4F1DE;
 }
 
-/* .box {
-    position: relative;
-    right: 0;
-}
-
-.input {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    background: none;
-    background-image: url(../../Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px 30px;
-    border: 2px solid #F4F1DE;
-    border-radius: 50px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: #F4F1DE;
-    outline: none;
-    transition: .5s;
-}
-
-.box:hover input {
-    width: 350px;
-    background: transparent;
-    border-right: 4px solid #F4F1DE;
-    border-bottom: 4px solid #F4F1DE;
-    border-radius: 10px;
-}
-
-.box i {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translate(-50%, -50%);
-    font-size: 26px;
-    color: #F4F1DE;
-    transition: .1s;
-}
-
-.box:hover i {
-    opacity: 0;
-    z-index: -1;
-} */
-
 /* Navbar animation */
 .anim-nav {
     opacity: 0;
@@ -245,10 +198,23 @@ section {
     /* background-color: #AFDDE5; */
 }
 
-/* .intro,
-.scroller-section {
-    z-index: 1;
-} */
+.side-design{
+    max-width:20vw;
+    top:0;
+    position: absolute;
+}
+
+.bg-img-1{
+    /* top: 50%; */
+    left: 0;
+    transform: rotateZ(75deg);
+}
+
+.bg-img-2{
+    /* top: 50%; */
+    right: 0;
+    transform: rotateZ(-75deg);
+}
 
 .parallax {
     pointer-events: none;
@@ -256,18 +222,6 @@ section {
     transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
     /* opacity:0.6; */
 }
-
-/* 
-.bg-img{
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:50%;
-    left:50.7%;
-    /* transform: translate(-50%,-50%); */
-/*
-    z-index:1;
-} */
 
 .layer-5 {
     position: absolute;
