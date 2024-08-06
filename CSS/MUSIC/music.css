@@ -534,6 +534,16 @@ footer{
     width:70px;
 }
 
+.Social{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Social iframe{
+    width: 100%;
+}
+
 .social-icons{
     text-align: center;
     padding: 0;

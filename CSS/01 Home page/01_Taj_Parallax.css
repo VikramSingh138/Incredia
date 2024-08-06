@@ -606,6 +606,16 @@ a:hover {
     border-right: 2px solid #ffffff;
 }
 
+.Social{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Social iframe{
+    width: 100%;
+}
+
 /* MAKING THINGS RESPONSIVE */
 
 @media (max-width: 1400px) {
