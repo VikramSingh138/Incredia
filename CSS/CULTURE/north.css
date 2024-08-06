@@ -3,12 +3,34 @@
 /* <style> */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* </style> */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.inter-normal{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .inter-heading{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+  }
+  
+  .inter-mid{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+  }
 
 html {
     scroll-behavior: smooth;
@@ -856,7 +878,7 @@ main {
     align-items: center;
     justify-content: left;
     padding: 10px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 #b4 {
@@ -871,7 +893,7 @@ main {
     align-items: center;
     justify-content: left;
     padding: 10px;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 #b5 {
@@ -933,7 +955,7 @@ main {
         font-size: 20px;
     }
     .front-content > p{
-        font-size: 12px;
+        font-size: 10px;
     }
     #f1 > h1{
         font-size: 30px;
