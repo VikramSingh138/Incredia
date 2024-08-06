@@ -421,7 +421,7 @@ svg path {
 
 #section03 a span {
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 50%;
     width: 46px;
     height: 46px;

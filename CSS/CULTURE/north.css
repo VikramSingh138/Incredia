@@ -661,10 +661,10 @@ main {
     background-color:#0FA4AF;
     border-radius: 5px;
     padding:25px 0px 25px 25px;
-    background-image:url("../../Images/Plate.png");
+    /* background-image:url("../../Images/Plate.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: contain; */
 }
 
 .intro-cuisine {
