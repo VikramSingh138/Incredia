@@ -345,8 +345,31 @@ section {
     font-size: 30px;
 }
 
-/* BELOW IS THE SCROLLER SECTION */
 
+/* Monuments intro */
+.monument-section {
+    position: relative;
+    height: 500px;
+    width: 100vw;
+}
+
+.monument-section img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.monument-intro {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* BELOW IS THE SCROLLER SECTION */
 
 .scroller-section {
     background-color: #024;
@@ -375,7 +398,7 @@ section {
 }
 
 .scroll_list li:hover {
-    scale: 1.3;
+    scale: 1.05;
 }
 
 .scroller {
@@ -562,14 +585,14 @@ a:hover {
 }
 
 .bottom-bar {
-    background: #f18930;
+    background: #2e2e2e;
     text-align: center;
     padding: 10px;
     margin-top: 50px;
 }
 
 .bottom-bar p {
-    color: #343434;
+    color: #d3d3d3;
     margin: 0;
     font-size: 16px;
     padding: 7px;
@@ -581,6 +604,16 @@ a:hover {
 
 .Quick-links {
     border-right: 2px solid #ffffff;
+}
+
+.Social{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Social iframe{
+    width: 100%;
 }
 
 /* MAKING THINGS RESPONSIVE */
