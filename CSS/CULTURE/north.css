@@ -351,6 +351,11 @@ main {
     transform: scale(1.05); 
 }
 
+.card .image{
+    display: flex;
+    justify-content: center;
+}
+
 .dance-section{
     /* background-color:#0FA4AF; */
     background-color: #14c5d2;
@@ -387,8 +392,8 @@ main {
 }
 
 .dance1 img {
-    height: 700px;
-    width: 700px;
+    max-height: 700px;
+    max-width: 700px;
     /* border-top-right-radius: 20px; */
     /* border-bottom-right-radius: 20px; */
 }
@@ -419,8 +424,8 @@ main {
 }
 
 .dance2 img {
-    height: 700px;
-    width: 700px;
+    max-height: 700px;
+    max-width: 700px;
     /* border-top-left-radius: 20px; */
     /* border-bottom-left-radius: 20px; */
 }
@@ -454,8 +459,8 @@ main {
 }
 
 .dance3 img {
-    height: 700px;
-    width: 700px;
+    max-height: 700px;
+    max-width: 700px;
     /* border-top-right-radius: 20px; */
     /* border-bottom-right-radius: 20px; */
 }
@@ -485,8 +490,8 @@ main {
 }
 
 .dance4 img {
-    height: 700px;
-    width: 700px;
+    max-height: 700px;
+    max-width: 700px;
     /* border-top-left-radius: 20px; */
     /* border-bottom-left-radius: 20px; */
 }
@@ -1104,14 +1109,14 @@ a:hover{
 }
 
 .bottom-bar{
-    background: #f18930;
+    background: #2e2e2e;
     text-align: center;
     padding: 10px;
     margin-top: 50px;
 }
 
 .bottom-bar p {
-    color: #343434;
+    color: #d3d3d3;
     margin:0;
     font-size: 16px;
     padding: 7px;
@@ -1166,10 +1171,10 @@ a:hover{
         border-bottom: 2px solid #fff;
     }
 
-    .Social{
+    /* .Social{
         padding-top: 20px;
         padding-bottom: 20px;
-    }
+    } */
 
     .bottom-bar{
         border-top: 2px solid #ffffff;

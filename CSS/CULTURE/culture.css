@@ -589,14 +589,14 @@ a:hover {
 }
 
 .bottom-bar {
-    background: #f18930;
+    background: #2e2e2e;
     text-align: center;
     padding: 10px;
     margin-top: 50px;
 }
 
 .bottom-bar p {
-    color: #343434;
+    color: #d3d3d3;
     margin: 0;
     font-size: 16px;
     padding: 7px;
@@ -728,10 +728,10 @@ a:hover {
         border-bottom: 2px solid #fff;
     }
 
-    .Social{
+    /* .Social{
         padding-top: 20px;
         padding-bottom: 20px;
-    }
+    } */
 
     .bottom-bar{
         border-top: 2px solid #ffffff;
