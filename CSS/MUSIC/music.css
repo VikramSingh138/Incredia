@@ -199,14 +199,19 @@ main {
     margin-bottom: 100px;
 }
 
+.mid-heading{
+    text-decoration: 2px underline dashed;
+}
+
 p {
     margin: 10px 120px 10px 10px;
 }
 
 .intro {
     margin: 100px 50px;
-    background-color: #0FA4AF;
+    background-color: #5ff4ff;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .intro .heading1 {
@@ -234,8 +239,9 @@ p {
 
 .explore {
     margin: 100px 50px;
-    background-color: #0FA4AF;
+    background-color: #14c5d2;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .explore .row1 {
@@ -353,6 +359,7 @@ p {
     margin: 100px 50px;
     padding: 20px;
     background-color:#0FA4AF;
+    border-radius: 5px;
 }
 
 .events .heading3 h1 {
@@ -404,6 +411,7 @@ p {
     padding: 20px;
     color: #F0F8FF;
     background-color: #024;
+    border-radius: 5px;
 }
 
 .community .social h1 {
