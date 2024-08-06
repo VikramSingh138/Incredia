@@ -177,7 +177,10 @@ main {
     /* padding-right: 50px;
     padding-left: 50px; */
     /* z-index: 0; */
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .short-intro h1 {
@@ -197,7 +200,8 @@ main {
     font-size: 25px;
     z-index: 1;
     width: 1000px;
-    padding-left: 27%;
+    text-align: center;
+    /* padding-left: 27%; */
 }
 
 /* Intro animation */
@@ -362,31 +366,35 @@ svg path {
 .map-bg1{
     position: absolute;
     /* top: 0; */
-    bottom: 0;
+    bottom: 120px;
     right: 0;
     min-width: 300px;
     height: auto;
     z-index: -10;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
 
 .map-bg2{
     position: absolute;
     /* top: 0; */
-    bottom: 0;
+    bottom:120px;
     left: 0;
     min-width: 300px;
     height: auto;
     z-index: -10;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     /* transform: scaleX(-1); */
 }
 /* MAP ENDS */
 
+.demo {
+    display: flex;
+    justify-content: center;
+}
+
 .demo a {
     position: absolute;
     bottom: 0px;
-    left: 40%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
@@ -399,6 +407,7 @@ svg path {
     transition: opacity .3s;
     height: 100px;
     margin: auto;
+    padding: auto;
 }
 
 .demo a:hover {
