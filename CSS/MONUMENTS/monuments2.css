@@ -170,8 +170,8 @@ nav img {
 
 .map-section-container{
     display: flex;
-    background-color: #E54848;
-    /* background-color:#c5f5fa; */
+    /* background-color: #E54848; */
+    background-color:#c5f5fa;
 }
 
 .map-section{
@@ -188,9 +188,13 @@ nav img {
     align-items: center; */
 }
 
+.path{
+    fill: #17adbe;
+}
+
 .map-side-textarea{
     padding-top: 20px;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -198,8 +202,9 @@ nav img {
 
 .map-side-head{
     height: 30%;
-    font-size: 30px;
-    text-align: center;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 25px;
 }
 
 .map-descriptions{
@@ -210,7 +215,7 @@ nav img {
     background-color:transparent;
     cursor: pointer;
     pointer-events: none;
-    color: #f9f9f9;
+    color: #2d2d2d;
     font-size: 25px;
     font-weight: bold;
     position: absolute;
@@ -218,6 +223,7 @@ nav img {
     padding: 10px;
     z-index: 100;
     opacity: 0;
+    padding-left: 25px;
 }
 
 /* MONUMENTS DIVS AND SECTION STYLING ENDS  */
@@ -228,7 +234,8 @@ nav img {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #2E2E2E;
+    /* background-color: #2E2E2E; */
+    background-color:#c5f5fa;
     gap: 20px;
 }
 
@@ -236,19 +243,34 @@ nav img {
     width: 80vw;
     height: 75vh;
     margin: auto;
-    background-color: #f18930;
+    /* background-color: #f18930; */
     display: flex;
 }
 
+.monument-div img{
+    width: 100%;
+    height: auto;
+}
+
 .monu-mid-head{
-    border-right: 2px solid black;
+    /* border-right: 2px solid black; */
     width: 60%;
     text-align: center;
+}
+
+.monu-mid-head h3{
+    padding-bottom: 10px;
 }
 
 .monu-mid-content{
     width: 40%;
     text-align: left;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-top: 20%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* FOOTER STYLING BELOW */
