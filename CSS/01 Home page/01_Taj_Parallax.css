@@ -643,14 +643,14 @@ a:hover {
 }
 
 .bottom-bar {
-    background: #f18930;
+    background: #2e2e2e;
     text-align: center;
     padding: 10px;
     margin-top: 50px;
 }
 
 .bottom-bar p {
-    color: #343434;
+    color: #d3d3d3;
     margin: 0;
     font-size: 16px;
     padding: 7px;
@@ -662,6 +662,16 @@ a:hover {
 
 .Quick-links {
     border-right: 2px solid #ffffff;
+}
+
+.Social{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.Social iframe{
+    width: 100%;
 }
 
 /* MAKING THINGS RESPONSIVE */
