@@ -321,7 +321,7 @@ p {
 .events {
     margin: 100px 50px;
     padding: 20px;
-    background-color: rgb(133, 215, 221);
+    background-color: #b7f5fc;
     border-radius: 5px;
 }
 
@@ -593,10 +593,6 @@ a:hover {
         border-right: 0px;
         /* border-top:2px solid #fff; */
     }
-
-    /* .Contact h3{
-        padding-bottom: 10px;
-    } */
 
     .Quick-links {
         padding-top: 20px;

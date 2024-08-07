@@ -111,53 +111,6 @@ nav img {
     color: #F4F1DE;
 }
 
-/* .box {
-    position: relative;
-    right: 0;
-}
-
-.input {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    background: none;
-    background-image: url(../../Images/search_24dp_F4F1DE_FILL0_wght400_GRAD0_opsz24.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px 30px;
-    border: 2px solid #F4F1DE;
-    border-radius: 50px;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: #F4F1DE;
-    outline: none;
-    transition: .5s;
-}
-
-.box:hover input {
-    width: 350px;
-    background: transparent;
-    border-right: 4px solid #F4F1DE;
-    border-bottom: 4px solid #F4F1DE;
-    border-radius: 10px;
-}
-
-.box i {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translate(-50%, -50%);
-    font-size: 26px;
-    color: #F4F1DE;
-    transition: .1s;
-}
-
-.box:hover i {
-    opacity: 0;
-    z-index: -1;
-} */
-
 /* Navbar animation */
 .anim-nav {
     opacity: 0;
@@ -695,10 +648,6 @@ main {
     background-color: #0FA4AF;
     border-radius: 5px;
     padding: 25px 0px 25px 25px;
-    /* background-image:url("../../Images/Plate.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain; */
 }
 
 .intro-cuisine {
@@ -713,10 +662,6 @@ main {
     width: 1050px;
     font-size: 100px;
 }
-
-/* .intro-cuisine{
-    color: #000000;
-} */
 
 .intro-cuisine p {
     position: relative;
@@ -1229,10 +1174,6 @@ a:hover {
         /* border-top:2px solid #fff; */
     }
 
-    /* .Contact h3{
-        padding-bottom: 10px;
-    } */
-
     .Quick-links {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -1240,11 +1181,6 @@ a:hover {
         border-top: 2px solid #fff;
         border-bottom: 2px solid #fff;
     }
-
-    /* .Social{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    } */
 
     .bottom-bar {
         border-top: 2px solid #ffffff;
