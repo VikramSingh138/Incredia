@@ -367,10 +367,6 @@ nav img {
         font-size: 20px;
     }
 
-    /* .monuments-section{
-        flex-direction: column;
-    } */
-
     .monument-div{
         flex-direction: column;
         width:100%;
@@ -576,10 +572,6 @@ a:hover {
         border-right: 0px;
         /* border-top:2px solid #fff; */
     }
-
-    /* .Contact h3{
-        padding-bottom: 10px;
-    } */
 
     .Quick-links {
         padding-top: 20px;
