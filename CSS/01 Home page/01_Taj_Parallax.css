@@ -702,6 +702,16 @@ a:hover {
     width: 100%;
 }
 
+.photo{
+
+}
+
+.photo img{
+    height:125px;
+    width:125px;
+    border-radius: 50%;
+}
+
 /* MAKING THINGS RESPONSIVE */
 
 @media (max-width: 1400px) {
@@ -846,6 +856,7 @@ a:hover {
     .layer-2,
     .layer-1 {
         width: 80vw;
+        top: 50%;
     }
 
     .text {
