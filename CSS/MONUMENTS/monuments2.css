@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: #EAF5F1;
@@ -212,6 +215,7 @@ nav img {
 .map-descriptions {
     padding-right: 10px;
     height: 70%;
+    line-height: 1.5;
 }
 
 .description-box {
