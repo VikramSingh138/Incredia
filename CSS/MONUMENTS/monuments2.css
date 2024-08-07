@@ -178,7 +178,8 @@ nav img {
     display: flex;
     /* background-color: #E54848; */
     background-color: #c5f5fa;
-    height: 700px;
+    height: 100%;
+    padding-top: 100px;
 }
 
 .map-section {
@@ -189,7 +190,7 @@ nav img {
     display: flex;
     justify-content: center;
     background: transparent;
-    height: 80vh;
+    height: 90vh;
     width: 60%;
     /* justify-content: center;
     align-items: center; */
@@ -200,7 +201,7 @@ nav img {
 }
 
 .map-side-textarea {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     /* border-left: 2px solid black; */
     width: 40%;
     display: flex;
@@ -208,7 +209,7 @@ nav img {
 }
 
 .map-side-head {
-    /* height: 30%; */
+    height: 30%;
     font-size: 50px;
     text-align: left;
     /* padding-left: 25px; */
@@ -321,35 +322,72 @@ nav img {
 @media (max-aspect-ratio: 850/600){
     .map-section-container{
         flex-direction: column;
-        height: 850px;
+        height: 90vh;
         width: 100%;
         align-items: center;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-top: 5%;
+        /* padding-left: 25px;
+        padding-right: 25px; */
     }
-    .default-box{
+
+    .map-section{
+        height: 60%;
         width: 100%;
     }
-    .intro-monu-head{
-        font-size: 25px;
-    }
-    .intro-monu-para{
-        font-size: 18px;
-    }
-    .description-box{
-        width: 100%;
-        left: 0;
-        /* padding-left: 0; */
-    }
+
     .map-side-textarea{
+        height: 40%;
         width: 80%;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .default-box{
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .intro-monu-head{
+        font-size: 25px;
+    }
+    
+    .intro-monu-para{
+        font-size: 18px;
+    }
+    
+    .description-box{
+        width: 100%;
+        left: 0;
+        /* padding-left: 0; */
+    }
+    
     .map-side-head{
         font-size: 20px;
+    }
+
+    /* .monuments-section{
+        flex-direction: column;
+    } */
+
+    .monument-div{
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .monu-mid-head h3{
+        font-size: 25px;
+    }
+
+    .monu-mid-content{
+        padding-top: 10%;
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
     }
 }
 
@@ -368,6 +406,15 @@ nav img {
     }
     .intro-monu-para{
         font-size: 15px;
+    }
+
+    .monu-mid-head h3{
+        font-size: 20px;
+    }
+
+    .monu-mid-content{
+        padding-top: 10%;
+        font-size: 16px;
     }
 }
 
