@@ -211,10 +211,15 @@ p {
 }
 
 .intro {
+    position: relative;
     margin: 100px 50px;
     /* background-color: #5ff4ff; */
     padding: 20px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 60%; */
 }
 
 .intro .heading1 {
@@ -238,6 +243,16 @@ p {
 
 .intro .intro-description p {
     font-size: 25px;
+    /* padding-right: 150px; */
+}
+
+.intro .intro-image img{
+    position: relative;
+    height: 330px;
+    width: 330px;
+    /* width: 40%; */
+    /* right: 0; */
+    z-index: -1;
 }
 
 .explore {
