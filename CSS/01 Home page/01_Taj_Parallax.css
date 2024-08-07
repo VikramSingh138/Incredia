@@ -429,6 +429,7 @@ section {
     min-width: 300px;
     min-height: 300px;
     transition: .3s;
+    overflow: hidden;
 }
 
 .scroll_list li:hover {
@@ -551,6 +552,15 @@ section {
 
 .photo {
     background-color: #fff;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
     height: 125px;
     width: 125px;
     border-radius: 50%;
