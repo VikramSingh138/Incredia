@@ -169,13 +169,15 @@ main {
 
 .intro {
     margin: 50px 50px;
-    background-color: #5ff4ff;
+    background-color: #c5f5fa;
     padding: 25px;
     /* margin: 100px 50px; */
     /* background-color:powderblue; */
     padding: 50px 25px 50px 25px;
     border-radius: 5px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro .heading1 {
@@ -188,13 +190,14 @@ main {
     cursor: default;
     /* margin: 30px 0; */
     width: 100%;
-    font-size: 70px;
+    font-size: 40px;
     color: #263138;
     text-align: center;
 }
 
 .intro .paragraph1 p {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .about {
@@ -224,7 +227,7 @@ main {
 
 .explore {
     margin: 100px 50px;
-    background-color: #14c5d2;
+    background-color: rgb(133, 215, 221);
     padding: 25px;
     border-radius: 5px;
 }
@@ -239,8 +242,8 @@ main {
 
 .explore .historical-art .heading4 h1 {
     text-align: center;
-    font-size: 50px;
-    text-decoration: 2px underline dashed;
+    font-size: 40px;
+    /* text-decoration: 2px underline dashed; */
     /* margin: 30px 0; */
     padding-bottom: 30px;
     padding-top: 30px;
@@ -347,7 +350,7 @@ main {
     /* margin: 30px 0; */
     font-size: 50px;
     text-align: center;
-    text-decoration: 2px underline dashed;
+    /* text-decoration: 2px underline dashed; */
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -418,7 +421,7 @@ main {
     /* margin: 30px 0; */
     text-align: center;
     font-size: 50px;
-    text-decoration: 2px underline dashed;
+    /* text-decoration: 2px underline dashed; */
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -480,7 +483,7 @@ main {
     /* margin: 30px 0; */
     font-size: 50px;
     text-align: center;
-    text-decoration: 2px underline dashed;
+    /* text-decoration: 2px underline dashed; */
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -542,7 +545,7 @@ main {
     margin: 30px 0;
     font-size: 50px;
     text-align: center;
-    text-decoration: 2px underline dashed;
+    /* text-decoration: 2px underline dashed; */
     padding-bottom: 30px;
     padding-top: 30px;
 }
@@ -794,6 +797,9 @@ main {
     .box5 {
         scale: 0.7;
     }
+    .intro, .explore{
+        margin: 0 0;
+    }
 }
 
 @media (max-width: 400px) {
@@ -824,6 +830,24 @@ main {
     .box5 {
         scale: 0.5;
         margin: 5px;
+    }
+    .heading4 h1{
+        font-size: 0.6rem;
+    }
+    .heading5 h1{
+        font-size: 0.6rem;
+    }
+    .heading6 h1{
+        font-size: 0.6rem;
+    }
+    .heading7 h1{
+        font-size: 0.6rem;
+    }
+    .heading8 h1{
+        font-size: 0.6rem;
+    }
+    .heading9 h1{
+        font-size: 0.6rem;
     }
 }
 
