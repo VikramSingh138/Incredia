@@ -55,17 +55,6 @@ body {
     display: none;
 }
 
-.baskervville-sc-regular {
-    font-family: "Baskervville SC", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.lxgw-wenkai-mono-tc-regular {
-    font-family: "LXGW WenKai Mono TC", monospace;
-    font-style: normal;
-}
-
 header {
     border-bottom: 2px solid rgb(0, 0, 0);
     position: sticky;
@@ -158,83 +147,57 @@ nav img {
 main {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     /* color: #36454F; */
 }
 
+/* Intro Section */
+
 .intro{
-    height: 100vh;
-    /* background-color: #EAF5F1; */
-    /* background-color: rgb(197, 230, 235); */
-    background-color: #c5f5fa;
+    /* height: 90vh; */
+    width: 100%;
+    border:2px solid #000000;
+    /* height: 900px; */
+    /* position: relative; */
 }
 
-/* Intro Section */
-.short-intro {
-    /* height: 100vh; */
-    width: auto;
-    height: 100%;
-    /* background-color: #2E2E2E; */
-    /* color: #F4F1DE; */
-    line-height: 1.5;
-    /* padding-right: 50px;
-    padding-left: 50px; */
-    /* z-index: 0; */
-    /* text-align: center; */
+.short-intro{
+    width: 100%;
+    height: 90vh;
+}
+
+.intro-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.short-intro h1 {
-    font-size: 70px;
-    color: #22292d;
-    padding-bottom: 15px;
-    z-index: 1;
-}
-
-.short-intro h3 {
-    font-size: 40px;
-    padding-bottom: 10px;
-    z-index: 1;
-}
-
-.short-intro p {
-    font-size: 25px;
-    z-index: 1;
-    width: 1000px;
+    width: 70%;
+    margin: auto;
     text-align: center;
-    /* padding-left: 27%; */
 }
 
-.stroked-text {
-    -webkit-text-stroke: 2px black; /* Stroke width and color */
+.intro-text h1{
+    font-size: 70px;
+    padding-bottom: 20px;
 }
 
-.stroked-text-light {
-    -webkit-text-stroke: 0.5px black; /* Stroke width and color */
+.intro-text p{
+    font-size: 25px;
 }
 
-.map-bg1{
+.ele-image{
+    height: 50%;
+    bottom: 0;
     position: absolute;
-    /* top: 0; */
-    bottom: 120px;
+    /* position: float;     */
+}
+
+.intro-bg1{
     right: 0;
-    width: auto;
-    height: 300px;
-    z-index: -10;
-    /* padding-bottom: 120px; */
 }
 
-.map-bg2{
-    position: absolute;
-    /* top: 0; */
-    bottom:120px;
-    left: 0;
-    width: auto;
-    height: 300px;
-    z-index: -10;
-    /* padding-bottom: 120px; */
-    /* transform: scaleX(-1); */
+.intro-bg2{
+    left:0;
 }
 
 /* Intro animation */
@@ -252,34 +215,18 @@ main {
     }
 }
 
-@media (max-width: 1200px) {
-    .intro {
-        height: 50vh;
-    }
-}
-
-@media (max-width: 600px) {
-    .intro {
-        height: 40vh;
-    }
-    .eleimage {
-        opacity: 0.5;
-    }
-}
-
 /* MAP SECTION STYLING BELOW */
-
 .map-section-container {
+    border-top: 2px solid black;
     position: relative;
     display: flex;
     /* background-color: #E54848; */
-    /* background-color: #c5f5fa; */
-    background-color: rgb(133, 215, 221);
-    height: 700px;
+    background-color: #c5f5fa;
+    height: 100%;
+    padding-top: 100px;
 }
 
 .map-section {
-    z-index: 0;
     top: 0;
     position: relative;
     overflow: auto;
@@ -297,7 +244,7 @@ main {
 }
 
 .map-side-textarea {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     /* border-left: 2px solid black; */
     width: 40%;
     display: flex;
@@ -307,41 +254,43 @@ main {
 .map-side-head {
     height: 30%;
     font-size: 50px;
-    text-align: center;
-    padding-left: 25px;
+    text-align: left;
+    /* padding-left: 25px; */
 }
 
 .map-descriptions {
-    padding-left: 10px;
+    padding-right: 10px;
     height: 70%;
     line-height: 1.5;
 }
 
-.default-box .describe-cult{
-    font-size: 25px;
-}
-
-.default-box .hover-p{
-    font-size: 25px;
-    padding-top: 10px;
-}
-
 .description-box {
-    /* background-color: black; */
+    background-color: transparent;
     cursor: pointer;
     pointer-events: none;
     color: #2d2d2d;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     position: absolute;
-    width: 40%;
-    padding: 10px;
+    width: 30%;
+    /* padding: 10px; */
     z-index: 100;
     opacity: 0;
     padding-left: 25px;
 }
 
+/* Responsive Map */
+
 @media (max-aspect-ratio: 1200/600) {
+
+    .intro-text h1{
+        font-size: 55px;
+    }
+    
+    .intro-text p{
+        font-size: 22px;
+    }
+
     .default-box .describe-monu{
         font-size: 15px;
     }
@@ -363,42 +312,98 @@ main {
     }
 }
 
+@media(max-aspect-ratio:850/900){
+    .ele-image{
+        height: 30%;
+    }
+}
+
+@media(max-aspect-ratio:950/1050){
+    .ele-image{
+        height: 30%;
+    }
+}
+
 @media (max-aspect-ratio: 850/600){
+
+    .intro-text h1{
+        font-size: 45px;
+    }
+    
+    .intro-text p{
+        font-size: 20px;
+    }
+
     .map-section-container{
         flex-direction: column;
-        height: 850px;
+        height: 90vh;
         width: 100%;
         align-items: center;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-top: 5%;
+        /* padding-left: 25px;
+        padding-right: 25px; */
     }
-    .default-box{
+
+    .map-section{
+        height: 60%;
         width: 100%;
     }
-    .intro-monu-head{
-        font-size: 25px;
-    }
-    .intro-monu-para{
-        font-size: 18px;
-    }
-    .description-box{
-        width: 100%;
-        left: 0;
-        /* padding-left: 0; */
-    }
+
     .map-side-textarea{
+        height: 40%;
         width: 80%;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .default-box{
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .intro-monu-head{
+        font-size: 25px;
+    }
+    
+    .intro-monu-para{
+        font-size: 18px;
+    }
+    
+    .description-box{
+        width: 100%;
+        left: 0;
+        /* padding-left: 0; */
+    }
+    
     .map-side-head{
         font-size: 20px;
     }
 }
 
+@media(max-aspect-ratio:700/1000){
+    .short-intro{
+        height: 50vh;
+    }
+}
+
+@media(max-aspect-ratio:600/1000){
+    .short-intro{
+        height: 50vh;
+    }
+}
+
 @media (max-aspect-ratio: 500/600){
+
+    .intro-text h1{
+        font-size: 40px;
+    }
+    
+    .intro-text p{
+        font-size: 17px;
+    }
+
     .description-box{
         font-size: 15px;
     }
@@ -408,14 +413,9 @@ main {
     .map-side-head{
         font-size: 15px;
     }
-    .intro-monu-head{
-        font-size: 20px;
-    }
-    .intro-monu-para{
-        font-size: 15px;
-    }
 }
 
+/* MAP STYLING ENDS */
 .demo {
     display: flex;
     justify-content: center;
@@ -550,7 +550,6 @@ footer {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 50px;
-    z-index: 10;
     color: #D3D3D3;
 }
 
