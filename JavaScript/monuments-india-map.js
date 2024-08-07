@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (descriptionBox) {
                 descriptionBox.style.display = 'block';
                 descriptionBox.style.opacity = 1;
-                descriptionBox.style.backgroundColor = 'transparent';
+                // descriptionBox.style.backgroundColor = 'transparent';
             }
 
             // Hide the default box

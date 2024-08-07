@@ -285,7 +285,7 @@ main {
     display: flex;
     justify-content: center;
     background: transparent;
-    height: 80vh;
+    height: 90vh;
     width: 60%;
     /* justify-content: center;
     align-items: center; */
@@ -307,7 +307,7 @@ main {
     height: 30%;
     font-size: 50px;
     text-align: center;
-    /* padding-left: 25px; */
+    padding-left: 25px;
 }
 
 .map-descriptions {
@@ -317,15 +317,15 @@ main {
 }
 
 .description-box {
-    background-color: transparent;
+    /* background-color: black; */
     cursor: pointer;
     pointer-events: none;
     color: #2d2d2d;
     font-size: 25px;
     font-weight: bold;
     position: absolute;
-    width: 100%;
-    /* padding: 10px; */
+    width: 40%;
+    padding: 10px;
     z-index: 100;
     opacity: 0;
     padding-left: 25px;
@@ -464,6 +464,10 @@ main {
     }
     .demo a {
         position: relative;
+    }
+    .description-box {
+        position: absolute;
+        padding: 0;
     }
 }
 
