@@ -520,6 +520,50 @@ section {
     }
 }
 
+.about-us {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    height: 400px;
+    width: 400px;
+    background-color: #024;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    background-color: #fff;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.name {
+    color: white;
+    padding: 10px;
+}
+
+.abt {
+    color: white;
+}
+
+.abt p {
+    text-align: center;
+}
+
 /* BELOW IS THE FOOTER STYLING */
 
 footer {

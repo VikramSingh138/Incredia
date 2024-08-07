@@ -266,6 +266,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10%;
+    padding: 40px;
 }
 
 .explore .heading2 h1 {
@@ -323,9 +325,9 @@ p {
 }
 
 .card1 {
-    height: 600px;
-    width: 600px;
-    margin: 20px;
+    height: 400px;
+    width: 400px;
+    /* margin: 20px; */
     overflow: hidden;
     position: relative;
     color: white;
@@ -353,6 +355,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: centers;
+    gap: 10%;
+    padding: 40px;
 }
 
 .explore .music3 h3 {
@@ -389,12 +393,14 @@ p {
 .events .flex1 {
     display: flex;
     justify-content: center;
+    gap: 10%;
+    padding: 40px;
 }
 
 .card2 {
-    height: 600px;
-    width: 600px;
-    margin: 20px;
+    height: 400px;
+    width: 400px;
+    /* margin: 20px; */
     overflow: hidden;
     position: relative;
     color: white;
