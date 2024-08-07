@@ -24,50 +24,6 @@
     font-style: normal;
 }
 
-
-.cormorant-garamond-light {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.cormorant-garamond-regular {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cormorant-garamond-medium {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.cormorant-garamond-semibold {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.cormorant-garamond-bold {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-
-.bona-nova-sc-regular {
-    font-family: "Bona Nova SC", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.bona-nova-sc-bold {
-    font-family: "Bona Nova SC", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
 *,
 *::before,
 *::after {
@@ -314,55 +270,6 @@ section {
     /* opacity:0.5; */
 }
 
-/* INTRO SECTION BELOW THIS */
-
-.intro {
-    /* background-color: #4682B4; */
-    background-color: #0FA4AF;
-    z-index: 10;
-    border-top: 2px solid #0cf;
-    border-bottom: 2px solid #0cf;
-}
-
-.text-container-intro {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-
-.intro .heading {
-    font-family: 'Bona+Nova+SC';
-    font-size: 3rem;
-    /* color:#ffffff; */
-    color: #FFFFFF;
-    border-right: 5px solid #0cf;
-    box-sizing: border-box;
-    margin: 30px 0 30px 15px;
-    /*TOP RIGHT BOTTOM LEFT*/
-    padding: 0px 20px 0px 25px;
-    align-items: center;
-    justify-content: center;
-    max-width: 50%;
-    text-align: center;
-}
-
-.intro .paragraph {
-    /* border: 5px solid #0cf; */
-    max-width: 50%;
-    padding: 30px 30px;
-    cursor: default;
-    /* color: #2E2E2E; */
-    /* color:#ffd792; */
-    color: #F0F0F0;
-    margin-left: 100px;
-    /* max-width: 1300px; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-}
-
-
 /* Monuments intro */
 .home-page-sections-container{
     padding-top: 20px;
@@ -382,10 +289,8 @@ section {
     /* background-color: #2E2E2E; */
     display: flex;
     flex-direction: row;
-    /* flex-direction: column; */
-    /* justify-content: center; 
-    align-items: center;     */
-    /* text-align: center; */
+    /* -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); */
 }
 
 .mid-section{
