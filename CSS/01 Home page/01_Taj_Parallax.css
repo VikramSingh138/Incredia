@@ -58,6 +58,10 @@ nav img {
     width: 50px;
 }
 
+.scrollerimage img{
+    height: 300px;
+}
+
 .title {
     cursor: default;
     position: relative;
@@ -425,7 +429,6 @@ section {
     padding: 1rem;
     background-color: #ffffff;
     border: 2px solid rgb(56, 56, 56);
-    border-radius: 20px;
     min-width: 300px;
     min-height: 300px;
     transition: .3s;
