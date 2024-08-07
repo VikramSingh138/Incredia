@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <!-- <link rel="stylesheet" href="../../CSS/01 Home page/home.css"> -->
     <link rel="stylesheet" href="../../CSS/01 Home page/01_Taj_Parallax.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../../JavaScript/nav-anim.js"></script>
     <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <script src="../../JavaScript/aos.js"></script>
     <!-- <script src="../JavaScript/01_Taj_Parallax.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> -->
 </head>
+
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <header class="hide">
         <nav class="anim-nav">
             <span style="cursor:pointer" onclick="openNav()"><img src="../../Images/menu.png"></span>
@@ -34,22 +44,29 @@
     <main onclick="closeNav()">
 
         <img src="../../Images/Home page/phool.png" class="bg-img-1 side-design">
-        <img src="../../Images/Home page/phool.png" class="bg-img-2 side-design"> 
+        <img src="../../Images/Home page/phool.png" class="bg-img-2 side-design">
 
         <section class="Taj_Parallax content-block">
-        <!-- <img src="../../Images/Taj Parallax Images/01_Blue_Background.png" data-speedx="0.12" data-speedy="0.05" data-distance="-200" alt="" class="parallax layer-6 bg-img"> -->
+            <!-- <img src="../../Images/Taj Parallax Images/01_Blue_Background.png" data-speedx="0.12" data-speedy="0.05" data-distance="-200" alt="" class="parallax layer-6 bg-img"> -->
             <!-- <div data-speedx="0.12" data-speedy="0.05" data-distance="-200" alt="" class="parallax layer-6 bg-img" style="background-color: #FFBF78;"></div>  -->
-            <img src="../../Images/Taj Parallax Images/02_Pillar_Left.png" data-speedx="0.1" data-speedy="0.036" data-distance="800" alt="" class="parallax layer-5">
-            <img src="../../Images/Taj Parallax Images/02_Pillar_Right.png" data-speedx="0.095" data-speedy="0.034" data-distance="800" alt="" class="parallax layer-5">
+            <img src="../../Images/Taj Parallax Images/02_Pillar_Left.png" data-speedx="0.1" data-speedy="0.036"
+                data-distance="800" alt="" class="parallax layer-5">
+            <img src="../../Images/Taj Parallax Images/02_Pillar_Right.png" data-speedx="0.095" data-speedy="0.034"
+                data-distance="800" alt="" class="parallax layer-5">
             <div class="text parallax" data-speedx="0.14" data-speedy="0.05" data-distance="-200">
                 <h2 class="cormorant-garamond-light">EXPLORE</h2>
                 <h1 class="cormorant-garamond-bold">INDIA</h1>
-            </div>    
-            <img src="../../Images/Taj Parallax Images/03_Center.png" data-speedx="0.085" data-speedy="0.032" data-distance="1000" alt="" class="parallax layer-4">
-            <img src="../../Images/Taj Parallax Images/04_Pillar_Left_Front.png" data-speedx="0.045" data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
-            <img src="../../Images/Taj Parallax Images/04_Pillar_Right_Front.png" data-speedx="0.045" data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
-            <img src="../../Images/Taj Parallax Images/05_Front_White.png" data-speedx="0.04" data-speedy="0.025" data-distance="1800" alt="" class="parallax layer-2">
-            <img src="../../Images/Taj Parallax Images/06_Front_Red.png" data-speedx="0.03" data-speedy="0.02" data-distance="2000" alt="" class="parallax layer-1">
+            </div>
+            <img src="../../Images/Taj Parallax Images/03_Center.png" data-speedx="0.085" data-speedy="0.032"
+                data-distance="1000" alt="" class="parallax layer-4">
+            <img src="../../Images/Taj Parallax Images/04_Pillar_Left_Front.png" data-speedx="0.045" data-speedy="0.028"
+                data-distance="1200" alt="" class="parallax layer-3">
+            <img src="../../Images/Taj Parallax Images/04_Pillar_Right_Front.png" data-speedx="0.045"
+                data-speedy="0.028" data-distance="1200" alt="" class="parallax layer-3">
+            <img src="../../Images/Taj Parallax Images/05_Front_White.png" data-speedx="0.04" data-speedy="0.025"
+                data-distance="1800" alt="" class="parallax layer-2">
+            <img src="../../Images/Taj Parallax Images/06_Front_Red.png" data-speedx="0.03" data-speedy="0.02"
+                data-distance="2000" alt="" class="parallax layer-1">
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -57,55 +74,55 @@
 
         <section class="content-block home-page-sections-container">
 
-                <!-- <img src="../../Images/Home page/monument.jpg" style="opacity: 0.5;"> -->
-                <div class="home-page-sections monu-home">
-                    <div class="img-left">
-                        <img src="../../Images/Home page/Home-page-bg-img-5.png" alt="">
-                    </div>
-                    <div class="mid-section">
+            <!-- <img src="../../Images/Home page/monument.jpg" style="opacity: 0.5;"> -->
+            <div class="home-page-sections monu-home">
+                <div class="img-left" data-aos="fade-right">
+                    <img src="../../Images/Home page/Home-page-bg-img-5.png" alt="">
+                </div>
+                <div class="mid-section">
                     <h1>Explore Monuments of India</h1>
                     <a href="../MONUMENTS/monuments.html" class="btn">Read More</a>
-                    </div>
-                    <div class="img-right">
-                        <img src="../../Images/Home page/India-Gate.png" alt="">
-                    </div>
                 </div>
-                <div class="home-page-sections culutre-home">
-                    <div class="img-left">
-                        <img src="../../Images/Home page/Dance-bg-img-3.png" alt="">
-                    </div>
-                    <div class="mid-section">
-                        <h1>Explore Culture of India</h1>
-                        <a href="../CULTURE/culture.html" class="btn">Read More</a>
-                    </div>
-                    <div class="img-right">
-                        <img src="../../Images/Home page/Dance-bg-img-4.png" alt="">
-                    </div>
+                <div class="img-right" data-aos="fade-left">
+                    <img src="../../Images/Home page/India-Gate.png" alt="">
                 </div>
-                <div class="home-page-sections music">
-                    <div class="img-left">
-                        <img src="../../Images/Home page/Dance-bg-img-1.png" alt="">
-                    </div>
-                    <div class="mid-section">
+            </div>
+            <div class="home-page-sections culutre-home">
+                <div class="img-left" data-aos="fade-right">
+                    <img src="../../Images/Home page/Dance-bg-img-3.png" alt="">
+                </div>
+                <div class="mid-section">
+                    <h1>Explore Culture of India</h1>
+                    <a href="../CULTURE/culture.html" class="btn">Read More</a>
+                </div>
+                <div class="img-right" data-aos="fade-left">
+                    <img src="../../Images/Home page/Dance-bg-img-4.png" alt="">
+                </div>
+            </div>
+            <div class="home-page-sections music">
+                <div class="img-left" data-aos="fade-right">
+                    <img src="../../Images/Home page/Dance-bg-img-1.png" alt="">
+                </div>
+                <div class="mid-section">
                     <h1>Explore Music of India</h1>
                     <a href="../MUSIC/music.html" class="btn">Read More</a>
-                    </div>
-                    <div class="img-right">
-                        <img src="../../Images/Home page/Dance-bg-img-2.png" alt="">
-                    </div>
                 </div>
-                <div class="home-page-sections">
-                    <div class="img-left">
-                        <img src="../../Images/Home page/rangoli-1.png" alt="">
-                    </div>
-                    <div class="mid-section">
+                <div class="img-right" data-aos="fade-left">
+                    <img src="../../Images/Home page/Dance-bg-img-2.png" alt="">
+                </div>
+            </div>
+            <div class="home-page-sections">
+                <div class="img-left" data-aos="fade-right">
+                    <img src="../../Images/Home page/rangoli-1.png" alt="">
+                </div>
+                <div class="mid-section">
                     <h1>Explore Arts & Crafts of India</h1>
                     <a href="../ARTS&CRAFTS/aandc.html" class="btn">Read More</a>
-                    </div>
-                    <div class="img-right">
-                        <img src="../../Images/Home page/rangoli-2.png" alt="">
-                    </div>
                 </div>
+                <div class="img-right" data-aos="fade-left">
+                    <img src="../../Images/Home page/rangoli-2.png" alt="">
+                </div>
+            </div>
 
         </section>
 
@@ -127,7 +144,7 @@
             <div class="monument-intro">
             </div>
         </section> -->
-        
+
         <section class="scroller-section content-block">
             <div class="scroller-pos">
                 <div class="scroller anim-scroller">
@@ -150,8 +167,8 @@
         <div class="footer-container">
             <div class="footer-content Contact">
                 <h3>Contact Us</h3>
-                <p>Email   : vikkram138@gmail.com</p>
-                <p>Phone   : +91 9XXXXXXXXX</p>
+                <p>Email : vikkram138@gmail.com</p>
+                <p>Phone : +91 9XXXXXXXXX</p>
                 <P>Address : Nexus, SVNIT , Surat</P>
             </div>
             <div class="footer-content Quick-links">
@@ -166,7 +183,9 @@
                 </ul>
             </div>
             <div class="footer-content Social">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6299713642265!2d72.78262877526039!3d21.167119180517012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dec8b56fdf3%3A0x423b99085d26d1f9!2sSardar%20Vallabhbhai%20National%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1722968959621!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6299713642265!2d72.78262877526039!3d21.167119180517012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dec8b56fdf3%3A0x423b99085d26d1f9!2sSardar%20Vallabhbhai%20National%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1722968959621!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="bottom-bar">
@@ -177,9 +196,10 @@
                 <li><a href="#"><i class="fab fa-linkedIn"></i></a></li>
             </ul>
             <p>&copy; Code Crafters SVNIT . All rights reserved</p>
-        </div>   
+        </div>
     </footer>
     <!-- <script src="../JavaScript/01_Taj_Parallax.js"></script> -->
     <!-- </div> -->
 </body>
+
 </html>
