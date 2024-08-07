@@ -549,6 +549,12 @@ section {
     justify-content: center;
 }
 
+.description-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .photo {
     background-color: #fff;
     height: 125px;
