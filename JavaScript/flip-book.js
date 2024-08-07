@@ -20,6 +20,19 @@ let currentLocation = 1;
 let numOfPapers = 5;
 let maxLocation = numOfPapers + 1;
 
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+    e = e || window.event;
+    
+    if (event.keyCode == '37') {
+        goPrevPage();
+    }
+    else if (event.keyCode == '39') {
+        goNextPage();
+    }
+}
+
 function openBook() {
     book.style.transform = "translateX(35%)";
     prevBtn.style.display = "block";

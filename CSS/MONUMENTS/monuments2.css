@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+.inter-heading {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-/* 
+
+
 body{
-    overflow-x: hidden;
-} */
+    background-color: #EAF5F1;
+}
 
 /* FONTS */
-.inter-normal{
+.inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .inter-heading{
-      font-family: "Inter", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-  }
-  
-  .inter-mid{
-      font-family: "Inter", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-  }
+}
+
+.inter-mid {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 
 /* HEADER AND SIDE MENU STYLING BELOW */
 
@@ -137,20 +138,21 @@ nav img {
 
 /* INTRO SECTION STYLING BELOW */
 
-.intro-monuments{
-    height: 85vh;
+.intro-monuments {
+    position: relative;
+    height: 90vh;
     width: auto;
 }
 
-.intro-monu-head{
+.intro-monu-head {
     padding-top: 20px;
     padding-bottom: 20px;
-    z-index:0;
+    z-index: 0;
     font-size: 50px;
     text-align: center;
 }
 
-.intro-monu-para{
+.intro-monu-para {
     z-index: 0;
     font-size: 25px;
     text-align: center;
@@ -158,7 +160,7 @@ nav img {
     margin: auto;
 }
 
-.intro-monuments img{
+.intro-monuments img {
     position: absolute;
     max-width: 100%;
     height: auto;
@@ -168,31 +170,31 @@ nav img {
 
 /* MAP SECTION STYLING BELOW */
 
-.map-section-container{
+.map-section-container {
     display: flex;
     /* background-color: #E54848; */
-    background-color:#c5f5fa;
+    background-color: #c5f5fa;
 }
 
-.map-section{
+.map-section {
     z-index: 0;
     top: 0;
     position: relative;
-    overflow: auto; 
+    overflow: auto;
     display: flex;
     justify-content: center;
     background: transparent;
     height: 80vh;
-    width: 60%;  
+    width: 60%;
     /* justify-content: center;
     align-items: center; */
 }
 
-.path{
+.path {
     fill: #4a9dae;
 }
 
-.map-side-textarea{
+.map-side-textarea {
     padding-top: 20px;
     /* border-left: 2px solid black; */
     width: 40%;
@@ -200,19 +202,20 @@ nav img {
     flex-direction: column;
 }
 
-.map-side-head{
+.map-side-head {
     height: 30%;
     font-size: 50px;
     text-align: left;
-    padding-left: 25px;
+    /* padding-left: 25px; */
 }
 
-.map-descriptions{
+.map-descriptions {
+    padding-right: 10px;
     height: 70%;
 }
 
 .description-box {
-    background-color:transparent;
+    background-color: transparent;
     cursor: pointer;
     pointer-events: none;
     color: #2d2d2d;
@@ -220,7 +223,7 @@ nav img {
     font-weight: bold;
     position: absolute;
     width: 30%;
-    padding: 10px;
+    /* padding: 10px; */
     z-index: 100;
     opacity: 0;
     padding-left: 25px;
@@ -228,18 +231,18 @@ nav img {
 
 /* MONUMENTS DIVS AND SECTION STYLING ENDS  */
 
-.monuments-section{
+.monuments-section {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* background-color: #2E2E2E; */
-    background-color:#77cbda;
-    gap: 20px;
+    background-color: #77cbda;
+    gap: 50px;
 }
 
-.monument-div{
+.monument-div {
     width: 80vw;
     height: 75vh;
     margin: auto;
@@ -247,35 +250,39 @@ nav img {
     display: flex;
 }
 
-.monument-div img{
+.monument-div img {
     width: 100%;
     height: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.monu-mid-head{
+.monu-mid-head {
     /* border-right: 2px solid black; */
     width: 60%;
     text-align: center;
 }
 
-.monu-mid-head h3{
+.monu-mid-head h3 {
     padding-bottom: 10px;
 }
 
-.monu-mid-content{
+.monu-mid-content {
     width: 40%;
     text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* text-align: center; */
     /* justify-content: center; */
     /* align-items: center; */
-    padding-top: 20%;
+    /* padding-top: 20%; */
     padding-left: 20px;
     padding-right: 20px;
 }
 
 /* FOOTER STYLING BELOW */
 
-footer{
+footer {
     margin: 0;
     padding: 0;
     background-color: #2E2E2E;
