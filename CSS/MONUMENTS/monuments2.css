@@ -223,7 +223,7 @@ nav img {
     cursor: pointer;
     pointer-events: none;
     color: #2d2d2d;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     position: absolute;
     width: 30%;
@@ -285,17 +285,18 @@ nav img {
 }
 
 .default-box .describe-monu{
-    font-size: 25;
+    font-size: 15px;
 }
 
 .default-box .hover-p{
-    font-size: 20px; padding-top: 10px;
+    font-size: 15px;
+    padding-top: 10px;
 }
 
 /* RESPONSIFYING Map Descriptions*/
 @media (max-aspect-ratio: 1200/600) {
     .default-box .describe-monu{
-        font-size: 20px;
+        font-size: 15px;
     }
     .intro-monu-head{
         font-size: 30px;
@@ -311,7 +312,7 @@ nav img {
         font-size: 30px;
     }
     .description-box{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
