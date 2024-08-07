@@ -163,7 +163,9 @@ main {
 
 .intro{
     height: 100vh;
-    background-color:#c5f5fa;
+    /* background-color: #EAF5F1; */
+    /* background-color: rgb(197, 230, 235); */
+    background-color: #c5f5fa;
 }
 
 /* Intro Section */
@@ -204,157 +206,6 @@ main {
     /* padding-left: 27%; */
 }
 
-/* Intro animation */
-.anim-intro {
-    opacity: 0;
-    transform: translatey(10%);
-    animation: moveup 0.5s linear forwards;
-    animation-delay: 0.3s;
-}
-
-/* Map and Description box styling */
-/* mapp is SECTION */
-.map-section {
-    z-index: 0;
-    top: 0;
-    position: relative;
-    /* min-height: 100vh; Ensures that content is visible even if it overflows */
-    overflow: auto; /* Allows scrolling if content exceeds the section height */
-    /* padding: 20px; Add some padding to prevent content from touching edges */
-    display: flex;
-    justify-content: center;
-    background-color: #2e4d58;
-    border-top: 5px solid black;
-    /* width: 50%; Adjust the width as needed */
-    height: 100vh;
-    margin: 0 auto; /* Center the SVG */
-}
-
-
-svg {
-    width: 100%; /* Make the SVG take the full width of the container */
-    height: auto; /* Maintain the aspect ratio */
-    z-index: 1;
-}
-
-.path{
-    stroke: rgb(0, 0, 0);
-    stroke-width: 2px;
-}
-
-.description-box {
-    background-color:transparent;
-    cursor: pointer;
-    pointer-events: none;
-    color: #f9f9f9;
-    font-size: 25px;
-    font-weight: bold;
-    position: absolute;
-    width: 30%;
-    padding: 10px;
-    z-index: 100;
-    opacity: 0;
-}
-
-.path3-4-description{
-    font-size: 25px;
-}
-
-img {
-    height: 50px;
-    width: 50px;
-    opacity: 0;
-    transform-origin: bottom;
-    transform: rotateZ(-180deg);
-    animation: pop-up 0.3s ease forwards;
-}
-
-@keyframes pop-up {
-    100% {
-        opacity: 1;
-        transform: rotateZ(0deg);
-    }
-}
-
-svg path {
-    stroke: transparent;
-    transition: transform 0.3s ease;
-}
-
-/* Position description boxes */
-.path1-description {
-    position: absolute;
-    text-align: right;
-    top: 25%;
-    left: 10%;
-}
-
-.path2-description {
-    position: absolute;
-    top: 35%;
-    left: 45%;
-}
-
-.path3-4-description {
-    position: absolute;
-    /* font-size: 15px; */
-    top: 30%;
-    left: 60%;
-    width: 30%;
-}
-
-.path5-description {
-    position: absolute;
-    top: 43%;
-    left: 52%;
-}
-
-.path6-description {
-    text-align: right;
-    position: absolute;
-    top: 52%;
-    left: 10%;
-}
-
-.path7-description {
-    position: absolute;
-    top: 67%;
-    left: 40%;
-}
-
-@keyframes moveup {
-    100% {
-        opacity: 1;
-        transform: translatey(0%);
-    }
-}
-
-.map-heading1{
-    font-size: 150px;
-    max-width: 90%;
-    position: absolute;
-    top: 5%;
-    left: 13%;
-    text-align: center;
-    z-index: -1;
-    /* line-height:200px ; */
-    padding-right: 20%;
-    color: #d3d3d3;
-}
-
-.map-heading2{
-    font-size: 200px;
-    max-width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    text-align: center;
-    z-index: -1;
-    color: #d3d3d3;
-    /* line-height:200px ; */
-    /* padding-right: 20%; */
-}
-
 .stroked-text {
     -webkit-text-stroke: 2px black; /* Stroke width and color */
 }
@@ -385,7 +236,114 @@ svg path {
     /* padding-bottom: 120px; */
     /* transform: scaleX(-1); */
 }
-/* MAP ENDS */
+
+/* Intro animation */
+.anim-intro {
+    opacity: 0;
+    transform: translatey(10%);
+    animation: moveup 0.5s linear forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+        height: 40vh;
+    }
+    .eleimage {
+        opacity: 0.5;
+    }
+}
+
+/* MAP SECTION STYLING BELOW */
+
+.map-section-container {
+    position: relative;
+    display: flex;
+    /* background-color: #E54848; */
+    /* background-color: #c5f5fa; */
+    background-color: rgb(133, 215, 221);
+}
+
+.map-section {
+    z-index: 0;
+    top: 0;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    height: 80vh;
+    width: 60%;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.path {
+    fill: #4a9dae;
+}
+
+.map-side-textarea {
+    padding-top: 20px;
+    /* border-left: 2px solid black; */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-side-head {
+    height: 30%;
+    font-size: 50px;
+    text-align: center;
+    /* padding-left: 25px; */
+}
+
+.map-descriptions {
+    padding-left: 10px;
+    height: 70%;
+    line-height: 1.5;
+}
+
+.description-box {
+    background-color: transparent;
+    cursor: pointer;
+    pointer-events: none;
+    color: #2d2d2d;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    /* padding: 10px; */
+    z-index: 100;
+    opacity: 0;
+    padding-left: 25px;
+}
+
+@media (max-width: 1200px) {
+    .map-section-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .map-side-textarea {
+        text-align: center;
+        width: 100%;
+    }
+    .default-box h1 {
+        padding: 0;
+    }
+}
 
 .demo {
     display: flex;
@@ -497,6 +455,15 @@ svg path {
 
     100% {
         opacity: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .demo {
+        background-color: #c5f5fa;
+    }
+    .demo a {
+        position: relative;
     }
 }
 
@@ -620,168 +587,8 @@ a:hover {
     border-right: 2px solid #ffffff;
 }
 
-/* MAKING THINGS RESPONSIVE */
-
-@media (max-width: 1400px) {
-    .short-intro h1{
-        font-size: 55px;
-        padding-bottom: 15px;
-    }
-    
-    .short-intro h3{
-        font-size: 32px;
-        padding-bottom: 10px;
-    }
-
-    .short-intro p{
-        font-size: 27px;
-    }
-}
-
-@media (max-width: 1100px) {
-    .short-intro h1{
-        font-size: 50px;
-        padding-bottom: 15px;
-    }
-    
-    .short-intro h3{
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
-
-    .short-intro p{
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 1000px){
-    .short-intro p{
-        width: 95vw;
-    }
-    .map-bg1, .map-bg2{
-        height: 250px;
-    }
-
-}
-
-@media (max-width: 900px) {
-    .short-intro h1{
-        font-size: 47px;
-        padding-bottom: 15px;
-    }
-    
-    .short-intro h3{
-        font-size: 27px;
-        padding-bottom: 10px;
-    }
-
-    .short-intro p{
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 775px) {
-    .short-intro h1{
-        font-size: 44px;
-        padding-bottom: 17px;
-    }
-    
-    .short-intro h3{
-        font-size: 24px;
-        padding-bottom: 10px;
-    }
-
-    .short-intro p{
-        font-size: 19px;
-    }
-
-    .footer-container{
-        width: 100%;
-    }
-
-    .map-bg1,.map-bg2{
-        height: 200px;
-    }
-}
-
-@media(max-width:650px){
-    .short-intro h1{
-        font-size: 40px;
-        padding-bottom: 20px;
-    }
-    
-    .short-intro h3{
-        font-size: 22px;
-        padding-bottom: 12px;
-    }
-
-    .short-intro p{
-        font-size: 17px;
-    }
-
-    .map-bg1,.map-bg2{
-        height: 150px;
-    }
-
-    .footer-container{
-        /* border-top: 2px solid white; */
-        width:80%;
-        margin:auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-content{
-        width: 100%;
-    }
-
-    .Contact{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-right:0px;
-        /* border-top:2px solid #fff; */
-    }
-
-    /* .Contact h3{
-        padding-bottom: 10px;
-    } */
-    
-    .Quick-links{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-right: 0px;
-        border-top: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-    }
-
-    /* .Social{
-        padding-top: 20px;
-        padding-bottom: 20px;
-    } */
-
-    .bottom-bar{
-        border-top: 2px solid #ffffff;
-    }
-}
-
-@media (max-width: 520px) {
-    .short-intro h1{
-        font-size: 32px;
-        padding-bottom: 25px;
-    }
-    
-    .short-intro h3{
-        font-size: 20px;
-        padding-bottom: 15px;
-    }
-
-    .short-intro p{
-        font-size: 15px;
-    }
-
-    .map-bg1,.map-bg2{
-        height: 100px;
+@media (max-width: 1200px) {
+    footer {
+        position: relative;
     }
 }
