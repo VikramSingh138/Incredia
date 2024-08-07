@@ -566,6 +566,13 @@ section {
     border-radius: 50%;
 }
 
+.description-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .name {
     color: white;
     padding: 10px;
