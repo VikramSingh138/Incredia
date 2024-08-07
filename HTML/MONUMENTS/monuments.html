@@ -14,7 +14,12 @@
 </head>
 
 <body>
-
+    <script>
+        // This will scroll the window to the top on load
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
     <header class="hide">
         <nav class="anim-nav">
             <span style="cursor:pointer" onclick="openNav()"><img src="../../Images/menu.png"></span>

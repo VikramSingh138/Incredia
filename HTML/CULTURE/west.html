@@ -12,7 +12,12 @@
 </head>
 
 <body>
-
+    <script>
+        // This will scroll the window to the top on load
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
     <button onclick="topFunction()" id="myBtn" title="back to top">
         <img src="../../Images/arrow_up.png">
     </button>
