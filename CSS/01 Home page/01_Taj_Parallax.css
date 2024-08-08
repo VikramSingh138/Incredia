@@ -304,22 +304,30 @@ section {
 }
 
 .img-left{
+    position: relative;
     /* padding-top: 10%; */
     padding-top: 5px;
     width: 30%;
+    height: 100%;
 }
 
 .img-left img{
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
 .img-right{
+    position: relative;
     padding-top: 5px;
     width: 30%;
+    height: 100%;
 }
 
 .img-right img{
+    position: absolute;
     width:100%;
+    bottom: 0;
 }
 
 .monu-home .img-right img {
@@ -340,6 +348,38 @@ section {
     width:65%;
 }
 
+@media (max-width: 1000px) {
+    .mid-section {
+        padding-top: 70px;
+        justify-content: left;
+    }
+    .img-left {
+        display: flex;
+        align-items: flex-end;
+    }
+    .img-right {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 900px) {
+    .mid-section {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 775px) {
+    .mid-section {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 520px) {
+    .mid-section {
+        padding-top: 250px;
+    }
+}
 
 /* .monument-section img {
     position: absolute;
@@ -762,6 +802,14 @@ a:hover {
         font-size: 4.7rem;
     }
 
+    .mid-section h1 {
+        font-size: 35px;
+    }
+
+    .btn {
+        scale: 0.8;
+    }
+
     .layer-5,
     .layer-4,
     .layer-3,
@@ -866,6 +914,14 @@ a:hover {
         line-height: 1.1;
     }
 
+    .mid-section h1 {
+        font-size: 30px;
+    }
+
+    .btn {
+        scale: 0.6;
+    }
+
     .layer-5,
     .layer-4,
     .layer-3,
@@ -923,11 +979,17 @@ a:hover {
 @media(max-width:800px){
     .about{
         flex-direction: column;
-        width: 100vw;
+        width: 80vw;
     }
     .card{
         flex-direction: row;
         width: 100%;
+        justify-content: flex-start;
+        padding-left: 50px;
+    }
+    .description-about {
+        justify-content: flex-start;
+        padding-left: 40px;
     }
 }
 
@@ -994,6 +1056,14 @@ a:hover {
 
     .text h2 {
         font-size: 2.6rem;
+    }
+
+    .mid-section h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        scale: 0.5;
     }
 
     .layer-5,
