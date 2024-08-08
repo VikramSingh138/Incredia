@@ -390,13 +390,13 @@ main {
 
 @media(max-aspect-ratio:700/1000){
     .short-intro{
-        height: 50vh;
+        height: 80vh;
     }
 }
 
 @media(max-aspect-ratio:600/1000){
     .short-intro{
-        height: 50vh;
+        height: 80vh;
     }
 }
 
