@@ -275,21 +275,21 @@ p {
 }
 
 .explore .music1 h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
 .explore .music1 p {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .explore .music2 h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
 .explore .music2 p {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .explore .row2 {
@@ -301,21 +301,21 @@ p {
 }
 
 .explore .music3 h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
 .explore .music3 p {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .explore .music4 h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
 }
 
 .explore .music4 p {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .events {
@@ -348,25 +348,25 @@ p {
 }
 
 .events .festivals h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
     text-align: center;
 }
 
 .events .festivals p {
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     margin: 20px;
 }
 
 .events .culture h3 {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 0;
     text-align: center;
 }
 
 .events .culture p {
-    font-size: 25px;
+    font-size: 15px;
     text-align: center;
     margin: 20px;
 }

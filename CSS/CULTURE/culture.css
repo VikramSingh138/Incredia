@@ -297,7 +297,7 @@ main {
         font-size: 22px;
     }
 
-    .default-box .describe-monu{
+    .default-box .describe-cult{
         font-size: 15px;
     }
     .intro-monu-head{
@@ -413,8 +413,8 @@ main {
     .description-box{
         font-size: 15px;
     }
-    .default-box .describe-monu{
-        font-size: 15px;
+    .default-box .describe-cult{
+        font-size: 12px;
     }
     .map-side-head{
         font-size: 15px;
