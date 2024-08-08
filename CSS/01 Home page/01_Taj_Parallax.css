@@ -925,7 +925,6 @@ a:hover {
         flex-direction: column;
         width: 100vw;
     }
-
     .card{
         flex-direction: row;
         width: 100%;
@@ -974,6 +973,12 @@ a:hover {
 
     .bottom-bar {
         border-top: 2px solid #ffffff;
+    }
+}
+
+@media (max-width: 600px) {
+    .photo {
+        scale: 0.8;
     }
 }
 

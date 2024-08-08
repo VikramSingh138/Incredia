@@ -177,7 +177,7 @@ p {
 }
 
 .intro .paragraph p {
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     font-size: 40px;
 }
 
@@ -193,6 +193,48 @@ p {
     /* width: 40%; */
     /* right: 0; */
     z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .intro .heading1 h1 {
+        font-size: 55px;
+    }
+    .intro .paragraph p {
+        font-size: 30px;
+    }
+    .intro .intro-description p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .intro .heading1 h1 {
+        font-size: 45px;
+    }
+    .intro .paragraph p {
+        font-size: 23px;
+    }
+    .intro .intro-description p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .intro .heading1 h1 {
+        font-size: 40px;
+    }
+    .intro .paragraph p {
+        font-size: 19px;
+    }
+    .intro .intro-description p {
+        font-size: 13px;
+    }
 }
 
 .explore {

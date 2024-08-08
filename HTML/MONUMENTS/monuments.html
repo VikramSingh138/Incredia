@@ -20,6 +20,11 @@
             window.scrollTo(0, 0);
         };
     </script>
+
+    <button onclick="topFunction()" id="myBtn" title="back to top">
+        <img src="../../Images/arrow_up.png">
+    </button>
+
     <header class="hide">
         <nav class="anim-nav">
             <span style="cursor:pointer" onclick="openNav()"><img src="../../Images/menu.png"></span>
@@ -102,7 +107,8 @@
                 <div class="map-descriptions">
 
                     <div class="default-box" id="default-box">
-                        <p class="inter-normal describe-monu">Monuments are witnesses of India's past; the monuments of India are
+                        <p class="inter-normal describe-monu">Monuments are witnesses of India's past; the monuments of
+                            India are
                             also the guardian pillars of India's cultural heritage. The monuments of India have become
                             an inspiration for the future generations.</h1>
                         <p class="inter-normal hover-p">Hover on map to know more
@@ -133,7 +139,11 @@
                     </div>
                     <div class="description-box path5-description">
                         <h1 class="inter-mid">EASTERN INDIA</h1>
-                        <p class="inter-normal">The monuments of Eastern India embody the essence of the region's cultural tapestry, woven from the diverse threads of its constituent states. The states of West Bengal, Odisha, Bihar, and Jharkhand form the vibrant mosaic of Eastern India, and nestled within them are the majestic monuments of a bygone era, waiting to be discovered.</p>
+                        <p class="inter-normal">The monuments of Eastern India embody the essence of the region's
+                            cultural tapestry, woven from the diverse threads of its constituent states. The states of
+                            West Bengal, Odisha, Bihar, and Jharkhand form the vibrant mosaic of Eastern India, and
+                            nestled within them are the majestic monuments of a bygone era, waiting to be discovered.
+                        </p>
                     </div>
                     <div class="description-box path6-description">
                         <h1 class="inter-mid">WESTERN INDIA</h1>
@@ -262,15 +272,40 @@
             </div>
             <div class="bottom-bar">
                 <ul class="social-icons">
-                    <li><a href="https://github.com/VikramSingh138/Indian-Heritage-Code-Crafters"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/p/C8mPkkNp9qq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/posts/nexus-svnit_web-wonders-is-back-the-ultimate-theme-based-activity-7211592490892595200-pY-A?utm_source=share&utm_medium=member_desktop"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/VikramSingh138/Indian-Heritage-Code-Crafters"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a
+                            href="https://www.instagram.com/p/C8mPkkNp9qq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a
+                            href="https://www.linkedin.com/posts/nexus-svnit_web-wonders-is-back-the-ultimate-theme-based-activity-7211592490892595200-pY-A?utm_source=share&utm_medium=member_desktop"><i
+                                class="fab fa-linkedin"></i></a></li>
                 </ul>
                 <p>&copy; Incredia - Code Crafters SVNIT . All rights reserved</p>
             </div>
         </footer>
     </main>
 
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 
 </html>
