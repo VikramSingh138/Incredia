@@ -13,7 +13,9 @@
 > We have divided our website into 5 Sections : Home Page , Monuments Page , Culture Page, Music Page and Arts and Crafts page.
 >
 > If users visits our website, the first page they will see is our "greet page". On greet page there is a typing animated text "नमस्ते"
+> 
 > Our home page is named as "Taj_parallax". It is the way you can navigate through our website.
+> 
 > The Monuments Page is about the Monuments from different parts of our country. There is a Map on that page just below the Introduction section. This Maap can be used to navigate to different monuments in the same page
 >
 > Now the Culture Page actually navigates to 6 different Pages for Each of the Six Regions of our Country where we have discussed the Dance and Cuisine Culture of those regions in detail.
