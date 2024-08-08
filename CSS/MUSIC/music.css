@@ -250,7 +250,8 @@ p {
     position: relative;
     margin: 100px 50px;
     /* background-color: rgb(133, 215, 221); */
-    background-color: #b7f5fc;
+    /* background-color: #b7f5fc; */
+    background-color: #77cbda;
     padding: 20px;
     border-radius: 5px;
 }
@@ -388,7 +389,8 @@ p {
 .events {
     margin: 100px 50px;
     padding: 20px;
-    background-color: #b7f5fc;
+    /* background-color: #b7f5fc; */
+    background-color: #77cbda;
     border-radius: 5px;
 }
 
