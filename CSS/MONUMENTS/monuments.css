@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #EAF5F1;
 }
 
@@ -34,6 +34,34 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 10px;
+    outline: none;
+    background-color: #2E2E2E;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    scale: 0.6;
+    transition: 0.3s;
+    max-height: 90px;
+    max-width: 90px;
+}
+
+#myBtn img {
+    max-width: 60px;
+}
+
+#myBtn:hover {
+    background-color: #555;
 }
 
 /* HEADER AND SIDE MENU STYLING BELOW */
@@ -257,7 +285,8 @@ nav img {
     width: 80vw;
     height: 75vh;
     margin: auto;
-    /* background-color: #f18930; */
+    /* background-color:; */
+    background-color: #c5f5fa;
     display: flex;
 }
 
@@ -287,40 +316,45 @@ nav img {
     padding-right: 20px;
 }
 
-.default-box .describe-monu{
+.default-box .describe-monu {
     font-size: 25px;
 }
 
-.default-box .hover-p{
+.default-box .hover-p {
     font-size: 25px;
     padding-top: 10px;
 }
 
 /* RESPONSIFYING Map Descriptions*/
 @media (max-aspect-ratio: 1200/600) {
-    .default-box .describe-monu{
+    .default-box .describe-monu {
         font-size: 15px;
     }
-    .intro-monu-head{
+
+    .intro-monu-head {
         font-size: 30px;
     }
-    .intro-monu-para{
+
+    .intro-monu-para {
         font-size: 20px;
     }
-    .default-box .hover-p{
+
+    .default-box .hover-p {
         font-size: 15px;
         padding-top: 7px;
     }
-    .map-side-head{
+
+    .map-side-head {
         font-size: 30px;
     }
-    .description-box{
+
+    .description-box {
         font-size: 15px;
     }
 }
 
-@media (max-aspect-ratio: 850/600){
-    .map-section-container{
+@media (max-aspect-ratio: 850/600) {
+    .map-section-container {
         flex-direction: column;
         height: 90vh;
         width: 100%;
@@ -330,12 +364,12 @@ nav img {
         padding-right: 25px; */
     }
 
-    .map-section{
+    .map-section {
         height: 60%;
         width: 100%;
     }
 
-    .map-side-textarea{
+    .map-side-textarea {
         height: 40%;
         width: 80%;
         text-align: center;
@@ -344,42 +378,42 @@ nav img {
         align-items: center;
     }
 
-    .default-box{
+    .default-box {
         width: 100%;
         font-size: 18px;
     }
-    
-    .intro-monu-head{
+
+    .intro-monu-head {
         font-size: 25px;
     }
-    
-    .intro-monu-para{
+
+    .intro-monu-para {
         font-size: 18px;
     }
-    
-    .description-box{
+
+    .description-box {
         width: 100%;
         left: 0;
         /* padding-left: 0; */
     }
-    
-    .map-side-head{
+
+    .map-side-head {
         font-size: 20px;
     }
 
-    .monument-div{
+    .monument-div {
         flex-direction: column;
-        width:100%;
+        width: 100%;
         align-items: center;
         overflow: hidden;
         height: 100%;
     }
-    
-    .monu-mid-head h3{
+
+    .monu-mid-head h3 {
         font-size: 25px;
     }
 
-    .monu-mid-content{
+    .monu-mid-content {
         padding-top: 10%;
         font-size: 18px;
         width: 90%;
@@ -387,28 +421,32 @@ nav img {
     }
 }
 
-@media (max-aspect-ratio: 500/600){
-    .description-box{
-        font-size: 15px;
-    }
-    .default-box .describe-monu{
-        font-size: 15px;
-    }
-    .map-side-head{
-        font-size: 15px;
-    }
-    .intro-monu-head{
-        font-size: 20px;
-    }
-    .intro-monu-para{
+@media (max-aspect-ratio: 500/600) {
+    .description-box {
         font-size: 15px;
     }
 
-    .monu-mid-head h3{
+    .default-box .describe-monu {
+        font-size: 15px;
+    }
+
+    .map-side-head {
+        font-size: 15px;
+    }
+
+    .intro-monu-head {
         font-size: 20px;
     }
 
-    .monu-mid-content{
+    .intro-monu-para {
+        font-size: 15px;
+    }
+
+    .monu-mid-head h3 {
+        font-size: 20px;
+    }
+
+    .monu-mid-content {
         padding-top: 10%;
         font-size: 16px;
     }
