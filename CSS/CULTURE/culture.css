@@ -277,6 +277,14 @@ main {
     padding-left: 25px;
 }
 
+.description-box p{
+    font-weight: 400;
+}
+
+.default-box{
+    font-weight: 400;
+}
+
 /* Responsive Map */
 
 @media (max-aspect-ratio: 1200/600) {
@@ -289,7 +297,7 @@ main {
         font-size: 22px;
     }
 
-    .default-box .describe-monu{
+    .default-box .describe-cult{
         font-size: 15px;
     }
     .intro-monu-head{
@@ -405,8 +413,8 @@ main {
     .description-box{
         font-size: 15px;
     }
-    .default-box .describe-monu{
-        font-size: 15px;
+    .default-box .describe-cult{
+        font-size: 12px;
     }
     .map-side-head{
         font-size: 15px;

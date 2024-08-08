@@ -177,6 +177,7 @@ nav img {
     position: relative;
     height: 90vh;
     width: auto;
+    overflow: hidden;
 }
 
 .intro-monu-head {
@@ -197,10 +198,11 @@ nav img {
 
 .intro-monuments img {
     position: absolute;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     z-index: -1;
     bottom: 0;
+    /* left: -50%; */
 }
 
 /* MAP SECTION STYLING BELOW */
@@ -268,6 +270,15 @@ nav img {
     padding-left: 25px;
 }
 
+.description-box p{
+    font-weight: 400;
+}
+
+.default-box{
+    font-weight: 400;
+    width: 100%;
+}
+
 /* MONUMENTS DIVS AND SECTION STYLING ENDS  */
 
 .monuments-section {
@@ -283,12 +294,22 @@ nav img {
 
 .monument-div {
     width: 80vw;
-    height: 75vh;
+    height: 100%;
     margin: auto;
-    /* background-color:; */
-    background-color: #c5f5fa;
     display: flex;
+    background-color: #c5f5fa;
+    /* box-shadow: #2d2d2d ; */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* .card-odd{
+    background-color: rgb(185, 237, 250);
+}
+
+.card-even{
+    background-color: #88d7ff;
+    color: black;
+} */
 
 .monument-div img {
     width: 100%;
@@ -299,7 +320,7 @@ nav img {
 .monu-mid-head {
     /* border-right: 2px solid black; */
     width: 60%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .monu-mid-head h3 {
@@ -311,9 +332,16 @@ nav img {
     text-align: left;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.monu-mid-content h3{
+    padding-bottom: 25px;
 }
 
 .default-box .describe-monu {
@@ -353,8 +381,9 @@ nav img {
     }
 }
 
-@media (max-aspect-ratio: 850/600) {
-    .map-section-container {
+@media (max-aspect-ratio: 850/600){
+
+    .map-section-container{
         flex-direction: column;
         height: 90vh;
         width: 100%;
