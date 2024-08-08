@@ -184,7 +184,7 @@ main {
 }
 
 .ele-image{
-    height: 50%;
+    width: 20%;
     bottom: 0;
     position: absolute;
     /* position: float;     */
@@ -215,7 +215,6 @@ main {
 
 /* MAP SECTION STYLING BELOW */
 .map-section-container {
-    border-top: 2px solid black;
     position: relative;
     display: flex;
     /* background-color: #E54848; */
@@ -225,6 +224,7 @@ main {
 }
 
 .map-section {
+    z-index: 0;
     top: 0;
     position: relative;
     overflow: auto;
@@ -279,66 +279,45 @@ main {
 
 .description-box p{
     font-weight: 400;
+    font-size: 18px;
 }
 
 .default-box{
     font-weight: 400;
+    width: 100%;
+    font-size: 18px;
 }
 
 /* Responsive Map */
 
 @media (max-aspect-ratio: 1200/600) {
-
-    .intro-text h1{
-        font-size: 55px;
-    }
-    
-    .intro-text p{
-        font-size: 22px;
-    }
-
-    .default-box .describe-cult{
+    .default-box .describe-monu {
         font-size: 15px;
     }
-    .intro-monu-head{
+
+    .intro-monu-head {
         font-size: 30px;
     }
-    .intro-monu-para{
+
+    .intro-monu-para {
         font-size: 20px;
     }
-    .default-box .hover-p{
+
+    .default-box .hover-p {
         font-size: 15px;
         padding-top: 7px;
     }
-    .map-side-head{
+
+    .map-side-head {
         font-size: 30px;
     }
-    .description-box{
+
+    .description-box {
         font-size: 15px;
-    }
-}
-
-@media(max-aspect-ratio:850/900){
-    .ele-image{
-        height: 30%;
-    }
-}
-
-@media(max-aspect-ratio:950/1050){
-    .ele-image{
-        height: 30%;
     }
 }
 
 @media (max-aspect-ratio: 850/600){
-
-    .intro-text h1{
-        font-size: 45px;
-    }
-    
-    .intro-text p{
-        font-size: 20px;
-    }
 
     .map-section-container{
         flex-direction: column;
@@ -346,16 +325,14 @@ main {
         width: 100%;
         align-items: center;
         padding-top: 5%;
-        /* padding-left: 25px;
-        padding-right: 25px; */
     }
 
-    .map-section{
+    .map-section {
         height: 60%;
         width: 100%;
     }
 
-    .map-side-textarea{
+    .map-side-textarea {
         height: 40%;
         width: 80%;
         text-align: center;
@@ -364,27 +341,49 @@ main {
         align-items: center;
     }
 
-    .default-box{
+    .default-box {
         width: 100%;
         font-size: 18px;
     }
-    
-    .intro-monu-head{
+
+    .intro-monu-head {
         font-size: 25px;
     }
-    
-    .intro-monu-para{
+
+    .intro-monu-para {
         font-size: 18px;
     }
-    
-    .description-box{
+
+    .description-box {
         width: 100%;
         left: 0;
-        /* padding-left: 0; */
     }
-    
-    .map-side-head{
+
+    .description-box p{
+        font-size: 13px;
+    }
+
+    .map-side-head {
         font-size: 20px;
+    }
+
+    .monument-div {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .monu-mid-head h3 {
+        font-size: 25px;
+    }
+
+    .monu-mid-content {
+        padding-top: 10%;
+        font-size: 18px;
+        width: 90%;
+        text-align: center;
     }
 }
 
