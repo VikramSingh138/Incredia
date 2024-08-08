@@ -277,6 +277,14 @@ main {
     padding-left: 25px;
 }
 
+.description-box p{
+    font-weight: 400;
+}
+
+.default-box{
+    font-weight: 400;
+}
+
 /* Responsive Map */
 
 @media (max-aspect-ratio: 1200/600) {

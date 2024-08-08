@@ -240,6 +240,14 @@ nav img {
     padding-left: 25px;
 }
 
+.description-box p{
+    font-weight: 400;
+}
+
+.default-box{
+    font-weight: 400;
+}
+
 /* MONUMENTS DIVS AND SECTION STYLING ENDS  */
 
 .monuments-section {
