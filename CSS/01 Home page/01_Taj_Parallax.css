@@ -58,6 +58,13 @@ nav img {
     width: 50px;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .scrollerimage img{
     height: 300px;
 }
