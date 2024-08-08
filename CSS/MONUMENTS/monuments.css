@@ -272,11 +272,13 @@ nav img {
 
 .description-box p{
     font-weight: 400;
+    font-size: 18px;
 }
 
 .default-box{
     font-weight: 400;
     width: 100%;
+    font-size: 18px;
 }
 
 /* MONUMENTS DIVS AND SECTION STYLING ENDS  */
@@ -389,8 +391,6 @@ nav img {
         width: 100%;
         align-items: center;
         padding-top: 5%;
-        /* padding-left: 25px;
-        padding-right: 25px; */
     }
 
     .map-section {
@@ -423,7 +423,10 @@ nav img {
     .description-box {
         width: 100%;
         left: 0;
-        /* padding-left: 0; */
+    }
+
+    .description-box p{
+        font-size: 13px;
     }
 
     .map-side-head {
@@ -447,37 +450,6 @@ nav img {
         font-size: 18px;
         width: 90%;
         text-align: center;
-    }
-}
-
-@media (max-aspect-ratio: 500/600) {
-    .description-box {
-        font-size: 15px;
-    }
-
-    .default-box .describe-monu {
-        font-size: 15px;
-    }
-
-    .map-side-head {
-        font-size: 15px;
-    }
-
-    .intro-monu-head {
-        font-size: 20px;
-    }
-
-    .intro-monu-para {
-        font-size: 15px;
-    }
-
-    .monu-mid-head h3 {
-        font-size: 20px;
-    }
-
-    .monu-mid-content {
-        padding-top: 10%;
-        font-size: 16px;
     }
 }
 
