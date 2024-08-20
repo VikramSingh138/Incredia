@@ -5,14 +5,15 @@
 
 body {
     background-color: #2E2E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Greetings */
 .greet {
-    overflow: hidden;
     position: absolute;
     top: 35%;
-    left: 43%;
 }
 
 .greet p {
@@ -23,7 +24,7 @@ body {
     white-space: nowrap;
     font-size: 100px;
     font-weight: 450;
-    border-right: .15em solid rgb(255, 255, 255);
+    border-right: .10em solid rgb(255, 255, 255);
     border-color: transparent;
     letter-spacing: 0em;
     animation:
