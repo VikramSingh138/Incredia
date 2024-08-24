@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULTURE: WEST-INDIA</title>
+    <link rel="stylesheet" href="culture-page.css">
+    <script src="nav-anim.js"></script>
+    <script src="flip-book.js" defer></script>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        // This will scroll the window to the top on load
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <button onclick="topFunction()" id="myBtn" title="back to top">
+        <img src="arrow_up.png">
+    </button>
+
+    <header>
+
+        <nav class="anim-nav">
+            <span style="cursor:pointer" onclick="openNav()"><img src="menu.png"></span>
+            <div class="logo">
+                <div class="title inter-heading">INCREDIA</div>
+                <a href="01_Taj_Parallax.html" title="INCREDIA">
+                    <span style="cursor:pointer" onclick="openNav()"><img src="website-logo.png" style="height: 60px; width: auto;"></span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Side Menu -->
+        <div id="mySidenav" class="menu anim">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="01_Taj_Parallax.html" class="slide-anim inter-heading">HOME</a>
+            <a href="monuments.html" class="slide-anim inter-heading">MONUMENTS</a>
+            <a href="culture.html" class="slide-anim inter-heading">CULTURE</a>
+            <a href="music.html" class="slide-anim inter-heading">MUSIC</a>
+            <a href="aandc.html" class="slide-anim inter-heading">ARTS & CRAFTS</a>
+        </div>
+
+
+
+    </header>
+
+    <main onclick="closeNav()">
+<!-- 
+        <section class="shortcuts" id="shortcuts">
+            <div class="dance baskervville-sc-regular">
+                <a href="#dance" data-replace="DANCE"><span>DANCE</span></a>
+            </div>
+            <div class="dance baskervville-sc-regular">
+                <a href="#cuisine" data-replace="CUISINES"><span>CUISINES</span></a>
+            </div>
+        </section> -->
+
+        <section class="dance dance-section">
+
+            <div class="intro-dance">
+                <!-- style="color: #E54848;">Rhythms</span></strong></h1> -->
+                <h1 class="bebas-neue-regular inter-heading">Unveiling The <strong><span>Rhythms</span></strong></h1>
+                <p class="anim-paragraph inter-mid">Delve Into The Exquisite Dance Culture of West India.</p>
+            </div>
+
+            <div class="dance1 card" id="garba">
+                <div class="description inter-normal">
+                    <h2>GARBA</h2>
+                    <p>Garba is a traditional dance form performed during the nine-night Navratri festival. It involves rhythmic circular movements around a central lamp or deity, symbolizing the cycle of life. Dancers, dressed in vibrant, colorful attire, perform to the beats of dhol and other traditional instruments. Garba is characterized by its lively steps, clapping, and twirls.</p>
+                </div>
+                <div class="image">
+                    <img src="Folk-Dance-Forms-of-West-India-Garba-Gujarat.jpg" alt="Garba">
+                </div>
+            </div>
+
+            <div class="dance2 card" id="dandiya">
+                <div class="image">
+                    <img src="Folk-Dance-Forms-of-West-India-Dandiya-Gujarat.jpg" alt="Dandiya">
+                </div>
+                <div class="description inter-normal">
+                    <h2>DANDIYA RAAS</h2>
+                    <p>Dandiya Raas is another popular dance form from Gujarat, often performed during Navratri. Dancers use decorated wooden sticks (dandiyas) to perform rhythmic strikes and intricate patterns in pairs. The dance is energetic and synchronized, with participants dressed in traditional costumes, creating a festive and vibrant atmosphere.</p>
+                </div>
+            </div>
+
+            <div class="dance3 card" id="lavani">
+                <div class="description inter-normal">
+                    <h2>LAVANI</h2>
+                    <p>Lavani is a traditional dance form of Maharashtra known for its powerful rhythm, expressive movements, and compelling lyrics. It is performed to the beats of the dholki drum and is a combination of traditional song and dance, performed by women wearing nine-yard saris. Lavani often addresses social issues and is characterized by its fast-paced tempo and graceful gestures.</p>
+                </div>
+                <div class="image">
+                    <img src="Folk-Dance-Forms-of-West-India-Lavani-Maharashtra.jpg" alt="Lavani">
+                </div>
+            </div>
+
+            <div class="dance4 card" id="dekhnni">
+                <div class="image">
+                    <img src="Folk-Dance-Forms-of-West-India-Dekhni-Goa.jpg" alt="Dekhnni">
+                </div>
+                <div class="description inter-normal">
+                    <h2>DEKHNNI</h2>
+                    <p>Dekhnni is a traditional Goan dance form that showcases a blend of Indian and Western influences. It is performed by women dressed in colorful costumes, and the dance tells stories of Goan life and traditions. The movements are graceful and expressive, set to the music of traditional Goan instruments.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="cuisine cuisine-section">
+
+            <div class="intro-cuisine">
+                <h1 class="inter-heading">India on Your Plate</h1>
+                <p class="inter-mid">Indulge in the Delectable Cuisine Culture of West India</p>
+            </div>
+
+            <div class="book-container">
+                <button id="prev-btn">
+                    <!-- <i class="fas fa-arrow-circle-left"></i> -->
+                    <img src="arrow_back.png">
+                </button>
+
+                <div id="book" class="book">
+                    <!-- Paper 1 -->
+                    <div id="p1" class="paper">
+                        <div class="front cover-page">
+                            <div id="f1" class="front-content inter-heading">
+                                <h1>THE<br>CUISINE<br>CULTURE<br>OF<br>WEST INDIA</h1>
+                            </div>
+                        </div>
+                        <div class="back content-page-back">
+                            <div id="b1" class="back-content inter-mid">
+                                <h1>GEOGRAPHICAL<br>AND<br>CULTURAL<br>INFLUENCES</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 2 -->
+                    <div id="p2" class="paper">
+                        <div class="front content-page-front">
+                            <div id="f2" class="front-content inter-normal">
+                                <p>Western Indian cuisine, influenced by the coastal states of Gujarat, Maharashtra, Goa, and the arid regions of Rajasthan, features a rich variety of seafood, grains, and pulses. The diverse cultural heritage, including Hindu, Jain, Parsi, and Portuguese influences, is evident in the cuisine. This results in a mix of sweet vegetarian dishes, spicy coconut-based curries, and hearty meat-centric fare.</p>
+                            </div>
+                        </div>
+                        <div class="back content-page-back">
+                            <div id="b2" class="back-content inter-mid">
+                                <h1>STYLE<br>OF<br>FOOD</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 3 -->
+                    <div id="p3" class="paper">
+                        <div class="front content-page-front">
+                            <div id="f3" class="front-content inter-normal">
+                                <p>Western Indian cuisine is known for its diverse and vibrant styles. Coastal regions like Goa and parts of Maharashtra feature seafood and use a lot of coconut and spices. Gujarat offers a unique blend of sweet and savory vegetarian dishes with a distinctive use of sugar and jaggery. Each area emphasizes regional ingredients and cooking techniques, creating a rich and varied culinary landscape.</p>
+                            </div>
+                        </div>
+                        <div class="back content-page-back">
+                            <div id="b3" class="back-content inter-mid">
+                                <h1>STAPLE<br>FOODS<br>WESTERN INDIANS<br>SEEM<br>TO PREFER</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 4 -->
+                    <div id="p4" class="paper">
+                        <div class="front content-page-front">
+                            <div id="f4" class="front-content inter-normal">
+                                <p>Western Indians enjoy a variety of staple foods. In Gujarat, grains like millet, sorghum, and rice are paired with lentils and vegetables. Maharashtra features rice, wheat, and pulses, often with fish or chicken. Coastal Goa primarily consumes rice and seafood, along with coconut-based dishes. Rajasthan relies on hardier grains like millet and sorghum, and legumes like chickpeas, often in spicy preparations.</p>
+                            </div>
+                        </div>
+                        <div class="back content-page-back">
+                            <div id="b4" class="back-content inter-mid">
+                                <h1>COOKING<br>OILS<br>COMMONLY<br>USED</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Paper 5 -->
+                    <div id="p5" class="paper">
+                        <div class="front content-page-front">
+                            <div id="f5" class="front-content inter-normal">
+                                <p>In Western Indian cuisine, the commonly used cooking oils vary by region. Gujarat primarily uses peanut oil due to the abundant cultivation of peanuts. Maharashtra and Goa often use coconut oil, especially in coastal areas, where coconuts are plentiful. Mustard oil is also used in some parts, particularly in dishes requiring a strong, pungent flavor. Additionally, ghee (clarified butter) is widely used across the region for its rich taste and aroma.</p>
+                            </div>
+                        </div>
+                        <div class="back cover-page-back">
+                            <div id="b5" class="back-content inter-heading">
+                                <h1>The End.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Button -->
+                <button id="next-btn">
+                    <!-- <i class="fas fa-arrow-circle-right"></i> -->
+                    <img src="arrow_forward.png">
+                </button>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content Contact">
+                    <h3>Contact Us</h3>
+                    <p>Email   : vikkram138@gmail.com</p>
+                    <p>Phone   : +91 9XXXXXXXXX</p>
+                    <P>Address : Nexus, SVNIT , Surat</P>
+                </div>
+                <div class="footer-content Quick-links">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="01_Taj_Parallax.html">HOME</a></li>
+                        <li><a href="culture.html">CULTURE</a></li>
+                        <li><a href="aandc.html">ART</a></li>
+                        <li><a href="monuments.html">MONUMENTS</a></li>
+                        <li><a href="music.html">MUSIC</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content Social">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.6299713642265!2d72.78262877526039!3d21.167119180517012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dec8b56fdf3%3A0x423b99085d26d1f9!2sSardar%20Vallabhbhai%20National%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1722968959621!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <ul class="social-icons">
+                    <li><a href="https://github.com/VikramSingh138/Indian-Heritage-Code-Crafters"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/p/C8mPkkNp9qq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/posts/nexus-svnit_web-wonders-is-back-the-ultimate-theme-based-activity-7211592490892595200-pY-A?utm_source=share&utm_medium=member_desktop"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                <p>&copy; Incredia - Code Crafters SVNIT . All rights reserved</p>
+            </div>   
+        </footer>
+    </main>
+
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>
