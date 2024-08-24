@@ -153,6 +153,7 @@ nav img {
 main {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 section {
@@ -295,6 +296,18 @@ section {
     border-radius: 5px;
     /* -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px); */
+}
+
+@media (max-width: 1000px) {
+    .home-page-sections {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-page-sections {
+        height: 40vh;
+    }
 }
 
 .mid-section{
@@ -630,6 +643,10 @@ section {
     text-align: center;
 }
 
+.about-us .heading {
+    text-align: center;
+}
+
 .about-head{
     font-size: 40px;
     /* color: #2E2E2E; */
@@ -809,6 +826,11 @@ a:hover {
         font-size: 4.7rem;
     }
 
+    .bg-img-1, .bg-img-2 {
+        scale: 1.1;
+        top: 3%;
+    }
+
     .mid-section h1 {
         font-size: 35px;
     }
@@ -876,6 +898,11 @@ a:hover {
         font-size: 4.35rem;
     }
 
+    .bg-img-1, .bg-img-2 {
+        scale: 1.15;
+        top: 4%;
+    }
+
     .layer-5,
     .layer-4,
     .layer-3,
@@ -919,6 +946,11 @@ a:hover {
     .text h2 {
         font-size: 4.1rem;
         line-height: 1.1;
+    }
+
+    .bg-img-1, .bg-img-2 {
+        scale: 1.3;
+        top: 5%;
     }
 
     .mid-section h1 {
@@ -998,6 +1030,9 @@ a:hover {
         justify-content: flex-start;
         padding-left: 40px;
     }
+    .abt p {
+        text-align: left;
+    }
 }
 
 @media(max-width:650px) {
@@ -1047,7 +1082,15 @@ a:hover {
 
 @media (max-width: 600px) {
     .photo {
-        scale: 0.8;
+        scale: 0.6;
+    }
+
+    .description-about {
+        padding-left: 0px;
+    }
+
+    .name {
+        padding-left: 0;
     }
 }
 
@@ -1063,6 +1106,11 @@ a:hover {
 
     .text h2 {
         font-size: 2.6rem;
+    }
+
+    .bg-img-1, .bg-img-2 {
+        scale: 1.5;
+        top: 7%;
     }
 
     .mid-section h1 {
@@ -1087,6 +1135,15 @@ a:hover {
 
     .scroller h1 {
         font-size: 2.5rem;
+    }
+
+    .bg-img-1, .bg-img-2 {
+        scale: 1.7;
+        top: 9%;
+    }
+
+    .photo {
+        scale: 0.59;
     }
 }
 
