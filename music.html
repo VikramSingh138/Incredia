@@ -17,6 +17,10 @@
         };
     </script>
 
+    <button onclick="topFunction()" id="myBtn" title="back to top">
+        <img src="arrow_up.png">
+    </button>
+
     <header>
 
         <nav class="anim-nav">
@@ -24,7 +28,8 @@
             <div class="logo">
                 <div class="title inter-heading">INCREDIA</div>
                 <a href="01_Taj_Parallax.html" title="INCREDIA">
-                    <span style="cursor:pointer" onclick="openNav()"><img src="website-logo.png" style="height: 60px; width: auto;"></span>
+                    <span style="cursor:pointer" onclick="openNav()"><img src="website-logo.png"
+                            style="height: 60px; width: auto;"></span>
                 </a>
             </div>
         </nav>
@@ -54,9 +59,12 @@
                 <div class="intro-description inter-normal">
                     <p>
                         India’s musical culture is a harmonious blend of tradition and innovation, reflecting the rich
-                        history and diverse heritage of this ancient land. From the classical rhythms of the Vedas to the
-                        contemporary beats of Bollywood, Indian music encompasses a wide array of genres, styles, and forms.
-                        Whether you are a connoisseur of classical music, a fan of folk tunes, or an enthusiast of modern
+                        history and diverse heritage of this ancient land. From the classical rhythms of the Vedas to
+                        the
+                        contemporary beats of Bollywood, Indian music encompasses a wide array of genres, styles, and
+                        forms.
+                        Whether you are a connoisseur of classical music, a fan of folk tunes, or an enthusiast of
+                        modern
                         fusion, there is something for everyone in India’s vibrant musical tapestry.
                     </p>
                 </div>
@@ -96,16 +104,16 @@
                             echoing the
                             unique cultural essence of its region.<br><br>
                         </p>
-                        <p><a href="north.html#bhangra" title="Learn More"
-                                data-replace="Punjab’s Bhangra"><span class="inter-heading">Punjab’s
+                        <p><a href="north.html#bhangra" title="Learn More" data-replace="Punjab’s Bhangra"><span
+                                    class="inter-heading">Punjab’s
                                     Bhangra</span></a><br>Feel the energy of Punjab with the vibrant beats of
                             Bhangra and Giddha.<br></p>
-                        <p><a href="west.html#garba" title="Learn More"
-                                data-replace="Gujarat’s Garba"><span class="inter-heading">Gujarat’s
+                        <p><a href="west.html#garba" title="Learn More" data-replace="Gujarat’s Garba"><span
+                                    class="inter-heading">Gujarat’s
                                     Garba</span></a><br>Dance to the rhythmic circles of Garba and Dandiya during
                             festive seasons.<br></p>
-                        <p><a href="west.html#lavani" title="Learn More"
-                                data-replace="Maharashtra’s Lavani"><span class="inter-heading">Maharashtra’s
+                        <p><a href="west.html#lavani" title="Learn More" data-replace="Maharashtra’s Lavani"><span
+                                    class="inter-heading">Maharashtra’s
                                     Lavani</span></a><br>Enjoy the storytelling dance and music of Lavani.<br><br>
                         </p>
                     </div>
@@ -178,13 +186,13 @@
                         <p>
                             Explore the inseparable bond between dance and music in India. Learn about classical dance
                             forms
-                            like <a href="south.html#bharatnatyam" title="Learn More"
-                                data-replace="Bharatanatyam"><span class="inter-heading">Bharatanatyam</span></a> and <a
-                                href="south.html#kathakali" title="Learn More" data-replace="Kathak"><span
-                                    class="inter-heading">Kathak</span></a>, and enjoy folk dances such as <a
-                                href="north.html#bhangra" title="Learn More" data-replace="Bhangra"><span
-                                    class="inter-heading">Bhangra</span></a> and <a href="west.html#garba"
-                                title="Learn More" data-replace="Garba"><span class="inter-heading">Garba</span></a>,
+                            like <a href="south.html#bharatnatyam" title="Learn More" data-replace="Bharatanatyam"><span
+                                    class="inter-heading">Bharatanatyam</span></a> and <a href="south.html#kathakali"
+                                title="Learn More" data-replace="Kathak"><span class="inter-heading">Kathak</span></a>,
+                            and enjoy folk dances such as <a href="north.html#bhangra" title="Learn More"
+                                data-replace="Bhangra"><span class="inter-heading">Bhangra</span></a> and <a
+                                href="west.html#garba" title="Learn More" data-replace="Garba"><span
+                                    class="inter-heading">Garba</span></a>,
                             each with its unique
                             musical accompaniment.
                         </p>
@@ -235,15 +243,40 @@
             </div>
             <div class="bottom-bar">
                 <ul class="social-icons">
-                    <li><a href="https://github.com/VikramSingh138/Indian-Heritage-Code-Crafters"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/p/C8mPkkNp9qq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/posts/nexus-svnit_web-wonders-is-back-the-ultimate-theme-based-activity-7211592490892595200-pY-A?utm_source=share&utm_medium=member_desktop"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/VikramSingh138/Indian-Heritage-Code-Crafters"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a
+                            href="https://www.instagram.com/p/C8mPkkNp9qq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a
+                            href="https://www.linkedin.com/posts/nexus-svnit_web-wonders-is-back-the-ultimate-theme-based-activity-7211592490892595200-pY-A?utm_source=share&utm_medium=member_desktop"><i
+                                class="fab fa-linkedin"></i></a></li>
                 </ul>
                 <p>&copy; Incredia - Code Crafters SVNIT . All rights reserved</p>
             </div>
         </footer>
-
     </main>
+
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 

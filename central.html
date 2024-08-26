@@ -56,7 +56,7 @@
                 <p class="anim-paragraph inter-mid">Experience The Vibrant Dance Culture of Central India.</p>
             </div>
 
-            <div class="dance1 card" id="chholiya">
+            <div class="dance1 card card-odd" id="chholiya">
                 <div class="description inter-normal">
                     <h2>CHHOLIYA</h2>
                     <p>Chholiya is a traditional dance form of the Kumaon region of Uttarakhand. It is a martial dance performed by men with swords and shields. The dance is characterized by vigorous movements and is traditionally performed during weddings and other festive occasions to ward off evil spirits.</p>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="dance2 card" id="kathak">
+            <div class="dance2 card card-even" id="kathak">
                 <div class="image">
                     <img src="Folk-Dance-Forms-of-Central-India-Kathak-UP.jpg" alt="Kathak">
                 </div>
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="dance3 card" id="raslila">
+            <div class="dance3 card card-odd" id="raslila">
                 <div class="description inter-normal">
                     <h2>RASLILA</h2>
                     <p>Raslila is a traditional dance form of Uttar Pradesh, particularly popular in the Braj region. It depicts the life and love stories of Lord Krishna, especially his playful interactions with the gopis (milkmaids). The dance is theatrical, combining narrative, music, and graceful movements, and is typically performed during religious festivals.</p>
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="dance4 card" id="matki">
+            <div class="dance4 card card-even" id="matki">
                 <div class="image">
                     <img src="Folk-Dance-Forms-of-Central-India-Matki-MP.jpg" alt="Matki Naach">
                 </div>
@@ -106,20 +106,20 @@
             </div>
 
             <div class="book-container">
+                <!-- Previous button -->
                 <button id="prev-btn">
-                    <!-- <i class="fas fa-arrow-circle-left"></i> -->
                     <img src="arrow_back.png">
                 </button>
 
                 <div id="book" class="book">
                     <!-- Paper 1 -->
                     <div id="p1" class="paper">
-                        <div class="front cover-page">
+                        <div class="front cover-page" onclick="goNextPage()">
                             <div id="f1" class="front-content inter-heading">
                                 <h1>THE<br>CUISINE<br>CULTURE<br>OF<br>CENTRAL INDIA</h1>
                             </div>
                         </div>
-                        <div class="back content-page-back">
+                        <div class="back content-page-back" onclick="goPrevPage()">
                             <div id="b1" class="back-content inter-mid">
                                 <h1>GEOGRAPHICAL<br>AND<br>CULTURAL<br>INFLUENCES</h1>
                             </div>
@@ -127,12 +127,12 @@
                     </div>
                     <!-- Paper 2 -->
                     <div id="p2" class="paper">
-                        <div class="front content-page-front">
+                        <div class="front content-page-front" onclick="goNextPage()">
                             <div id="f2" class="front-content inter-normal">
                                 <p>Central Indian cuisine is shaped by its diverse landscape and rich cultural heritage. The varied terrain supports staples like wheat, rice, and pulses, influenced by the tropical climate. Cultural diversity and historical trade routes introduce unique flavors and dishes such as poha, bhutte ka kees, and various dals and curries.</p>
                             </div>
                         </div>
-                        <div class="back content-page-back">
+                        <div class="back content-page-back" onclick="goPrevPage()">
                             <div id="b2" class="back-content inter-mid">
                                 <h1>STYLE<br>OF<br>FOOD</h1>
                             </div>
@@ -140,12 +140,12 @@
                     </div>
                     <!-- Paper 3 -->
                     <div id="p3" class="paper">
-                        <div class="front content-page-front">
+                        <div class="front content-page-front" onclick="goNextPage()">
                             <div id="f3" class="front-content inter-normal">
                                 <p>Central Indian cuisine features simple yet flavorful dishes made with wheat, rice, lentils, and seasonal vegetables. Spices like coriander, cumin, and turmeric are key. Popular dishes include poha, dal bafla, and bhutte ka kees, showcasing the region's rich agricultural and cultural heritage.</p>
                             </div>
                         </div>
-                        <div class="back content-page-back">
+                        <div class="back content-page-back" onclick="goPrevPage()">
                             <div id="b3" class="back-content inter-mid">
                                 <h1>STAPLE<br>FOODS<br>CENTRAL INDIANS<br>SEEM<br>TO PREFER</h1>
                             </div>
@@ -153,12 +153,12 @@
                     </div>
                     <!-- Paper 4 -->
                     <div id="p4" class="paper">
-                        <div class="front content-page-front">
+                        <div class="front content-page-front" onclick="goNextPage()">
                             <div id="f4" class="front-content inter-normal">
                                 <p>Central Indians prefer staple foods like wheat, rice, lentils, and a variety of seasonal vegetables. Wheat is used to make rotis, parathas, and other bread, while rice is a common base for meals. Lentils, often prepared as dals, are a primary source of protein. Popular vegetables include potatoes, eggplant, okra, and various leafy greens. These staples form the foundation of daily meals, providing nourishment and variety.</p>
                             </div>
                         </div>
-                        <div class="back content-page-back">
+                        <div class="back content-page-back" onclick="goPrevPage()">
                             <div id="b4" class="back-content inter-mid">
                                 <h1>COOKING<br>OILS<br>COMMONLY<br>USED</h1>
                             </div>
@@ -166,12 +166,12 @@
                     </div>
                     <!-- Paper 5 -->
                     <div id="p5" class="paper">
-                        <div class="front content-page-front">
+                        <div class="front content-page-front" onclick="goNextPage()">
                             <div id="f5" class="front-content inter-normal">
                                 <p>In Central Indian cuisine, commonly used cooking oils include mustard oil, peanut oil, and ghee (clarified butter). Mustard oil is favored for its pungent flavor and is often used in pickling and frying. Peanut oil is popular for its high smoke point and neutral taste, making it ideal for frying and general cooking. Ghee, with its rich, nutty flavor, is used for sautéing, frying, and as a finishing touch to enhance the taste of dishes.</p>
                             </div>
                         </div>
-                        <div class="back">
+                        <div class="back" onclick="goPrevPage()">
                             <div id="b5" class="back-content inter-heading">
                                 <h1>The End.</h1>
                             </div>
@@ -181,7 +181,6 @@
 
                 <!-- Next Button -->
                 <button id="next-btn">
-                    <!-- <i class="fas fa-arrow-circle-right"></i> -->
                     <img src="arrow_forward.png">
                 </button>
             </div>

@@ -262,14 +262,13 @@ main {
 }
 
 .intro-dance {
-    overflow: hidden;
     position: relative;
     color: #fefefe;
 }
 
 .intro-dance h1 {
     cursor: default;
-    width: 1050px;
+    /* width: 1050px; */
     font-size: 100px;
 }
 
@@ -485,10 +484,17 @@ main {
 
     .card {
         display: flex;
-        flex-direction: column;
         align-items: center;
         top: 0px;
         height: 600px;
+    }
+
+    .card-odd {
+        flex-direction: column-reverse;
+    }
+
+    .card-even {
+        flex-direction: column;
     }
 
     .description h2 {
@@ -661,14 +667,13 @@ main {
 
 .intro-cuisine {
     margin: 50px;
-    overflow: hidden;
     position: relative;
     color: #fefefe;
 }
 
 .intro-cuisine h1 {
     cursor: default;
-    width: 1050px;
+    /* width: 1050px; */
     font-size: 100px;
 }
 
@@ -702,6 +707,10 @@ main {
     width: 500px;
     height: 600px;
     transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .paper {
@@ -832,7 +841,6 @@ main {
 
 #f1>h1 {
     font-size: 70px;
-    ;
 }
 
 #b1 {
@@ -910,7 +918,14 @@ main {
 }
 
 /* Responsive Flipbook */
-@media (max-aspect-ratio: 1250/600) {
+
+@media (max-width: 1080px) {
+    #prev-btn, #next-btn {
+        display: none;
+    }
+}
+
+@media (max-aspect-ratio: 1050/600) {
     .intro-cuisine {
         display: flex;
         flex-wrap: wrap;
@@ -949,7 +964,7 @@ main {
 
 @media (max-aspect-ratio: 850/600) {
     .cuisine-section {
-        margin: 20px 0px 0px 0px;
+        margin: 20px;
     }
 
     .intro-cuisine {

@@ -188,6 +188,30 @@ nav img {
     overflow: hidden;
 }
 
+@media (max-width: 1000px) {
+    .intro-monuments {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-monuments {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-monuments {
+        height: 40vh;
+    }
+    .intro-monu-head {
+        font-size: 30px;
+    }
+    .intro-monu-para {
+        font-size: 25px;
+    }
+}
+
 .intro-monu-head {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -443,10 +467,14 @@ nav img {
 
     .monument-div {
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         align-items: center;
         overflow: hidden;
         height: 100%;
+    }
+
+    .monu-mid-head {
+        width: 100%;
     }
 
     .monu-mid-head h3 {
