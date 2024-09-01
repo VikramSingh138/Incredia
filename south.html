@@ -9,6 +9,8 @@
     <script src="nav-anim.js"></script>
     <script src="flip-book.js" defer></script>
     <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 
 <body>
@@ -68,7 +70,7 @@
                 <p class="anim-paragraph baskervville-sc-regular">Feast Your Eyes on The Vibrant Dance Culture of South India.</p>
             </div>
 
-            <div class="dance1 card" id="kuchipudi">
+            <div class="dance1 card card-odd" id="kuchipudi">
                 <div class="description">
                     <h2>KUCHIPUDI</h2>
                     <p>Kuchipudi is a classical dance from the village of Kuchipudi in Andhra Pradesh. It combines dance, music, and acting, often telling stories from Hindu epics. Known for its graceful movements, expressive gestures, and dramatic storytelling, performers wear traditional costumes and makeup. Accompanied by Carnatic music, Kuchipudi features intricate footwork, fluid movements, and expressive facial expressions.</p>
@@ -78,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="dance2 card" id="kathakali">
+            <div class="dance2 card card-even" id="kathakali">
                 <div class="image">
                     <img src="Folk-Dance-Forms-of-South-India-Kathakali-Kerala.jpg" alt="Kathakali">
                 </div>
@@ -88,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="dance3 card" id="mohiniyattam">
+            <div class="dance3 card card-odd" id="mohiniyattam">
                 <div class="description">
                     <h2>MOHINIYATTAM</h2>
                     <p>Mohiniyattam is a classical dance from Kerala, performed by women with graceful, slow, and fluid movements. It emphasizes expressions (bhava) and gestures (mudras) to tell stories of love and devotion. Dancers wear white and gold saris and perform to Carnatic music, using instruments like the veena, mridangam, and edakka.</p>
@@ -98,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="dance4 card" id="bharatnatyam">
+            <div class="dance4 card card-even" id="bharatnatyam">
                 <div class="image">
                     <img src="Folk-Dance-Forms-of-South-India-Bharatnatyam-Tamilnadu.jpg" alt="Bharatnatyam">
                 </div>
@@ -210,6 +212,48 @@
                 </button>
             </div>
 
+            <div class="container">
+
+                <div class="card__container swiper">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide inter-heading" style="background-color: rgb(223, 213, 213);">
+                                <h1>THE<br>CUISINE<br>CULTURE<br>OF<br>SOUTH INDIA</h1>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>Southern India, with its diverse landscapes of ghats, forests, and coastlines, has a tropical climate that supports rice and spice cultivation. Culturally rich, it is known for Dravidian languages, Bharatanatyam dance, and Carnatic music. The region's iconic temples, like Meenakshi Temple, reflect its historical and religious heritage, creating a vibrant and enduring cultural tapestry.</p>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>Southern Indian cuisine is renowned for its vibrant flavors, using aromatic spices, fresh herbs, and coconut. Meals often feature rice, lentil-based dishes, vegetable curries, and chutneys. Key ingredients include curry leaves, mustard seeds, tamarind, and curry powders. Famous dishes are dosas (rice crepes), idlis (steamed rice cakes), and sambar (spicy lentil soup). Each state offers unique specialties, from Kerala's seafood to Tamil Nadu's spicy Chettinad cuisine.</p>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>Southern Indians prefer staple foods like rice, which forms the basis of most meals, complemented by lentil dishes, vegetable curries, and chutneys. Popular items include dosas (rice crepes), idlis (steamed rice cakes), and sambar (spicy lentil soup), reflecting their emphasis on rice and lentils in everyday cuisine.</p>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>In Southern Indian cuisine, commonly used cooking oils include coconut oil, which adds a distinctive flavor, and sesame oil, known for its rich, nutty taste. Groundnut (peanut) oil is also popular for its mild flavor and high smoking point.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <!-- <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div> -->
+
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
         </section>
 
         <footer>
@@ -245,6 +289,8 @@
         </footer>
     </main>
 
+    <script src="swiper-bundle.min.js"></script>
+    <script src="culture.js"></script>
 
     <script>
         let mybutton = document.getElementById("myBtn");

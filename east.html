@@ -9,6 +9,8 @@
     <script src="nav-anim.js"></script>
     <script src="flip-book.js" defer></script>
     <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 
 <body>
@@ -25,16 +27,15 @@
 
     <header>
 
-        <nav>
-            <nav class="anim-nav">
-                <span style="cursor:pointer" onclick="openNav()"><img src="menu.png"></span>
-                <div class="logo">
-                    <div class="title inter-heading">INCREDIA</div>
-                    <a href="../01 Home page/01_Taj_Parallax.html" title="INCREDIA">
-                        <span style="cursor:pointer" onclick="openNav()"><img src="website-logo.png" style="height: 60px; width: auto;"></span>
-                    </a>
-                </div>
-            </nav>
+        <nav class="anim-nav">
+            <span style="cursor:pointer" onclick="openNav()"><img src="menu.png"></span>
+            <div class="logo">
+                <div class="title inter-heading">INCREDIA</div>
+                <a href="../01 Home page/01_Taj_Parallax.html" title="INCREDIA">
+                    <span style="cursor:pointer" onclick="openNav()"><img src="website-logo.png" style="height: 60px; width: auto;"></span>
+                </a>
+            </div>
+        </nav>
 
         <!-- Side Menu -->
         <div id="mySidenav" class="menu anim">
@@ -59,7 +60,7 @@
                 </p>
             </div>
 
-            <div class="dance1 card" id="bidesia">
+            <div class="dance1 card card-odd" id="bidesia">
                 <div class="description inter-normal">
                     <h2>BIDESIA</h2>
                     <p>Bidesia is a traditional folk dance-drama from Bihar, blending music, dance, and dialogue to
@@ -72,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="dance2 card" id="chhau">
+            <div class="dance2 card card-even" id="chhau">
                 <div class="image">
                     <img src="Folk-Dance-Forms-of-East-India-Chhau-Jharkhand.jpg" alt="Chhau">
                 </div>
@@ -85,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="dance3 card" id="dhunuchi">
+            <div class="dance3 card card-odd" id="dhunuchi">
                 <div class="description inter-normal">
                     <h2>DHUNUCHI NAACH</h2>
                     <p>Dhunuchi Naach is a traditional dance from Bengal performed during the Durga Puja festival.
@@ -99,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="dance4 card" id="odissi">
+            <div class="dance4 card card-even" id="odissi">
                 <div class="image">
                     <img src="Folk-Dance-Forms-of-East-India-Odissi-Odisha.jpg" alt="Odissi">
                 </div>
@@ -205,6 +206,48 @@
                 </button>
             </div>
 
+            <div class="container">
+
+                <div class="card__container swiper">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide inter-heading" style="background-color: rgb(223, 213, 213);">
+                                <h1>THE<br>CUISINE<br>CULTURE<br>OF<br>EASTERN INDIA</h1>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>Eastern India, with its fertile plains, dense forests, and coastal regions, supports diverse agriculture and local economies. Culturally, it is rich and varied, influenced by ancient civilizations, colonial history, and indigenous traditions. Celebrations like Durga Puja and arts such as Odissi dance and Madhubani painting highlight the region's vibrant heritage.</p>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>Eastern Indian cuisine is characterized by its use of mustard oil, spices, and a love for rice and fish. The cuisine features subtle yet complex flavors with dishes often incorporating mustard seeds and pastes. Popular items include fish curries, lentil-based dishes, and an array of sweets like rasgulla and sandesh. The cuisine is also known for its use of local vegetables, leafy greens, and fermented foods, creating a distinct and rich culinary tradition.</p>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>In eastern India, staple foods include rice and fish, often accompanied by lentils (dal) and vegetables. Freshwater fish curries like macher jhol are popular, and sweets such as rasgulla and sandesh are also cherished.</p>
+                            </article>
+
+                            <article class="card__article swiper-slide inter-normal">
+                                <p>In eastern Indian cuisine, mustard oil is the most commonly used cooking oil, prized for its pungent flavor and aroma. Other oils, such as refined vegetable oil and ghee (clarified butter), are also used, particularly in preparing sweets and special dishes.</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <!-- <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div> -->
+
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
         </section>
         
         <footer>
@@ -240,6 +283,8 @@
         </footer>
     </main>
 
+    <script src="swiper-bundle.min.js"></script>
+    <script src="culture.js"></script>
 
     <script>
         let mybutton = document.getElementById("myBtn");

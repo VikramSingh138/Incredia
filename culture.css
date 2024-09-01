@@ -325,6 +325,18 @@ main {
     }
 }
 
+@media (max-width: 800px) {
+    .intro-text h1 {
+        font-size: 40px;
+    }
+    .intro-text p {
+        font-size: 20px;
+    }
+    .short-intro {
+        height: 70vh;
+    }
+}
+
 @media (max-aspect-ratio: 850/600){
 
     .map-section-container{
@@ -395,22 +407,25 @@ main {
     }
 }
 
-@media(max-aspect-ratio:700/1000){
+/* @media(max-aspect-ratio:700/1000){
     .short-intro{
-        height: 80vh;
+        height: 60vh;
     }
-}
+} */
 
-@media(max-aspect-ratio:600/1000){
+/* @media(max-aspect-ratio:600/1000){
     .short-intro{
-        height: 80vh;
+        height: 50vh;
     }
-}
+} */
 
 @media (max-aspect-ratio: 500/600){
+    .short-intro {
+        height: 55vh;
+    }
 
     .intro-text h1{
-        font-size: 40px;
+        font-size: 25px;
     }
     
     .intro-text p{
