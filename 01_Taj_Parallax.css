@@ -605,7 +605,7 @@ section {
 .card {
     /* border: 2px solid black; */
     height: 25vw;
-    width: 30vw;
+    width: 25vw;
     background-color: #024;
     margin: 10px;
     display: flex;
